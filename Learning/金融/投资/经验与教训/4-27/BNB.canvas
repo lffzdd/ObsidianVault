@@ -1,0 +1,27 @@
+{
+	"nodes":[
+		{"id":"0b46ac8e3c07d75b","type":"text","text":"1 小时\n价格线看涨\n成交量有点低, 不知道是不是在观望, #看不出\nDIF 将反走, #看不出\nRSI 有点低, 可能反弹","x":-3120,"y":-492,"width":250,"height":344},
+		{"id":"6e284cedc1f7d040","type":"text","text":"15 分钟\n价格线不明朗\n成交量正常\nMACD 正在涨\nRSI 正在涨","x":-3120,"y":0,"width":250,"height":300},
+		{"id":"9f259b601b3b5eaf","type":"text","text":"注意图中红色线\n被主力做局了\n做局完应该会回升","x":-2780,"y":240,"width":250,"height":160,"color":"4"},
+		{"id":"4d450565d681a703","type":"file","file":"Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427152224.png","x":-2421,"y":-520,"width":381,"height":400},
+		{"id":"78e2d400346e7846","type":"file","file":"Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427153703.png","x":-2421,"y":-50,"width":381,"height":400},
+		{"id":"2e22f0d3e954f305","type":"text","text":"BNBUSDT","x":-3120,"y":-1720,"width":250,"height":60},
+		{"id":"b6d5eed159c59605","type":"text","text":"日线\n震荡中, 将下降\n","x":-3120,"y":-1346,"width":250,"height":133},
+		{"id":"be2a5c925aa9c411","type":"text","text":"4 小时\n价格线看涨\n**成交量 #看不出 **\n**MACD #看不出 **\nRSI 将抬头\n","x":-3120,"y":-920,"width":250,"height":240,"color":"6"},
+		{"id":"c3c8d388bfef1044","type":"file","file":"Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427150336.png","x":-2420,"y":-1479,"width":380,"height":399},
+		{"id":"873c643d489edf7c","type":"file","file":"Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427151343.png","x":-2421,"y":-1000,"width":381,"height":400},
+		{"id":"0c57d2ff4f15162e","type":"text","text":"买入\n15:47\n600 买入\n608 止盈\n598 止损\n","x":-1400,"y":-920,"width":250,"height":256,"color":"4"}
+	],
+	"edges":[
+		{"id":"ac38c75767fd36af","fromNode":"2e22f0d3e954f305","fromSide":"bottom","toNode":"b6d5eed159c59605","toSide":"top","label":"买前"},
+		{"id":"d29b9779e2f82071","fromNode":"be2a5c925aa9c411","fromSide":"right","toNode":"873c643d489edf7c","toSide":"left","color":"4"},
+		{"id":"20a4638fdbfaeb32","fromNode":"b6d5eed159c59605","fromSide":"right","toNode":"c3c8d388bfef1044","toSide":"left","color":"1"},
+		{"id":"9bc99958047da2ac","fromNode":"0b46ac8e3c07d75b","fromSide":"right","toNode":"4d450565d681a703","toSide":"left","color":"4","label":"还得等"},
+		{"id":"edb7e6b937e4a5b7","fromNode":"6e284cedc1f7d040","fromSide":"right","toNode":"78e2d400346e7846","toSide":"left","color":"4","label":"看涨,但是利润很低"},
+		{"id":"887f62265cd10e47","fromNode":"78e2d400346e7846","fromSide":"left","toNode":"9f259b601b3b5eaf","toSide":"right"},
+		{"id":"a7f0e546bf3fe6b9","fromNode":"b6d5eed159c59605","fromSide":"bottom","toNode":"be2a5c925aa9c411","toSide":"top"},
+		{"id":"bcc81788a40a0240","fromNode":"be2a5c925aa9c411","fromSide":"bottom","toNode":"0b46ac8e3c07d75b","toSide":"top"},
+		{"id":"85811908195625d5","fromNode":"0b46ac8e3c07d75b","fromSide":"bottom","toNode":"6e284cedc1f7d040","toSide":"top"},
+		{"id":"40d81b4bcb779d43","fromNode":"6e284cedc1f7d040","fromSide":"bottom","toNode":"0c57d2ff4f15162e","toSide":"left"}
+	]
+}

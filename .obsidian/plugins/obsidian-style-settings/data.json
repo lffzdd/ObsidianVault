@@ -1,0 +1,20 @@
+{
+  "Appearance-light@@card-layout-open-light": true,
+  "Editor@@line-hover-indicator": true,
+  "Editor@@focus-indicator-list-level": true,
+  "Editor@@focus-indicator-codeblock-line-number": true,
+  "Appearance-light@@card-highlight-light": true,
+  "Mobile@@card-layout-pad-open": false,
+  "Components@@CTA-BTN-enable": false,
+  "Components@@file-icon-remove": false,
+  "Components@@colorful-folder": true,
+  "Components@@tab-autohide": false,
+  "Components@@status-bar-autohide": false,
+  "Components@@Ribbon-autohide": false,
+  "Components@@nav-header-autohide": true,
+  "Components@@tab-title-bar-autohide": true,
+  "Components@@vault-profile-autohide": true,
+  "Components@@folder-font-bold": true,
+  "Components@@outline-enhanced": true,
+  "Components@@restored-scrollbars": false
+}

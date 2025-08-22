@@ -1,0 +1,22 @@
+{
+	"nodes":[
+		{"id":"69e142978b09a896","type":"text","text":"入场时机不对, 没有找好点位, 凭着情绪入场, 导致被套住\n技术分析要加强","x":-582,"y":80,"width":344,"height":154},
+		{"id":"98176d960ba35616","type":"text","text":"止盈止损没有设置好, 经常是早上一起来一看大变天了","x":-570,"y":395,"width":259,"height":131},
+		{"id":"13fe36909c0d4cbc","type":"text","text":"嘉威哥说永远不要做空 BTC, 我没听\n我猜是因为\"大势\", 逆势而为, 胜率从 0 起","x":-251,"y":404,"width":451,"height":122},
+		{"id":"4b9735b60670d280","type":"text","text":"接下来尝试的策略\nBTC 只做多\n没有潜力的币只做空","x":-570,"y":600,"width":267,"height":169,"color":"4"},
+		{"id":"dc17c0b41f81bfbd","type":"text","text":"- ! 管理仓位, 我还不会","x":240,"y":360,"width":250,"height":123,"color":"1"},
+		{"id":"979a47260d7f195d","type":"text","text":"- 谐波理论, 市场跟黄金分割比有一定关系\n- 波浪理论, 人性的**追涨**杀跌\n","x":-180,"y":597,"width":438,"height":172},
+		{"id":"204881e431d8cd34","type":"text","text":"最近有点像无头苍蝇, 市场没有固定规律, 听谁说都有道理, 渐渐的有点害怕\n不管别人说什么, 要自己总结自己的经验和规律, 吸收知识, 而不是抄答案","x":-570,"y":820,"width":407,"height":201,"color":"1"},
+		{"id":"be4ac3ae2178cdd0","x":240,"y":863,"width":330,"height":115,"color":"2","type":"text","text":"- $ 确定的, 能看大势\n- ! 不确定的, 技术分析"},
+		{"id":"eb6a058a7aa3ccee","x":-100,"y":863,"width":240,"height":115,"color":"4","type":"text","text":"优先做确定的\n再考虑不确定性因素"},
+		{"id":"daa8f87d0e79648f","type":"text","text":"以及有三周了, 在入门, 在学习, 在积累经验","x":-582,"y":-420,"width":381,"height":117},
+		{"id":"61a842c73d1ef840","type":"text","text":"现在在扛空单, 有几次出手止损的机会都没有止损, 导致白白被套住, 已经被套住一个星期了, 时间成本过高, 早抛早继续了, 一直扛在这里, 白白浪费时间, **即使后续真的跌了, 其实也不赚了**, 耗费的时间太长","x":-366,"y":-280,"width":392,"height":263},
+		{"id":"5b07251d002adce6","type":"text","text":"后续再被套住怎么办? 学会对冲, 止损, 多空两头下","x":-25,"y":86,"width":261,"height":148}
+	],
+	"edges":[
+		{"id":"50c1d3d2236b5b56","fromNode":"61a842c73d1ef840","fromSide":"bottom","toNode":"69e142978b09a896","toSide":"top"},
+		{"id":"232929b11ea0e7e0","fromNode":"61a842c73d1ef840","fromSide":"bottom","toNode":"5b07251d002adce6","toSide":"top"},
+		{"id":"bd8531b477564492","fromNode":"204881e431d8cd34","fromSide":"right","toNode":"eb6a058a7aa3ccee","toSide":"left"},
+		{"id":"b30f26f41ba6ec87","fromNode":"eb6a058a7aa3ccee","fromSide":"right","toNode":"be4ac3ae2178cdd0","toSide":"left"}
+	]
+}

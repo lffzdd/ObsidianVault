@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"633c1dffba45fb58","type":"text","text":"注意庄家做了 1 波","x":-645,"y":452,"width":250,"height":88},
+		{"id":"94e5f83109905423","type":"text","text":"1 小时\n短期看涨\n不过注意 RSI 似乎停住了","x":-985,"y":168,"width":250,"height":344},
+		{"id":"bfc5b5a3b91f0ae1","type":"text","text":"15 分钟\n看起来不会涨了\n但是庄家做了 1 波\n应该还会继续回升\n看涨","x":-985,"y":660,"width":250,"height":300},
+		{"id":"8c334fff11ab1098","type":"text","text":"注意图中红色线\n被主力做局了\n做局完应该会回升","x":-645,"y":900,"width":250,"height":160,"color":"4"},
+		{"id":"2a7f46f74fd9961a","type":"text","text":"SOLUSDT","x":-985,"y":-1060,"width":250,"height":60},
+		{"id":"94375ff5de19dfd1","type":"text","text":"日线\n短期看下降\n长期看震荡中\n","x":-985,"y":-686,"width":250,"height":267},
+		{"id":"84432e97a0291b7a","type":"text","text":"4 小时\n短期看涨\n长期看降\n","x":-985,"y":-260,"width":250,"height":240},
+		{"id":"139a3940243df5f2","type":"text","text":"买入\n16:19\n149.5 止盈\n146.5 止损\n","x":735,"y":-260,"width":250,"height":256,"color":"4"},
+		{"id":"d1a7c5b5f8f4cb2f","type":"file","file":"Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427155823.png","x":-286,"y":-819,"width":381,"height":400},
+		{"id":"558be85c6ea58548","type":"file","file":"Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427160231.png","x":-286,"y":-332,"width":381,"height":400},
+		{"id":"9a26d7b8816ddcaa","type":"file","file":"Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427160428.png","x":-286,"y":140,"width":381,"height":400},
+		{"id":"70899069dfadecc3","type":"file","file":"Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427161230.png","x":-286,"y":610,"width":381,"height":400}
+	],
+	"edges":[
+		{"id":"6d4d6cb33e28f1b2","fromNode":"94e5f83109905423","fromSide":"bottom","toNode":"bfc5b5a3b91f0ae1","toSide":"top"},
+		{"id":"4759c8011e0d10bf","fromNode":"84432e97a0291b7a","fromSide":"bottom","toNode":"94e5f83109905423","toSide":"top"},
+		{"id":"c905649a3691757d","fromNode":"bfc5b5a3b91f0ae1","fromSide":"bottom","toNode":"139a3940243df5f2","toSide":"left"},
+		{"id":"db742e1aea631be9","fromNode":"2a7f46f74fd9961a","fromSide":"bottom","toNode":"94375ff5de19dfd1","toSide":"top","label":"买前"},
+		{"id":"d8452aa07a76f01f","fromNode":"94375ff5de19dfd1","fromSide":"bottom","toNode":"84432e97a0291b7a","toSide":"top"},
+		{"id":"34c204fb4d2df0f1","fromNode":"94375ff5de19dfd1","fromSide":"right","toNode":"d1a7c5b5f8f4cb2f","toSide":"left","color":"1"},
+		{"id":"c4e3aaa2cef443a9","fromNode":"84432e97a0291b7a","fromSide":"right","toNode":"558be85c6ea58548","toSide":"left","color":"4","label":"短期做多\n长期做空"},
+		{"id":"89a1d2bd066bc09f","fromNode":"94e5f83109905423","fromSide":"right","toNode":"9a26d7b8816ddcaa","toSide":"left","color":"4","label":"做短单"},
+		{"id":"5ba2f72ba4cf13bf","fromNode":"9a26d7b8816ddcaa","fromSide":"left","toNode":"633c1dffba45fb58","toSide":"right"},
+		{"id":"36267dcf1b2f3c2a","fromNode":"bfc5b5a3b91f0ae1","fromSide":"right","toNode":"70899069dfadecc3","toSide":"left","color":"4"}
+	]
+}

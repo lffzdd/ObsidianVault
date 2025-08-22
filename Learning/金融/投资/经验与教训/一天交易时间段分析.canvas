@@ -1,0 +1,12 @@
+{
+	"nodes":[
+		{"id":"692d6a15aab03f8f","type":"file","file":"Learning/金融/投资/经验与教训/attachments/Pasted image 20250429112701.png","x":-360,"y":300,"width":381,"height":400},
+		{"id":"19006834d44b70b0","type":"text","text":"4-19 起伏不大","x":-460,"y":60,"width":250,"height":60},
+		{"id":"dc045fab0d81a16e","type":"file","file":"Learning/金融/投资/经验与教训/attachments/Pasted image 20250429112416.png","x":0,"y":-560,"width":381,"height":400},
+		{"id":"2dffaa610395ea9c","type":"file","file":"Learning/金融/投资/经验与教训/一天交易时间段分析.md","x":-1120,"y":-840,"width":540,"height":1220}
+	],
+	"edges":[
+		{"id":"6cdc8b4dd0ff656d","fromNode":"dc045fab0d81a16e","fromSide":"bottom","toNode":"19006834d44b70b0","toSide":"top"},
+		{"id":"8ac917999fa4d31a","fromNode":"19006834d44b70b0","fromSide":"bottom","toNode":"692d6a15aab03f8f","toSide":"top"}
+	]
+}

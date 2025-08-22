@@ -1,0 +1,1486 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+/* 待完善 */
+/**
+ * 1. 代码非等宽字体；
+ * 2. kbd样式
+ * 3. 行内代码样式优化
+ */
+
+/* 字体引入：鸿蒙字体 */
+
+html {
+  font-size: 16px;
+  font-family: "HarmonyOS_Sans_SC";
+}
+
+/* 打印页面设置 */
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    /*确保打印颜色一致*/
+    print-color-adjust: exact;
+  }
+
+  body {
+    width: 21cm;
+    /* 设置页面宽度为A4宽度 */
+    height: 29.7cm;
+    /* 设置页面高度为A4高度 */
+    margin: 1cm;
+    /* 设置页面边距 */
+  }
+
+  p {
+    line-height: 1.5rem;
+    /*设置打印内容的行高*/
+  }
+
+  ol,
+  ul,
+  figure,
+  pre {
+    /*设置一些元素不会被分页截断对应有序列表、无序列表、图片(表格)、代码块*/
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
+/* 软件内部Markdown样式 */
+#write {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 15px;
+  line-height: 2.25;
+  color: #000;
+  letter-spacing: 1.1px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: left;
+  background-image: linear-gradient(90deg,
+      rgba(50, 0, 0, 0.05) calc(3% * var(--bg-grid)),
+      rgba(0, 0, 0, 0) calc(3% * var(--bg-grid))),
+    linear-gradient(360deg,
+      rgba(50, 0, 0, 0.05) calc(3% * var(--bg-grid)),
+      rgba(0, 0, 0, 0) calc(3% * var(--bg-grid)));
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+#write p {
+  color: #333;
+  margin: 10px 10px;
+  font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light,
+    "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  font-size: 1rem;
+  word-spacing: 2px;
+}
+
+#write h3:after,
+h4:after,
+h5:after,
+h6:after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.2em;
+  height: 2em;
+  width: 1.2em;
+  vertical-align: top;
+}
+
+#write h3:after {
+  background: var(--h3-r-graphic);
+}
+
+#write h4:after {
+  background: var(--h4-r-graphic);
+}
+
+#write h5:after {
+  background: var(--h5-r-graphic);
+}
+
+#write h6:after {
+  background: var(--h6-r-graphic);
+}
+
+/* 一级标题 */
+#write h1:after {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+  border-bottom: none;
+}
+
+#write h1 {
+  text-align: center;
+}
+
+/* 二级标题 */
+#write h2 {
+  color: var(--head-title-h2-color);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  width: fit-content;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 1px 12.5px;
+  border-radius: 4px;
+  background: var(--head-title-h2-background);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  transition: all ease-in-out 0.1s;
+}
+
+#write h2.md-heading a {
+  text-decoration: underline;
+  border-bottom: 0;
+  text-decoration-thickness: 1.2px;
+  text-underline-offset: 2px;
+}
+
+#write h2:hover {
+  background-position: -100% -100%;
+  transition: all ease-in-out 0.1s;
+}
+
+/* 三级标题 */
+#write h3 {
+  width: fit-content;
+  margin: 20px 0;
+  font-size: 1.3rem;
+  text-align: left;
+  padding-left: 10px;
+  border-left: 5px solid var(--head-title-color);
+}
+
+/* 三级标题内容 */
+#write h3 span {
+  border-bottom: 2px hidden var(--head-title-color);
+}
+
+/* #write h3 span:hover {
+  border-bottom: 2px solid var(--head-title-color);
+  transition: all linear 0.1s;
+} */
+
+#write h4 {
+  margin: 20px 0;
+  font-size: 1.15rem;
+  text-align: left;
+}
+
+#write h4::before {
+  content: "";
+  margin-right: 7px;
+  display: inline-block;
+  background-color: var(--head-title-color);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: var(--head-title-color) 1px solid;
+  vertical-align: inherit;
+}
+
+#write h5 {
+  margin: 23px 0;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+#write h5::before {
+  content: "";
+  margin-right: 7px;
+  display: inline-block;
+  background-color: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: var(--head-title-color) 2px solid;
+  vertical-align: inherit;
+}
+
+#write h6 {
+  margin: 23px 0;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+#write h6::before {
+  content: "-";
+  color: var(--head-title-color);
+  margin-right: 7px;
+  display: inline-block;
+  vertical-align: inherit;
+}
+
+/* 标题自动编号 */
+#write {
+  counter-reset: h1;
+}
+
+h1 {
+  counter-reset: h2;
+}
+
+h2 {
+  counter-reset: h3;
+}
+
+h3 {
+  counter-reset: h4;
+}
+
+h4 {
+  counter-reset: h5;
+}
+
+h5 {
+  counter-reset: h6;
+}
+
+.sidebar-content {
+  counter-reset: h1
+}
+.outline-content {
+  counter-reset: h1
+}
+.outline-h1 {
+  counter-reset: h2
+}
+
+.outline-h2 {
+  counter-reset: h3
+}
+
+.outline-h3 {
+  counter-reset: h4
+}
+
+.outline-h4 {
+  counter-reset: h5
+}
+
+.outline-h5 {
+  counter-reset: h6
+}
+
+
+
+.md-toc-content {
+  counter-reset: h1toc
+}
+
+.md-toc-h1 {
+  counter-reset: h2toc
+}
+
+.md-toc-h2 {
+  counter-reset: h3toc
+}
+
+.md-toc-h3 {
+  counter-reset: h4toc
+}
+
+.md-toc-h4 {
+  counter-reset: h5toc
+}
+
+.md-toc-h5 {
+  counter-reset: h6toc
+}
+
+
+#write h1:before {
+  counter-increment: h1;
+  content: var(--autonum-h1);
+}
+#outline-content li.outline-h1>div>span.outline-label:before {
+  counter-increment: h1;
+  content: var(--autonum-h1);
+}
+.outline-content .outline-h1>.outline-item>.outline-label:before{
+  counter-increment: h1;
+  content: var(--autonum-h1);
+}
+#write span.md-toc-item.md-toc-h1>a:before {
+  counter-increment: h1toc;
+  content: var(--autonum-h1toc);
+}
+
+#write h2:before {
+  counter-increment: h2;
+  content: var(--autonum-h2);
+  color: var(--head-title-h2-color);
+}
+.outline-content .outline-h2>.outline-item>.outline-label:before {
+  counter-increment: h2;
+  content: var(--autonum-h2);
+}
+li.outline-h2>div>a.outline-label:before {
+  counter-increment: h2;
+  content: var(--autonum-h2);
+}
+
+#write span.md-toc-item.md-toc-h2>a:before {
+  counter-increment: h2toc;
+  content: var(--autonum-h2toc);
+}
+
+
+#write h3>span:first-of-type::before {
+  counter-increment: h3;
+  content: var(--autonum-h3);
+  color: var(--element-color);
+}
+#outline-content li.outline-h3>div>span.outline-label:before {
+  counter-increment: h3;
+  content: var(--autonum-h3);
+}
+.outline-content .outline-h3>.outline-item>.outline-label:before {
+  counter-increment: h3;
+  content: var(--autonum-h3);
+}
+#write span.md-toc-item.md-toc-h3>a:before {
+  counter-increment: h3toc;
+  content: var(--autonum-h3toc);
+}
+
+
+#write h4>span:first-of-type::before {
+  counter-increment: h4;
+  content: var(--autonum-h4);
+  color: var(--element-color);
+}
+#outline-content li.outline-h4>div>span.outline-label:before {
+  counter-increment: h4;
+  content: var(--autonum-h4);
+}
+.outline-content .outline-h4>.outline-item>.outline-label:before {
+  counter-increment: h4;
+  content: var(--autonum-h4);
+}
+#write span.md-toc-item.md-toc-h4>a:before {
+  counter-increment: h4toc;
+  content: var(--autonum-h4toc);
+}
+
+
+#write h5>span:first-of-type::before {
+  counter-increment: h5;
+  content: var(--autonum-h5);
+  color: var(--element-color);
+}
+#outline-content li.outline-h5>div>span.outline-label:before {
+  counter-increment: h5;
+  content: var(--autonum-h5);
+}
+.outline-content .outline-h5>.outline-item>.outline-label:before {
+  counter-increment: h5;
+  content: var(--autonum-h5);
+}
+#write span.md-toc-item.md-toc-h5>a:before {
+  counter-increment: h5toc;
+  content: var(--autonum-h5toc);
+}
+
+
+#write h6>span:first-of-type::before {
+  counter-increment: h6;
+  content: var(--autonum-h6);
+  color: var(--element-color);
+}
+#outline-content li.outline-h6>div>span.outline-label:before {
+  counter-increment: h6;
+  content: var(--autonum-h6);
+}
+.outline-content .outline-h6>.outline-item>.outline-label:before {
+  counter-increment: h6;
+  content: var(--autonum-h6);
+}
+#write span.md-toc-item.md-toc-h6>a:before {
+  counter-increment: h6toc;
+  content: var(--autonum-h6toc);
+}
+
+
+/* 列表 */
+::marker {
+  color: var(--element-color-deep);
+}
+
+li.md-list-item {
+  margin: 0.4rem 0;
+}
+
+#write ul,
+#write ol {
+  margin-top: 0px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+  padding-left: 13px;
+}
+
+#write em {
+  padding: 0 3px 0 0;
+}
+
+#write ul {
+  list-style-type: disc;
+}
+
+#write ul ul {
+  list-style-type: circle;
+}
+
+#write ul ul ul {
+  list-style-type: square;
+}
+
+#write ol {
+  list-style-type: decimal;
+}
+
+#write ol ol {
+  list-style-type: lower-alpha;
+}
+
+#write ol ol ol {
+  list-style-type: lower-roman;
+}
+
+#write li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.7rem;
+  text-align: justify;
+  color: #000000;
+  font-weight: 500;
+}
+
+#write li:before {
+  content: "";
+  height: calc(100% - 50px);
+  top: 35px;
+  position: absolute;
+  border-left: 0.5px solid var(--element-color);
+  left: -14.5px;
+}
+
+/* 任务列表样式 */
+
+.task-list-item input{
+  width: 1.25rem;
+  height: 1.25rem;
+  display: block;
+  -webkit-appearance: initial;
+  top: 3px;
+  left: 4px;
+}
+
+.task-list-item input:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.task-list-item input:before{
+  border: 1px solid var(--element-color-deep);
+  border-radius: 1.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: #fff;
+  content: ' ';
+  transition: background-color 200ms ease-in-out;
+  display: block;
+}
+
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before{
+  background: var(--element-color-soo-shallow);
+  border-width: 2px;
+  display:inline-block;
+  transition: background-color 200ms ease-in-out;
+}
+
+.task-list-item input:checked:after,
+.task-list-item input[checked]:after {
+  opacity: 1;
+}
+
+/* .task-list-item input[type="checkbox"]:checked + p span {
+  text-decoration: line-through;
+  text-decoration-color:var(--element-color)
+} */
+
+.task-list-item input[type="checkbox"] + p span {
+  position: relative;
+  display: inline-block;
+}
+
+.task-list-item input[type="checkbox"] + p span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 52%;
+  width: calc(100%*var(--check-line));
+  height: 2px;
+  background: var(--element-color);
+  transform: scaleX(0); 
+  transform-origin: left center;
+  transition: transform 0.2s ease-in-out; 
+}
+
+.task-list-item input[type="checkbox"]:checked + p span::after {
+  transform: scaleX(1); 
+}
+
+.task-list-item input[type="checkbox"]:not(:checked) + p span::after {
+  transform-origin: right center; 
+  transition-delay: 0.1s; 
+}
+
+.task-list-item input:after {
+  opacity: 1;
+  -webkit-transition: opacity 0.05s ease-in-out;
+  -moz-transition: opacity 0.05s ease-in-out;
+  transition: opacity 0.05s ease-in-out;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0.325rem;
+  left: 0.28125rem;
+  width: 0.6375rem;
+  height: 0.4rem;
+  border: 3px solid var(--element-color-deep);
+  border-top: 0;
+  border-right: 0;
+  content: ' ';
+  opacity: 0;
+}
+
+/* 引用 */
+
+#write blockquote {
+  margin-left: 12px;
+  padding: 12px;
+  background: var(--element-color-soo-shallow);
+  border: 0px solid var(--element-color);
+  border-left-color: var(--element-color);
+  border-left-width: 4px;
+  border-radius: 4px;
+  line-height: 26px;
+}
+
+#write blockquote p {
+  color: #000;
+}
+
+/* 超链接 */
+#write a {
+  color: #000;
+}
+
+#write a:visited {
+  color: var(--element-color-deep);
+}
+
+#write a:not(.md-toc-inner) {
+  font-weight: bolder;
+  text-decoration: none;
+  transform: all linear 0.1s;
+}
+
+#write a:hover:not(.md-toc-inner) {
+  font-weight: bold;
+  color: var(--element-color-deep);
+  border-bottom: 1px solid var(--element-color-deep);
+  transform: all linear 0.1s;
+}
+
+#write p a:not(.md-toc-inner)::before {
+  content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath  d='M477.934459 330.486594A50.844091 50.844091 0 0 1 406.752731 258.796425L512 152.532274a254.220457 254.220457 0 0 1 359.467726 359.467726L762.66137 618.772592a50.844091 50.844091 0 1 1-71.690168-71.690169l106.772591-106.772592a152.532274 152.532274 0 0 0-215.578947-215.578947z m70.164846 361.501489A50.844091 50.844091 0 1 1 619.789474 762.66137l-107.281033 107.281033A254.220457 254.220457 0 0 1 152.532274 512L259.813307 406.752731a50.844091 50.844091 0 1 1 72.19861 69.656405l-107.789474 107.281033a152.532274 152.532274 0 0 0 215.578947 215.578947z m-126.601788-16.77855a50.844091 50.844091 0 1 1-71.690168-71.690169l251.678252-251.678252a50.844091 50.844091 0 0 1 71.690169 71.690169z'/%3E%3C/svg%3E");
+  color: #f68800;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.2em;
+  vertical-align: sub;
+}
+
+#write a.md-toc-inner:hover {
+  color: var(--element-color-deep);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#write sup a::before {
+  content: none;
+}
+
+/* 加粗 */
+#write strong {
+  color: #000;
+  font-weight: bold;
+}
+
+/* 斜体 */
+#write em {
+  font-style: italic;
+  color: #000;
+}
+
+/* 高亮 */
+#write mark {
+  font-weight: bolder;
+  color: #000;
+  background: var(--element-color-so-shallow);
+}
+
+/* 删除线 */
+#write del {
+  text-decoration-color: var(--element-color-deep);
+}
+
+/* 分隔线*/
+#write hr {
+  height: 1px;
+  padding: 0;
+  border: none;
+  border-top: 2px solid var(--head-title-color);
+}
+
+/* 图片*/
+#write img {
+  border-radius: 6px;
+  margin: 20px auto;
+  object-fit: contain;
+}
+
+/* 图片描述文字 */
+#write figcaption {
+  display: block;
+  font-size: 13px;
+  color: #595959;
+}
+
+/* Yaml */
+pre.md-meta-block {
+  padding: 8px 15px;
+  border: 2px dotted var(--element-color);
+  background-color: var(--element-color-soo-shallow);
+}
+
+/* 行内代码 */
+#write p code {
+  padding: 3px 3px 1px;
+  color: var(--element-color-linecode);
+  background: var(--element-color-linecode-background);
+  border-radius: 3px;
+  font-family: "CascadiaCode" monospace;
+  letter-spacing: 0.5px;
+}
+
+#write li code {
+  color: var(--element-color-linecode);
+}
+
+/* 代码块 */
+
+.md-fences:not([lang="mermaid"])::before {
+  content: attr(lang);
+  font-family: "CascadiaCode" monospace;
+  text-align: right;
+  padding-right: 15px;
+  color: #7e7e7e;
+  display: block;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDUwcHgiIGhlaWdodD0iMTMwcHgiPgogIDxlbGxpcHNlIGN4PSI2NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgc3Ryb2tlPSJyZ2IoMjIwLDYwLDU0KSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJyZ2IoMjM3LDEwOCw5NikiLz4KICA8ZWxsaXBzZSBjeD0iMjI1IiBjeT0iNjUiIHJ4PSI1MCIgcnk9IjUyIiAgc3Ryb2tlPSJyZ2IoMjE4LDE1MSwzMykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDI0NywxOTMsODEpIi8+CiAgPGVsbGlwc2UgY3g9IjM4NSIgY3k9IjY1IiByeD0iNTAiIHJ5PSI1MiIgIHN0cm9rZT0icmdiKDI3LDE2MSwzNykiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0icmdiKDEwMCwyMDAsODYpIi8+Cjwvc3ZnPg==);
+  height: 30px;
+  width: 100%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-color: #f8f8f8;
+  border-radius: 5px 5px 0 0;
+  background-position: 6px 10px;
+}
+
+.CodeMirror-wrap .CodeMirror-scroll {
+  overflow-x: auto;
+}
+
+.md-fences .cm-s-inner.CodeMirror {
+  margin-top: -0.5rem;
+}
+
+.cm-s-inner.CodeMirror {
+  padding: 1.2rem 0.8rem;
+  color: #4f5467;
+  font-family: "CascadiaCode" monospace;
+  border-radius: 10px;
+  background-color: #fa0303;
+  /* border: 1px solid #eef2f5;*/
+  line-height: 1.6rem;
+}
+
+.CodeMirror-gutters {
+  border-right: 1px solid #9d9d9d52;
+  background: inherit;
+  white-space: nowrap;
+}
+
+pre.CodeMirror-line {
+  padding: 0 1.2rem;
+}
+
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  text-align: right;
+  color: #a3a3a3;
+}
+
+.cm-s-inner.CodeMirror {
+  background: #f8f8f8;
+  border-radius: 0 0 5px 5px;
+  padding: 20px 10px 20px 10px;
+  page-break-before: auto;
+  line-height: 1.8rem;
+}
+
+.md-rawblock .md-rawblock-tooltip {
+  inset: auto 0.3rem auto auto;
+  transform: translateY(-120%);
+}
+
+/* 代码块颜色 */
+.cm-keyword {
+  color: #a626a4 !important;
+  font-weight: 700 !important;
+}
+
+.cm-variable {
+  color: #b92121 !important;
+}
+
+.cm-tag {
+  color: var(--color-cm-keyword) !important;
+  font-weight: 700 !important;
+}
+
+.cm-variable-3,
+.cm-variable-2 {
+  color: #7aadad !important;
+  font-weight: 700 !important;
+}
+
+.cm-def {
+  color: #c18401 !important;
+}
+
+.cm-attribute {
+  color: #8f6aa8 !important;
+}
+
+.cm-comment,
+.md-comment,
+.md-meta {
+  color: #9a9a9a !important;
+}
+
+.cm-string {
+  color: #50a14f !important;
+  font-variant-ligatures: common-ligatures !important;
+}
+
+.cm-link {
+  color: #e46918 !important;
+}
+
+.cm-type {
+  color: #626161;
+}
+
+.cm-property {
+  color: #800a84 !important;
+}
+
+.cm-tag:not(.cm-bracket) {
+  font-weight: 700 !important;
+}
+
+.cm-operator {
+  color: #0abe00 !important;
+}
+
+.cm-number {
+  color: #1694b6 !important;
+}
+
+.cm-meta {
+  color: #4078f2 !important;
+  font-weight: 700 !important;
+}
+
+.cm-builtin {
+  color: #fa6060 !important;
+}
+
+/* KBD */
+kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  font-weight: bolder;
+  color: var(--element-color-linecode);
+  border: var(--element-color) solid 1px;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+  box-shadow: inset 0 -1px 0 var(--element-color-so-shallow);
+}
+
+kbd:hover {
+  background: var(--element-color-so-shallow);
+}
+
+/** 表格内的单元格*/
+#write table tr th,
+#write table tr td {
+  font-size: 14px;
+  color: #000;
+}
+
+#write .footnotes {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 0.8px solid var(--element-color-deep);
+}
+
+#write table.md-table {
+  overflow: hidden;
+}
+
+#write table thead {
+  border-top: 1px solid #dedddd;
+  border-bottom: 1px solid #dedddd;
+}
+
+#write table tbody {
+  border-bottom: 1px solid #dedddd;
+}
+
+/* 脚注文字 */
+#write .footnote-word {
+  font-weight: normal;
+  color: #595959;
+}
+
+/* 脚注上标 */
+#write .footnote-ref {
+  font-weight: normal;
+  color: #595959;
+}
+
+/*脚注链接样式*/
+#write .footnote-item em {
+  font-size: 14px;
+  color: #595959;
+  display: block;
+  background: none;
+}
+
+/* 目录 */
+
+.md-toc * {
+  font-family: "HarmonyOS_Sans_SC";
+}
+
+.md-tooltip-hide>span {
+  display: none;
+}
+
+.md-toc:before {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  content: "目录";
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.md-toc {
+  padding: 20px 0;
+  margin: 0 20px;
+  background-color: var(--element-color-soo-shallow);
+  border: 2px solid var(--element-color);
+  border-radius: 5px;
+}
+
+.md-toc-item {
+  line-height: 1.8em;
+  display: block;
+  color: #333;
+}
+
+/* 程序UI */
+
+/* 侧边栏 */
+
+#typora-sidebar {
+  height: 100%;
+  color: var(--appui-color-text);
+  font-size: 0.92rem;
+  background-color: #fff;
+}
+
+/* 滑块 */
+
+#outline-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+#file-library::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(179, 179, 179, 0.425);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* 侧边栏 文件 */
+
+.active-tab-files #info-panel-tab-file .info-panel-tab-border,
+.active-tab-outline #info-panel-tab-outline .info-panel-tab-border,
+.ty-show-search #info-panel-tab-search .info-panel-tab-border {
+  border-radius: 10px;
+  height: 4px;
+  background-color: var(--appui-color);
+}
+
+.file-node-content {
+  line-height: 1.2rem;
+}
+
+.file-tree-node.active>.file-node-content {
+  color: var(--appui-color);
+}
+
+span.file-node-title {
+  color: var(--appui-color-text);
+}
+
+.file-node-icon {
+  color: var(--appui-color-icon);
+  padding-right: 0.2rem;
+}
+
+.file-tree-node.active>.file-node-background {
+  font-weight: bolder;
+  border-left: 4px solid var(--appui-color);
+  border-color: var(--appui-color);
+}
+
+.info-panel-tab-title {
+  font-weight: bolder;
+  color: var(--appui-color-text);
+}
+
+/* 侧边栏 搜索 */
+
+#file-library-search-panel {
+  background-color: #fff;
+}
+
+#file-library-search-input {
+  border-radius: 3px;
+  border-color: var(--appui-color);
+}
+
+#file-library-search-input:focus {
+  border-width: 2px;
+}
+
+/* 侧边栏 大纲 */
+#outline-content .outline-h1>.outline-item {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--element-color-deep);
+}
+
+#outline-content .outline-h1:not(:first-of-type)>.outline-item {
+  margin-top: 10px;
+}
+
+#outline-content .outline-h2>.outline-item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--element-color);
+  vertical-align: middle;
+  float: left;
+  margin-top: -2px;
+  margin-right: 11px;
+  margin-left: -24px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  z-index: 100;
+  position: relative;
+  top: 8px;
+  left: 8px;
+}
+
+#outline-content .outline-h2::after {
+  content: "";
+  height: calc(100% - 24px);
+  width: 1px;
+  background: var(--element-color);
+  position: absolute;
+  left: 3px;
+  top: 21px;
+}
+
+#outline-content .outline-h2>.outline-item:last-child:after {
+  display: none;
+}
+
+#outline-content .outline-h2>.outline-item>.outline-label {
+  line-height: 1.65rem;
+  margin: 0;
+}
+
+#outline-content .outline-h2>.outline-item {
+  margin-bottom: -3px;
+}
+
+#outline-content .outline-h3>.outline-item>.outline-label {
+  border-left: 2px solid var(--element-color);
+  padding-left: 8px;
+}
+
+.outline-item-active:not(.outline-item-wrapper)::after {
+  content: "";
+  position: relative;
+  width: 11px;
+  height: 8px;
+  background: var(--element-color-deep);
+  float: right;
+  top: -12px;
+  z-index: 100;
+  border-radius: 40% 20% 20% 40%;
+}
+
+/* 导出HTML的样式 */
+body.typora-export {
+  padding-left: 0px;
+}
+
+.typora-export-content .outline-content::before {
+  content: "目录";
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 22px;
+  left: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.typora-export-sidebar .outline-content {
+  height: 100%;
+  padding-left: 15px;
+  border-right: 1px solid #d2d2d2;
+}
+
+.typora-export-content .typora-export-content {
+  padding-left: 0px;
+}
+
+.typora-export-content .outline-expander {
+  width: 0;
+}
+
+.typora-export-content .outline-item-active>.outline-item::after {
+  content: "";
+  position: relative;
+  width: 11px;
+  height: 8px;
+  background: var(--element-color-deep);
+  float: right;
+  right: 5px;
+  top: -14px;
+  z-index: 100;
+  border-radius: 40% 20% 20% 40%;
+}
+
+.typora-export-content .outline-label {
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.outline-content .outline-h1>.outline-item {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--element-color-deep);
+}
+
+.outline-content .outline-h1:not(:first-of-type)>.outline-item {
+  margin-top: 10px;
+}
+
+.outline-content .outline-h2>.outline-item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: var(--element-color-deep);
+  vertical-align: middle;
+  float: left;
+  margin-top: -2px;
+  margin-right: 11px;
+  margin-left: -24px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  z-index: 100;
+  position: relative;
+  top: 8px;
+  left: 8px;
+}
+
+.outline-content .outline-h2::after {
+  content: "";
+  height: calc(100% - 24px);
+  width: 1px;
+  background: var(--element-color);
+  position: absolute;
+  left: 3px;
+  top: 21px;
+}
+
+.outline-content .outline-h2>.outline-item:last-child:after {
+  display: none;
+}
+
+.outline-content .outline-h2>.outline-item>.outline-label {
+  line-height: 1.65rem;
+  margin: 0;
+}
+
+.outline-content .outline-h2>.outline-item {
+  margin-bottom: -3px;
+}
+
+.outline-content .outline-h3>.outline-item>.outline-label {
+  border-left: 2px solid var(--element-color);
+  padding-left: 8px;
+}@import url();
+
+:root {
+  /* 标题后小图标，借鉴自思源笔记主题——Savor */
+  --h1-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 176, 176, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.8 29.714v0c-1.371 0-2.514-1.143-2.514-2.514v0c0-1.371 1.143-2.514 2.514-2.514v0c1.371 0 2.514 1.143 2.514 2.514v0c0.114 1.371-1.029 2.514-2.514 2.514z'/></svg>") no-repeat center;
+  --h2-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 176, 176, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>") no-repeat center;
+  --h3-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 176, 176, 0.5)' height='28' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>") no-repeat center;
+  --h4-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 176, 176, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 22.857c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286z'/></svg>") no-repeat center;
+  --h5-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 176, 176, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 22.857c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286zM4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 11.429c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286z'/></svg>") no-repeat center;
+  --h6-r-graphic: url("data:image/svg+xml;utf8,<svg fill='rgba(255, 176, 176, 0.5)' height='24' viewBox='0 0 32 32' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M4.571 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM4.571 11.429c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 18.286c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 25.143c-1.257 0-2.286 1.029-2.286 2.286s1.029 2.286 2.286 2.286 2.286-1.029 2.286-2.286-1.029-2.286-2.286-2.286zM11.429 16c1.257 0 2.286-1.029 2.286-2.286s-1.029-2.286-2.286-2.286-2.286 1.029-2.286 2.286 1.029 2.286 2.286 2.286z'/></svg>") no-repeat center;
+
+  /* 是否开启网格背景？1 是；0 否 */
+  --bg-grid: 0;
+  
+  /* 已完成的代办事项是否显示删除线？1 是；0 否 */
+  --check-line:1;
+
+  /* 自动编号格式设置 无需自动编号可全部注释掉或部分注释掉*/
+  --autonum-h1: counter(h1) ". ";
+  --autonum-h2: counter(h1) "." counter(h2) ". ";
+  --autonum-h3: counter(h1) "." counter(h2) "." counter(h3) ". ";
+  --autonum-h4: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) ". ";
+  --autonum-h5: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". ";
+  --autonum-h6: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". ";
+
+  /* 下面是文章内Toc目录自动编号，与上面一样即可 */
+  --autonum-h1toc: counter(h1toc) ". ";
+  --autonum-h2toc: counter(h1toc) "." counter(h2toc) ". ";
+  --autonum-h3toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) ". ";
+  --autonum-h4toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) "." counter(h4toc) ". ";
+  --autonum-h5toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) "." counter(h4toc) "." counter(h5toc) ". ";
+  --autonum-h6toc: counter(h1toc) "." counter(h2toc) "." counter(h3toc) "." counter(h4toc) "." counter(h5toc) "." counter(h6toc) ". ";
+
+  /* 主题颜色 */
+
+  --head-title-color: #aa1141;
+  /* 标题主色 */
+  --head-title-h2-color: #fff;
+  --head-title-h2-background: linear-gradient(to right,
+      #b41919,
+      #ea68b6);
+  /* 二级标题主色，因为二级标题是背景色的，所以单独设置 */
+
+  --element-color: #aa1111;
+  /* 元素主色 */
+  --element-color-deep: #9a0036;
+  /* 元素深色 */
+  --element-color-shallow: #c38080;
+  /* 元素浅色 */
+  --element-color-so-shallow: #ff40404f;
+  /* 元素很浅色 */
+  --element-color-soo-shallow: #fec2c225;
+  /* 元素非常浅色 */
+
+  --element-color-linecode: #9a0000;
+  /* 行内代码文字色 */
+  --element-color-linecode-background: #b16c6c25;
+  /* 行内代码背景色 */
+
+  /* 程序本体UI */
+  --appui-color: #810000;
+  /* 程序UI主题色 */
+  --appui-color-icon: #870e0e;
+  /* 程序UI图标颜色 */
+  --appui-color-text: #333;
+  /* 程序UI文字色 */
+  --primary-color: #810000;
+  --s:rgba(255, 176, 176, 0.5);
+}
+
+
+</style><title>方案1</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='阶段一-ai-实施策略为高端女装构建效率基石'><span>阶段一 AI 实施策略：为高端女装构建效率基石</span></h1><h2 id='第一部分执行摘要'><span>第一部分：执行摘要</span></h2><h3 id='战略必要性'><span>战略必要性</span></h3><p><span>在当前高端时尚市场，人工智能（AI）的应用已不再是可选项，而是维持竞争力和卓越运营的基石。面对瞬息万变的市场趋势和数据驱动型竞争对手的崛起，传统企业必须主动拥抱技术变革。本报告旨在为贵公司提供一个审慎、可控且高效的AI转型第一阶段实施方案，其核心目标是通过引入AI工具提升内部运营效率，为后续更高阶的智能化转型奠定坚实基础。</span></p><h3 id='阶段一目标'><span>阶段一目标</span></h3><p><span>本阶段的核心目标是：通过为关键部门员工配备精准的AI工具，在未来12个月内实现可量化的效率提升。此举旨在将员工从重复性、事务性的工作中解放出来，使其能更专注于高价值的战略规划与创意设计工作，从而优化人力资本的投入产出比。</span></p><h3 id='核心建议'><span>核心建议</span></h3><p><span>报告建议从四个关键业务领域入手，引入经过市场验证的AI工具组合：</span></p><ul><li><p><strong><span>设计与产品研发</span></strong><span>：利用AI进行趋势预测和创意构想，加速设计流程。</span></p></li><li><p><strong><span>市场营销与品牌传播</span></strong><span>：规模化、自动化地生成符合品牌调性的高质量营销内容。</span></p></li><li><p><strong><span>销售与电子商务</span></strong><span>：优化线上商品信息与基础客户服务，提升数字渠道表现。</span></p></li><li><p><strong><span>运营与行政管理</span></strong><span>：简化内部项目管理与协作流程，提升跨部门沟通效率。</span></p></li></ul><h3 id='四步走实施路线图'><span>四步走实施路线图</span></h3><p><span>为确保AI工具的平稳落地与高效应用，本报告提出一个为期八个月的四步实施路线图：</span></p><ol start='' ><li><p><strong><span>探索与试点项目设计</span></strong><span>：识别高价值应用场景，组建跨职能AI任务小组，设计小范围、高影响力的试点项目。</span></p></li><li><p><strong><span>工具筛选与部署</span></strong><span>：评估并选择最适合企业需求的AI工具，完成技术部署与初步配置。</span></p></li><li><p><strong><span>内部启动与变革管理</span></strong><span>：正式启动试点项目，并同步推行全面的变革管理与沟通计划，确保员工的积极参与和支持。</span></p></li><li><p><strong><span>成果评估与规模化推广</span></strong><span>：基于预设的关键绩效指标（KPI）评估试点成果，并制定将成功经验推广至全公司的策略。</span></p></li></ol><h3 id='预期成果'><span>预期成果</span></h3><p><span>成功实施第一阶段AI转型后，预计将带来以下显著成果：营销内容创作周期缩短、设计构想迭代速度加快、项目管理流程更加透明高效，以及员工生产力得到显著提升。更重要的是，本阶段将为公司培养一种适应未来发展的“AI就绪”文化，这是实现后续“提质”与“转型”目标不可或缺的无形资产。</span></p><hr /><h2 id='第二部分新的竞争格局ai作为时尚产业的战略必需品'><span>第二部分：新的竞争格局：AI作为时尚产业的战略必需品</span></h2><h3 id='21-传统品牌面临的挑战'><span>2.1 传统品牌面临的挑战</span></h3><p><span>在当今市场环境下，像贵公司这样的传统高端女装企业正面临着前所未有的压力。这些挑战不仅来自宏观经济环境，更源于行业内部的结构性变革。</span></p><h4 id='行业痛点分析'><span>行业痛点分析</span></h4><p><span>传统时尚品牌的运营模式正受到多方面冲击。首先，消费者需求变得愈发难以预测，热点爆发周期缩短，呈现出“更碎”的特点，这要求品牌具备因时、因地、因人而变的精准需求把控能力 1。其次，传统的设计开发流程冗长且成本高昂。从设计稿到实体样衣，不仅沟通效率低下，打样货不对板导致返工的几率也很大，最终造成设计开发命中率（adoption rate）低下。此外，复杂的库存管理是另一大难题。商品种类繁多与市场需求多变的矛盾，导致库存积压或缺货现象频繁发生，这不仅占用了大量流动资金，也直接影响销售业绩。</span></p><h4 id='数据驱动型竞争者的优势'><span>数据驱动型竞争者的优势</span></h4><p><span>与此同时，以SHEIN为代表的新一代数字化原生品牌，正利用AI技术重塑行业规则。它们构建了消费者直连制造商（C2M）的商业模式，通过AI实时分析海量的社交媒体数据和用户行为，精准预测流行趋势，从而能够每天推出数千款紧跟潮流的新品。这种敏捷的反应速度和数据驱动的决策能力，是传统运营模式难以企及的，构成了巨大的竞争优势。</span></p><h3 id='22-ai成为行业新标准'><span>2.2 AI成为行业新标准</span></h3><p><span>面对上述挑战，AI不再是遥远未来的概念，而是当下时尚行业的核心竞争力。全球范围内的领先品牌已经将AI深度整合到其价值链的各个环节。</span></p><h4 id='市场采纳度与投资趋势'><span>市场采纳度与投资趋势</span></h4><p><span>行业数据清晰地表明了AI转型的紧迫性。据预测，全球时尚产业的AI市场规模将从2024年的22.3亿美元增长至2034年的600亿美元。高达73%的时尚行业高管将生成式AI列为2024年的业务优先事项。麦肯锡公司的分析更为乐观，预计在未来五年内，AI技术有望为服装、时尚和奢侈品行业增加1500亿至2750亿美元的营业利润 4。这些数据共同指向一个结论：AI转型已是大势所趋，观望即意味着落后。</span></p><h4 id='行业领导者实践案例'><span>行业领导者实践案例</span></h4><p><span>为了更具体地展示AI的价值，以下列举了几个行业领导者的成功案例：</span></p><ul><li><p><strong><span>Zara（Inditex）：AI驱动的供应链敏捷性。</span></strong><span> Zara利用AI实时分析超过7000家门店的销售数据，以惊人的速度预测特定款式的需求，并优化库存分配 3。这种模式使其能够在数天内完成门店补货，实现了高达85%的全价销售率，远超行业平均水平 3。通过AI建立销售数据与生产计划之间的紧密反馈闭环，Zara有效减少了浪费和降价促销，为其商业模式提供了强大支持 5。</span></p></li><li><p><strong><span>优衣库（Uniqlo）：数据增强的客户体验与产品创新。</span></strong><span> 优衣库运用AI分析社交媒体和销售数据以预测流行趋势，利用店内热力图技术优化商品布局，并根据需求预测自动执行补货 7。其战略核心是用AI来强化其高品质、功能性基础款的核心价值主张 8。例如，如果AI检测到消费者对可持续材料的兴趣日益浓厚，优衣库便会在下一季优先开发环保产品线 7。此外，其IQ智能客服聊天机器人也为顾客提供了便捷的购物支持 10。</span></p></li><li><p><strong><span>Stitch Fix：超个性化引擎。</span></strong><span> Stitch Fix的商业模式是AI增强人类专业能力的典范。它将机器学习算法与人类造型师的经验相结合，为客户提供深度个性化的服装搭配服务 3。AI负责处理海量数据进行初步匹配，而人类造型师则进行最终的筛选和润色，这种人机协作模式显著提升了客户忠诚度和平均订单价值 3。这对于一个同样强调服务和专业性的高端品牌来说，是至关重要的借鉴。</span></p></li><li><p><strong><span>Zalando：AI赋能内容创作。</span></strong><span> 欧洲时尚电商巨头Zalando利用生成式AI制作了超过70%的活动视觉图片，将内容生产周期从数周缩短至几天，并将相关成本降低了90% 3。这为市场营销部门提供了一个投资回报率极高且易于实施的具体应用案例。</span></p></li></ul><blockquote><p><span>AI应用的战略选择应与品牌定位紧密相连。Zara的核心是速度，其AI优化了运营效率；Stitch Fix的核心是服务，其AI优化了个性化体验。对于一个中高端女装品牌而言，其差异化优势在于设计的原创性和卓越的客户服务。因此，最有价值的AI应用将是那些能够为设计师提供更敏锐的趋势洞察，并为销售顾问配备增强客户服务工具的应用，而非仅仅着眼于供应链的成本削减。</span></p></blockquote><p><span>第一阶段的效率提升（提效）并非终点，而是通往更高阶价值创造（提质与转型）的必经之路。通过在运营层面引入AI工具，企业不仅能解决眼前的效率问题，更重要的是，能够开始构建支撑未来创新的数据基础、技术能力和组织文化。因此，本报告提出的第一阶段实施方案，既是一个战术性的效率优化计划，更是一个具有长远眼光的战略性基础工程。</span></p><hr /><h2 id='第三部分阶段一战略框架以ai精准提升基础效率'><span>第三部分：阶段一战略框架：以AI精准提升基础效率</span></h2><h3 id='31-定义阶段一目标'><span>3.1 定义阶段一目标</span></h3><blockquote><p><span>为了确保第一阶段的成功，必须将“提效”这一宏观目标分解为具体、可衡量、可实现、相关且有时限（SMART）的细化目标。</span></p></blockquote><ul><li><p><strong><span>主要目标</span></strong><span>：在项目启动后的12个月内，通过引入AI工具，使目标部门在处理重复性、非创意性任务上所花费的平均工时减少30%。</span></p></li><li><p><strong><span>次要目标</span></strong><span>：</span></p><ul><li><p><span>在不增加人力成本的前提下，提升营销内容的产出数量。</span></p></li><li><p><span>显著缩短设计流程的初始阶段（如情绪板制作、概念生成）所需时间。</span></p></li><li><p><span>提高内部项目追踪与报告的准确性和效率。</span></p></li><li><p><span>在目标员工群体中，核心AI工具的采纳率达到75%以上。</span></p></li></ul></li></ul><h3 id='32-识别低垂的果实ai影响力实施难度矩阵'><span>3.2 识别“低垂的果实”：AI影响力/实施难度矩阵</span></h3><blockquote><p><span>为了使AI转型平稳起步并迅速见效，战略选择至关重要。我们建议采用“影响力/实施难度”矩阵作为决策框架，将潜在的AI应用场景进行归类。</span></p></blockquote><p><em><span>注：此为示意图，实际应用中需根据企业具体情况进行评估。</span></em></p><ul><li><p><strong><span>重点关注领域</span></strong><span>：第一阶段的资源应完全集中于“高影响、低难度”的象限。这些应用场景的特点是：当前市面上成熟、用户友好的AI工具能够带来显著的时间节约，且无需复杂的系统集成或高深的技术培训。</span></p></li><li><p><strong><span>“低垂的果实”示例</span></strong><span>：</span></p><ul><li><p><strong><span>设计部门</span></strong><span>：使用AI图像生成工具快速创建情绪板，替代传统的手动搜集和拼贴。</span></p></li><li><p><strong><span>市场营销部门</span></strong><span>：利用AI写作工具生成产品描述、社交媒体文案和电子邮件营销内容的初稿。</span></p></li><li><p><strong><span>运营部门</span></strong><span>：通过AI工具自动总结会议纪要并提取关键行动项。</span></p></li><li><p><strong><span>销售部门</span></strong><span>：借助AI分析和优化电商平台的产品标题和关键词，以提升搜索引擎优化（SEO）效果。</span></p></li></ul></li></ul><p><span>选择从这些“低垂的果实”入手，其意义远不止于获得快速回报。这是一种精心设计的心理和文化策略。传统企业在引入新技术时，往往会因员工对未知的恐惧、对现有流程的依赖而产生抵触情绪 。如果一开始就推行复杂、庞大的AI项目，很可能会遭遇巨大阻力，甚至导致项目失败，从而对未来的所有AI计划产生负面影响。</span></p><p><span>相反，选择一个能解决明显痛点的简单应用作为起点——例如，将撰写数百条相似产品描述这项枯燥任务的时间从数小时缩短至几分钟——会立即产生积极的示范效应。这样的成功案例不仅能建立员工对AI技术的信任，也能增强他们对管理层决策的信心。更重要的是，它会在组织内部催生出一批“AI拥护者”。这些早期使用者会自发地向同事分享他们的正面体验，其说服力远胜于自上而下的行政命令。这种由点及面的积极反馈循环，我们称之为“信心飞轮”效应。一旦飞轮开始转动，后续推广更复杂的AI应用（即第二和第三阶段）时，所遇到的文化阻力将大大减小，为整个转型之路铺平道路。</span></p><hr /><h2 id='第四部分各部门专属ai工具包实现立竿见影的效果'><span>第四部分：各部门专属AI工具包：实现立竿见影的效果</span></h2><p><span>本部分将为各核心部门提供一套精心策划的AI工具包。推荐的工具均以用户友好、无需深度技术背景的商业化软件即服务（SaaS）平台为主，旨在最大化应用效果，同时最小化技术门槛和部署成本。</span></p><h3 id='41-设计与产品研发加速创意孵化'><span>4.1 设计与产品研发：加速创意孵化</span></h3><ul><li><p><strong><span>待解决的痛点</span></strong><span>：设计方案采纳率低，趋势研究耗时费力，概念可视化周期长。</span></p></li><li><p><strong><span>推荐工具包</span></strong><span>：</span></p><ul><li><p><strong><span>趋势预测与分析</span></strong><span>：订阅 </span><strong><span>WGSN</span></strong><span> 或 </span><strong><span>Heuritech</span></strong><span> 等专业平台。这些工具运用AI分析社交媒体、秀场等数百万个数据点，预测未来的流行色彩、廓形和印花，为设计师的创意直觉提供数据支持，将原本耗时的人工研究转变为高效的数据洞察过程 。</span></p></li><li><p><strong><span>AI辅助构思与可视化</span></strong><span>：采用 </span><strong><span>Midjourney</span></strong><span> 或 </span><strong><span>The New Black AI</span></strong><span> 等生成式AI工具。设计师可以通过简单的文本描述或草图，在几分钟内生成大量的情绪板素材、探索不同的设计变体，并创造出逼真的产品效果图，从而极大地缩短从概念到可视化的时间。</span></p></li><li><p><strong><span>协同平台整合</span></strong><span>：将AI生成的概念图上传至 </span><strong><span>Browzwear</span></strong><span> 这样的3D数字产品开发平台 14。这不仅为团队提供了一个集中的评审和反馈空间，也打通了从创意探索到技术实现的桥梁，确保设计流程的连贯性。</span></p></li></ul></li></ul><h3 id='42-市场营销与品牌传播规模化生产合规内容'><span>4.2 市场营销与品牌传播：规模化生产合规内容</span></h3><ul><li><p><strong><span>待解决的痛点</span></strong><span>：持续不断的内容需求、保持品牌声音一致性的挑战、撰写SEO优化文案的难度，以及营销活动素材制作的高昂时间与金钱成本。</span></p></li><li><p><strong><span>推荐工具包</span></strong><span>：</span></p><ul><li><p><strong><span>AI文案与内容生成</span></strong><span>：部署 </span><strong><span>Jasper</span></strong><span>、</span><strong><span>Copy.ai</span></strong><span> 或 </span><strong><span>Writesonic</span></strong><span> 等平台。这些工具可以通过学习公司的品牌语调，快速生成高质量的产品描述、邮件营销、社交媒体帖子和博客文章的初稿。据报道，这可以为团队节省“数十个小时”的工作时间 9。</span></p></li><li><p><strong><span>品牌声音与合规治理</span></strong><span>：对于追求高度品牌一致性的高端品牌，建议使用 </span><strong><span>Adobe GenStudio</span></strong><span> 或 </span><strong><span>Writer.com</span></strong><span> 等企业级工具。这些平台允许企业建立一个中央“品牌声音”知识库和风格指南，确保所有AI生成的内容都符合品牌规范，避免语调不一或信息错误。</span></p></li><li><p><strong><span>社交媒体管理</span></strong><span>：采用 </span><strong><span>Sprinklr</span></strong><span> 或 </span><strong><span>Blaze AI</span></strong><span> 等集成式AI社交媒体管理平台。它们不仅能自动生成多样化的帖子内容，还能利用AI分析最佳发布时间、自动排期，并追踪内容表现，实现智能化的社交媒体运营。</span></p></li></ul></li></ul><h3 id='43-销售与电子商务优化数字货架表现'><span>4.3 销售与电子商务：优化数字货架表现</span></h3><ul><li><p><strong><span>待解决的痛点</span></strong><span>：线上搜索排名不佳，客户互动体验平淡，因信息不足导致的退货率偏高。</span></p></li><li><p><strong><span>推荐工具包</span></strong><span>：</span></p><ul><li><p><strong><span>SEO内容优化</span></strong><span>：利用前述的AI文案工具（如 </span><strong><span>Jasper</span></strong><span> 或 </span><strong><span>Surfer SEO</span></strong><span>）对产品标题和描述进行关键词优化。正如内衣品牌Adore Me的实践所证明，此举能有效提升产品在搜索引擎中的自然排名，增加曝光率。</span></p></li><li><p><strong><span>基础客服聊天机器人</span></strong><span>：通过 </span><strong><span>Chatfuel</span></strong><span> 或 </span><strong><span>Userbot.ai</span></strong><span> 等平台，快速部署一个AI聊天机器人。它可以7x24小时自动回答“我的订单在哪里？”“退货政策是什么？”等常见重复性问题，从而解放人工客服，让他们专注于处理更复杂的客户咨询。</span></p></li><li><p><strong><span>AI图像编辑</span></strong><span>：使用 </span><strong><span>PhotoRoom</span></strong><span> 等工具，可以批量、快速地去除产品图片背景，生成符合电商平台要求的专业、干净的商品图，大幅提升图片处理效率。</span></p></li></ul></li></ul><h3 id='44-运营与行政管理精简内部工作流'><span>4.4 运营与行政管理：精简内部工作流</span></h3><ul><li><p><strong><span>待解决的痛点</span></strong><span>：项目管理效率低下，会议耗时过长，存在大量手动数据录入工作，跨部门沟通不畅。</span></p></li><li><p><strong><span>推荐工具包</span></strong><span>：</span></p><ul><li><p><strong><span>AI增强型项目管理</span></strong><span>：引入 </span><strong><span>Wrike</span></strong><span> 或 </span><strong><span>ClickUp</span></strong><span> 等现代项目管理平台。这些工具内置的AI功能可以辅助进行任务分配、预测项目风险，并自动生成进度摘要报告，让项目状态一目了然。</span></p></li><li><p><strong><span>生产力与协作套件</span></strong><span>：充分利用 </span><strong><span>Google Workspace</span></strong><span> 或 </span><strong><span>Notion AI</span></strong><span> 等办公套件中集成的AI功能。例如，使用AI一键总结长篇文档、起草邮件回复、自动转录会议录音并生成纪要，可以节省大量行政时间。</span></p></li><li><p><strong><span>工作流程自动化</span></strong><span>：借助 </span><strong><span>Zapier</span></strong><span> 这样的无代码自动化工具，可以轻松连接不同的应用程序，创建简单而强大的自动化流程。例如，设定一个规则，当收到特定类型的邮件时，自动在项目管理工具Wrike中创建一个任务，实现跨应用的信息同步。</span></p></li></ul></li></ul><p><span>为了便于决策，下表总结了针对各部门的AI工具包及其核心价值：</span></p><p><strong><span>表1：阶段一各部门AI工具包及效率提升目标</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>部门</span></th><th><span>待优化的核心任务</span></th><th><span>推荐AI工具类别</span></th><th><span>具体工具示例</span></th><th><span>主要效率衡量指标 (KPI)</span></th></tr></thead><tbody><tr><td><strong><span>设计与产品研发</span></strong></td><td><span>趋势研究与情绪板制作</span></td><td><span>AI趋势预测平台, AI图像生成</span></td><td><span>WGSN, Heuritech, Midjourney</span></td><td><span>将单系列趋势研究时间从40小时降至10小时</span></td></tr><tr><td><strong><span>市场营销与传播</span></strong></td><td><span>产品描述与社媒文案撰写</span></td><td><span>AI文案与内容生成, 品牌声音治理</span></td><td><span>Jasper, Copy.ai, Adobe GenStudio</span></td><td><span>将单品文案撰写平均时间减少80%</span></td></tr><tr><td><strong><span>销售与电子商务</span></strong></td><td><span>基础客户咨询响应</span></td><td><span>AI聊天机器人</span></td><td><span>Chatfuel, Userbot.ai</span></td><td><span>自动化处理50%以上的常见客户问询</span></td></tr><tr><td><strong><span>运营与行政管理</span></strong></td><td><span>会议纪要整理与任务追踪</span></td><td><span>AI办公助手, AI项目管理</span></td><td><span>Notion AI, Google Workspace, Wrike</span></td><td><span>将会议后整理纪要与分配任务的时间减少90%</span></td></tr></tbody></table></figure><p><span>此表格清晰地将业务问题、技术解决方案与可衡量的成果联系起来，将抽象的“AI转型”转化为具体、可执行的行动项。它为管理层提供了一个直观的决策依据，也为各部门负责人明确了第一阶段的核心目标和实现路径。</span></p><hr /><h2 id='第五部分切实可行的四步实施路线图'><span>第五部分：切实可行的四步实施路线图</span></h2><p><span>本部分将详细阐述一个结构化、风险可控的推广路线图，重点在于如何将技术平稳地融入组织，并有效管理变革过程中的“人”的因素。</span></p><h3 id='51-第一步探索与试点项目设计第1-2个月'><span>5.1 第一步：探索与试点项目设计（第1-2个月）</span></h3><ul><li><p><strong><span>目标</span></strong><span>：降低AI项目整体风险，通过小范围成功建立内部信心和概念验证。</span></p></li><li><p><strong><span>关键行动</span></strong><span>：</span></p><ul><li><p><strong><span>组建跨职能AI任务小组</span></strong><span>：成立一个由设计、市场、IT和人力资源等部门代表组成的核心团队，负责领导整个试点项目。</span></p></li><li><p><strong><span>识别高价值试点用例</span></strong><span>：运用第三部分的“影响力/实施难度”矩阵，精心挑选2-3个具体的试点项目。一个理想的初始项目可以是市场营销部的“AI辅助产品描述生成”。</span></p></li><li><p><strong><span>选拔“AI拥护者”</span></strong><span>：在试点部门中，识别并邀请那些对新技术充满热情、乐于尝试的员工，让他们成为首批用户和内部的积极推动者。</span></p></li><li><p><strong><span>设定清晰、可衡量的目标</span></strong><span>：为试点项目定义明确的成功标准。例如：“在保持品牌语调质量的前提下，将撰写50条产品描述的总时间缩短80%”。</span></p></li><li><p><strong><span>早期利益相关者沟通</span></strong><span>：向法务、IT安全和人力资源部门提前通报试点范围，确保在数据隐私、系统安全和员工关系等方面尽早达成共识，避免后期出现合规性障碍。</span></p></li></ul></li></ul><h3 id='52-第二步工具筛选与部署第2个月'><span>5.2 第二步：工具筛选与部署（第2个月）</span></h3><ul><li><p><strong><span>目标</span></strong><span>：为试点项目采购合适的工具，并完成必要的技术准备。</span></p></li><li><p><strong><span>关键行动</span></strong><span>：</span></p><ul><li><p><strong><span>供应商评估</span></strong><span>：针对每个试点用例，评估2-3款备选工具。评估标准应包括：非技术人员的易用性、输出内容的质量、品牌声音定制能力、安全合规性（如具备SOC 2 Type II认证者优先）以及灵活可扩展的定价模式。</span></p></li><li><p><strong><span>采购与许可</span></strong><span>：优先选择提供免费试用或短期试点许可的供应商，以最小化前期投入。</span></p></li><li><p><strong><span>技术部署</span></strong><span>：与IT部门协作，确保试点用户能够顺畅访问所选工具。对于SaaS工具，此过程通常较为简单，主要涉及账户创建和必要的集成配置。</span></p></li></ul></li></ul><h3 id='53-第三步内部启动与变革管理第3-6个月'><span>5.3 第三步：内部启动与变革管理（第3-6个月）</span></h3><ul><li><p><strong><span>目标</span></strong><span>：成功执行试点项目，并主动、系统地管理变革对组织和员工带来的影响。这是传统企业转型中最关键的一环。</span></p></li><li><p><strong><span>关键行动</span></strong><span>：</span></p><ul><li><p><strong><span>制定周密的沟通计划</span></strong><span>：向全体员工，特别是试点参与者，清晰地传达推行AI的“原因”。将AI定位为“助手”或“副驾驶”，强调其作用是增强人类的能力，而非取代人类。直接回应员工对失业的担忧，明确指出目标是自动化枯燥任务，让员工能投身于更具创造性和战略性的工作。</span></p></li><li><p><strong><span>开展实践导向的培训</span></strong><span>：为试点小组提供结构化的培训。培训内容不应仅限于“如何操作工具”，更要涵盖“如何与工具协同思考”，例如，教授基础的“提示词工程”（Prompt Engineering）技巧，以获得更高质量的输出。</span></p></li><li><p><strong><span>建立快速反馈机制</span></strong><span>：创建一个专门的沟通渠道（如企业微信群或定期的反馈会议），供试点用户分享成功经验、遇到的问题和改进建议。</span></p></li><li><p><strong><span>赋能“AI拥护者”</span></strong><span>：鼓励“AI拥护者”在团队内部公开分享他们的成功案例和“小窍门”。来自同伴的正面分享，其影响力远大于管理层的单向宣导。</span></p></li></ul></li></ul><h3 id='54-第四步成果评估与规模化推广第7-8个月'><span>5.4 第四步：成果评估与规模化推广（第7-8个月）</span></h3><ul><li><p><strong><span>目标</span></strong><span>：依据预设目标，客观评估试点项目的成效，并为下一步的全面推广提供数据驱动的决策依据。</span></p></li><li><p><strong><span>关键行动</span></strong><span>：</span></p><ul><li><p><strong><span>分析试点项目KPI</span></strong><span>：收集并分析第一步中定义的各项成功指标数据（详见下表2）。</span></p></li><li><p><strong><span>收集定性反馈</span></strong><span>：通过问卷调查和深度访谈，了解试点用户的真实体验、遇到的挑战以及他们对工具价值的感知。</span></p></li><li><p><strong><span>提交规模化推广的商业论证报告</span></strong><span>：由AI任务小组向高层管理团队汇报试点成果，报告需包含清晰的投资回报率（ROI）分析，以及一份将成功工具分阶段推广至全公司的详细计划。</span></p></li><li><p><strong><span>开发标准化培训体系</span></strong><span>：基于试点项目的经验教训，为即将推广的AI工具创建一套标准化的新员工上手指南和持续培训课程。</span></p></li></ul></li></ul><p><span>为了确保评估的客观性和全面性，建议采用以下多维度KPI框架：</span></p><p><strong><span>表2：阶段一试点项目成功衡量指标 (KPIs)</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>评估维度</span></th><th><span>关键绩效指标 (KPI)</span></th><th><span>衡量方法</span></th><th><span>试点成功目标</span></th></tr></thead><tbody><tr><td><strong><span>效率提升</span></strong></td><td><span>任务完成时间</span></td><td><span>对比使用AI前后完成同等任务所需的时间</span></td><td><span>任务平均耗时减少 &gt;70%</span></td></tr><tr><td><strong><span>工具采纳度</span></strong></td><td><span>日活跃用户数（DAU）</span></td><td><span>工具后台分析仪表盘</span></td><td><span>试点小组成员中 &gt;80% 为日活用户</span></td></tr><tr><td><strong><span>产出质量</span></strong></td><td><span>内容质量评分</span></td><td><span>由部门经理对AI生成内容进行盲审打分</span></td><td><span>AI生成内容所需的人工修改幅度 &lt;20%</span></td></tr><tr><td><strong><span>员工体验</span></strong></td><td><span>员工净推荐值 (eNPS)</span></td><td><span>针对新工具进行匿名问卷调查</span></td><td><span>关于新工具的eNPS分数 &gt; +50</span></td></tr></tbody></table></figure><p><span>这个平衡计分卡至关重要。它不仅衡量了“硬”指标（如节省的时间），也关注了“软”指标（如员工是否愿意用、用得好不好、用得开不开心）。一个高效但被员工厌恶的工具，长期来看必然失败；一个员工喜欢但产出质量低下的工具，则毫无商业价值。此框架确保了决策的全面性，既数据驱动，又以人为本，是做出正确推广决策的关键。</span></p><hr /><h2 id='第六部分着眼未来阶段二与阶段三展望'><span>第六部分：着眼未来：阶段二与阶段三展望</span></h2><h3 id='61-构建未来转型的基础能力'><span>6.1 构建未来转型的基础能力</span></h3><p><span>成功实施第一阶段不仅能带来眼前的效率提升，更重要的是，它为公司未来的深度智能化转型构建了三大核心能力。</span></p><ul><li><p><strong><span>数据成熟度</span></strong><span>：通过引入WGSN等趋势预测工具和各类数据分析应用，公司将开始系统性地积累和利用结构化数据。这些高质量的数据是驱动第二阶段个性化营销和第三阶段供应链优化等高级AI模型的基础和“燃料”。</span></p></li><li><p><strong><span>技能发展</span></strong><span>：员工将在此过程中逐步培养起“AI素养”，包括基础的提示词工程能力和适应数据驱动工作流的思维模式。这种全员技能的提升，是未来采纳更复杂AI系统所必需的人才储备。</span></p></li><li><p><strong><span>文化准备度</span></strong><span>：第一阶段的核心文化目标，是将组织内部可能存在的对AI的怀疑和抵触情绪，转变为好奇、开放和乐于接受数据辅助决策的氛围。这种文化上的转变，虽然无形，却是最难实现也最为关键的，它决定了公司AI转型之路能走多远、多成功。</span></p></li></ul><h3 id='62-未来之路'><span>6.2 未来之路</span></h3><p><span>第一阶段的成功将为后续更宏大的转型目标铺平道路：</span></p><ul><li><p><strong><span>阶段二（提质 - 提升品质与体验）</span></strong><span>：在第一阶段构建的能力基础上，公司可以探索更高阶的应用。例如，利用AI驱动的虚拟试穿技术减少因尺码不合导致的退货；基于客户数据分析，开展千人千面的个性化营销活动 40；以及运用AI辅助进行版型优化和面料选择，从源头提升产品品质。</span></p></li><li><p><strong><span>阶段三（转型 - 重塑商业模式）</span></strong><span>：当AI全面融入企业血脉后，公司将有能力实现真正的商业模式变革。这可能包括转向数据驱动的按需生产模式，从设计到交付的全链路供应链优化，甚至创造出像Stitch Fix那样以个性化服务为核心的全新客户体验。</span></p></li></ul><p><span>在这一进程中，一个常被忽视的战略价值在于，第一阶段本身就是一个强大的“数据收获”引擎。当设计师使用AI工具迭代设计方案时，他们实际上在创建一个关于品牌创意探索的独家数据库——哪些概念被尝试，哪些被选中，哪些被放弃。当市场部用AI对不同版本的产品描述进行A/B测试时，他们正在积累关于何种语言最能打动目标客户的宝贵数据。当客服机器人回答用户提问时，它正在结构化地记录下客户最关心的痛点和问题。</span></p><p><span>这些在日常工作中产生的内部数据，是公司最宝贵的、不可复制的资产。在未来的第二和第三阶段，这些独有的数据可以用来训练和微调专属的AI模型。这将为公司带来使用市面上通用工具的竞争对手所无法企及的独特优势。因此，第一阶段不仅是效率的提升，更是构建企业未来“智慧大脑”的开端。</span></p><hr /><h2 id='第七部分附录精选ai工具名录'><span>第七部分：附录：精选AI工具名录</span></h2><p><span>本附录提供了一份详细的参考指南，涵盖报告中推荐的所有工具，旨在为AI任务小组提供一个经过初步筛选的供应商列表，以节省其研究时间，直接进入评估和试用阶段。</span></p><p><strong><span>表3：阶段一精选AI工具名录</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>工具名称</span></th><th><span>类别</span></th><th><span>主要应用场景</span></th><th><span>目标部门</span></th><th><span>典型定价模式</span></th><th><span>核心特性与优势</span></th></tr></thead><tbody><tr><td><strong><span>WGSN</span></strong></td><td><span>趋势预测</span></td><td><span>提供数据驱动的色彩、材质、廓形等趋势预测，为系列规划提供决策支持。</span></td><td><span>设计, 商品企划</span></td><td><span>年度企业订阅，需联系报价。</span></td><td><span>TrendCurve AI预测准确率超90%；大幅缩短研究时间；培养数据驱动的设计决策文化。</span></td></tr><tr><td><strong><span>Heuritech</span></strong></td><td><span>趋势预测</span></td><td><span>通过AI分析社交媒体图像，量化和预测消费者穿着趋势，识别新兴潮流。</span></td><td><span>设计, 市场</span></td><td><span>企业订阅，需联系报价。</span></td><td><span>每日分析海量图像；可识别超过2000种时尚属性；帮助优化产品组合，减少库存风险。</span></td></tr><tr><td><strong><span>Midjourney</span></strong></td><td><span>AI图像生成</span></td><td><span>通过文本提示快速生成高质量的创意图像，用于情绪板、概念设计和视觉探索。</span></td><td><span>设计, 市场</span></td><td><span>按月/年订阅，提供不同用量套餐。</span></td><td><span>生成图像质量高，风格多样；极大提升创意构思和视觉表达的效率；社区活跃，创意启发性强。</span></td></tr><tr><td><strong><span>The New Black AI</span></strong></td><td><span>AI时尚设计</span></td><td><span>从文本或图像生成服装设计、虚拟模特图、3D服装模型及技术文件草图。</span></td><td><span>设计, 产品开发</span></td><td><span>提供免费和付费订阅计划。</span></td><td><span>功能全面，覆盖从设计到技术包的多个环节；支持虚拟试穿；为时尚行业量身定制。</span></td></tr><tr><td><strong><span>Jasper</span></strong></td><td><span>AI文案生成</span></td><td><span>生成各类营销文案，包括产品描述、广告语、博客文章、社交媒体内容等。</span></td><td><span>市场, 销售</span></td><td><span>按席位和功能分级的月度/年度订阅。</span></td><td><span>支持品牌声音定制；集成多种营销文案模板；支持多语言；社区和教程资源丰富。</span></td></tr><tr><td><strong><span>Adobe GenStudio</span></strong></td><td><span>企业级内容生成</span></td><td><span>在企业级工作流和治理框架下，规模化生成符合品牌规范的营销内容。</span></td><td><span>市场, 品牌</span></td><td><span>企业解决方案，需联系报价。</span></td><td><span>内置品牌合规性检查；与Adobe生态系统深度集成；支持基于营销活动简报的智能内容生成。</span></td></tr><tr><td><strong><span>Sprinklr</span></strong></td><td><span>社交媒体管理</span></td><td><span>集内容创作、排期、发布、聆听和分析于一体的AI驱动社交媒体管理平台。</span></td><td><span>市场, 客服</span></td><td><span>企业解决方案，需联系报价。</span></td><td><span>覆盖30+社交渠道；强大的AI内容生成和合规审批功能；统一的数字资产管理。</span></td></tr><tr><td><strong><span>Wrike</span></strong></td><td><span>项目管理</span></td><td><span>AI增强的项目与工作流程管理平台，提供360度可见性与协作。</span></td><td><span>运营, IT, 市场</span></td><td><span>提供免费版及不同等级的付费订阅。</span></td><td><span>AI辅助任务规划与风险预测；强大的自定义工作流和自动化功能；适用于跨部门复杂项目管理。</span></td></tr><tr><td><strong><span>Notion AI</span></strong></td><td><span>生产力与协作</span></td><td><span>集成在Notion笔记与知识库中的AI助手，用于写作、总结、信息提取等。</span></td><td><span>全体员工</span></td><td><span>作为Notion付费订阅的附加功能。</span></td><td><span>与现有知识库无缝集成；功能全面，包括写作、翻译、总结、任务提取等；提升个人信息处理效率。</span></td></tr><tr><td><strong><span>Zapier</span></strong></td><td><span>工作流程自动化</span></td><td><span>无代码平台，用于连接数千种不同的应用程序，创建自动化工作流。</span></td><td><span>运营, IT, 市场</span></td><td><span>提供免费版及基于任务量的付费订阅。</span></td><td><span>支持超过5000种应用连接；无需编程即可创建自动化规则；极大减少重复性数据迁移和手动操作。</span></td></tr></tbody></table></figure></div></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+	"nodes":[
+		{"id":"dc347d2fedf81284","type":"text","text":"# 晶体管","x":-880,"y":-70,"width":250,"height":60,"color":"4"},
+		{"id":"e402e6d91dc2120d","type":"file","file":"Learning/计算机/从0搭建计算机/attachments/Pasted image 20250727135152.png","x":-400,"y":-621,"width":579,"height":327},
+		{"id":"3f0a52731eaf3054","type":"file","file":"Learning/计算机/从0搭建计算机/attachments/Pasted image 20250727134843.png","x":-400,"y":-173,"width":580,"height":326},
+		{"id":"9fd8dde7c164cafa","type":"text","text":"[\\[从零搭建计算机保姆级教程01\\]——逻辑门原理\\_哔哩哔哩\\_bilibili](https://www.bilibili.com/video/BV1VS7AztETt/?spm_id_from=333.1391.0.0&vd_source=56499cc54ebd02db0ac739e485d74801)","x":-1540,"y":-820,"width":362,"height":60},
+		{"id":"8cb1b81f00d3e86c","type":"text","text":"# 二极管","x":-960,"y":-1080,"width":250,"height":60,"color":"4"},
+		{"id":"3dbf4d9e00a92e6f","type":"file","file":"Learning/计算机/从0搭建计算机/attachments/Pasted image 20250727135600.png","x":-400,"y":-1245,"width":580,"height":326},
+		{"id":"5ad140aa58e433a0","type":"text","text":"个人理解, 电子被自然吸引到 P\n- 如果右边再接个正极, 吸引力就更大了, 容易流通\n- 如果右边再接个负极左边接个正极, 电子可能就被迫撤回了, 如果撤回的吸引力足够大, 也许可以反向流通, 不过这明显是更费力的一件事情","x":340,"y":-1210,"width":250,"height":320},
+		{"id":"f429a8c04cec6505","type":"text","text":"# 非门","x":-1117,"y":566,"width":250,"height":60,"color":"1"},
+		{"id":"ed12cf1a5641dcaa","type":"file","file":"Learning/计算机/从0搭建计算机/attachments/Pasted image 20250727142229.png","x":-400,"y":480,"width":720,"height":407},
+		{"id":"f37647a0118e7b8c","type":"text","text":"左边导通的时候, 电流会从左边走, 右边不亮, 不然会从右边走\n也就是左边 1, 右边 0, 左边 0, 右边 1","x":540,"y":658,"width":380,"height":182},
+		{"id":"f0b5b27113d3865a","type":"file","file":"Learning/计算机/从0搭建计算机/attachments/Pasted image 20250727142445.png","x":-360,"y":1080,"width":400,"height":275},
+		{"id":"b1a2b3f0fe4ac0c3","type":"file","file":"Learning/计算机/从0搭建计算机/attachments/Pasted image 20250727142459.png","x":-400,"y":1560,"width":400,"height":241},
+		{"id":"3e7c97e503b5a01c","type":"file","file":"Learning/计算机/从0搭建计算机/attachments/Pasted image 20250727142556.png","x":680,"y":1239,"width":999,"height":562}
+	],
+	"edges":[
+		{"id":"2f81c8058f120ff4","fromNode":"dc347d2fedf81284","fromSide":"right","toNode":"3f0a52731eaf3054","toSide":"left"},
+		{"id":"8b4d3266072cda14","fromNode":"dc347d2fedf81284","fromSide":"right","toNode":"e402e6d91dc2120d","toSide":"left"},
+		{"id":"17d6c5bac8317ae1","fromNode":"e402e6d91dc2120d","fromSide":"bottom","toNode":"3f0a52731eaf3054","toSide":"top"},
+		{"id":"aeb2bdabf57b2b9a","fromNode":"8cb1b81f00d3e86c","fromSide":"right","toNode":"3dbf4d9e00a92e6f","toSide":"left"},
+		{"id":"60487ef512b40cf4","fromNode":"3dbf4d9e00a92e6f","fromSide":"right","toNode":"5ad140aa58e433a0","toSide":"left"},
+		{"id":"62b5f68d92c0608f","fromNode":"8cb1b81f00d3e86c","fromSide":"bottom","toNode":"dc347d2fedf81284","toSide":"top"},
+		{"id":"f49a3aa37ef75f8f","fromNode":"dc347d2fedf81284","fromSide":"bottom","toNode":"f429a8c04cec6505","toSide":"top"},
+		{"id":"b3a70b69f9e06d5d","fromNode":"f429a8c04cec6505","fromSide":"right","toNode":"ed12cf1a5641dcaa","toSide":"left"},
+		{"id":"fc911ddce3617b3b","fromNode":"ed12cf1a5641dcaa","fromSide":"right","toNode":"f37647a0118e7b8c","toSide":"left"}
+	]
+}
