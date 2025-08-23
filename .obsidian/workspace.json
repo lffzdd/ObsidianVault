@@ -171,20 +171,6 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "e243f6eee57e5348",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "添加笔记属性"
-            }
           }
         ],
         "currentTab": 4
