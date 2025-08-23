@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
+                "file": "尚霖盈和/智能化转型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "艾诺丝品牌趋势研究方案优化"
+              "title": "智能化转型"
+            }
+          },
+          {
+            "id": "41b5ea39be2e475c",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.9.10"
             }
           }
         ]
@@ -78,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 210.5
   },
   "right": {
     "id": "b6b4065b62f5014a",
@@ -159,6 +171,20 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "e243f6eee57e5348",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
           }
         ],
         "currentTab": 4
@@ -181,7 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,26 +223,26 @@
   },
   "active": "7beb2bd2df0efa81",
   "lastOpenFiles": [
-    "艾诺丝品牌趋势研究方案优化1.pdf",
-    "尚霖盈和/艾诺丝品牌趋势研究方案优化.pdf",
-    "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
-    "艾诺丝品牌趋势研究方案优化.pdf",
-    "尚霖盈和/标签提取prompt优化.md",
-    "尚霖盈和/女装prompt.md",
-    "未命名.md",
-    "Welcome.md",
-    "个人简历.md",
-    "尚霖盈和/智能化转型.md",
-    "尚霖盈和/未命名.md",
     "尚霖盈和/coze api.md",
+    "尚霖盈和/智能化转型.md",
+    "尚霖盈和/女装prompt.md",
+    "尚霖盈和/标签提取prompt优化.md",
+    "尚霖盈和/标签提取prompt.md",
+    "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
+    "Welcome.md",
+    "尚霖盈和/艾诺丝品牌趋势研究方案优化.pdf",
+    "未命名.md",
+    "个人全简历.md",
+    "艾诺丝品牌趋势研究方案优化.pdf",
+    "艾诺丝品牌趋势研究方案优化1.pdf",
+    "个人简历.md",
+    "尚霖盈和/未命名.md",
     "尚霖盈和/dify api.md",
     "尚霖盈和/Welcome.md",
-    "尚霖盈和/标签提取prompt.md",
     "Learning/计算机/深度学习/代码用法/2-加载和处理输入图像.md",
     "Learning/计算机/深度学习/代码用法/6-图像数据增强.md",
     "Learning/计算机/深度学习/代码用法/1-matplotlib.md",
     "Learning/计算机/计算机安全与加密/1.二进制编码-TLV.md",
-    "个人全简历.md",
     "Learning/计算机/编译原理/斯坦福cool/1-正则表达式.md",
     "Learning/计算机/编译原理/斯坦福cool/4-从正则到NFA.md",
     "Learning/计算机/编译原理/斯坦福cool/3-DFA和NFA.md",
