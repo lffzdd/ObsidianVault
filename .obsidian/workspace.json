@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "尚霖盈和/智能化转型.md",
-                "mode": "preview",
+                "file": "尚霖盈和/dify api.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "智能化转型"
+              "title": "dify api"
             }
           },
           {
@@ -171,6 +171,20 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "d3290a46bf8c93f9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
           }
         ],
         "currentTab": 4
@@ -204,14 +218,16 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
   "active": "7beb2bd2df0efa81",
   "lastOpenFiles": [
-    "尚霖盈和/coze api.md",
-    "尚霖盈和/智能化转型.md",
     "尚霖盈和/女装prompt.md",
+    "尚霖盈和/未命名.base",
+    "尚霖盈和/智能化转型.md",
+    "尚霖盈和/coze api.md",
     "尚霖盈和/标签提取prompt优化.md",
     "尚霖盈和/标签提取prompt.md",
     "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
