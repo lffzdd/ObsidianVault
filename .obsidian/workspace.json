@@ -13,24 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "尚霖盈和/女装prompt.md",
+                "file": "个人简历.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "女装prompt"
-            }
-          },
-          {
-            "id": "41b5ea39be2e475c",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.10"
-              },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.10"
+              "title": "个人简历"
             }
           }
         ]
@@ -90,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 210.5
+    "width": 300
   },
   "right": {
     "id": "b6b4065b62f5014a",
@@ -106,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "尚霖盈和/女装prompt.md",
+                "file": "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "女装prompt 的反向链接列表"
+              "title": "艾诺丝品牌趋势研究方案优化 的反向链接列表"
             }
           },
           {
@@ -125,12 +113,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "尚霖盈和/女装prompt.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "女装prompt 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -149,6 +136,21 @@
             }
           },
           {
+            "id": "9feb94ab95011611",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "个人简历.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "个人简历 的大纲"
+            }
+          },
+          {
             "id": "c7bc5f13d6f4fbb5",
             "type": "leaf",
             "state": {
@@ -157,38 +159,9 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "d3290a46bf8c93f9",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "添加笔记属性"
-            }
-          },
-          {
-            "id": "e60da67699c222e5",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "尚霖盈和/女装prompt.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "女装prompt 的大纲"
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       },
       {
         "id": "25249116168d189a",
@@ -208,7 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -219,33 +192,34 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false,
-      "markdown-importer:打开 Markdown 格式转换器": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "7beb2bd2df0efa81",
   "lastOpenFiles": [
-    "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
-    "尚霖盈和/标签提取prompt优化.md",
-    "尚霖盈和/dify api.md",
-    "尚霖盈和/coze api.md",
-    "尚霖盈和/智能化转型.md",
-    "尚霖盈和/女装prompt.md",
-    "尚霖盈和/未命名.base",
-    "尚霖盈和/标签提取prompt.md",
-    "Welcome.md",
-    "尚霖盈和/艾诺丝品牌趋势研究方案优化.pdf",
-    "未命名.md",
-    "个人全简历.md",
     "艾诺丝品牌趋势研究方案优化.pdf",
-    "艾诺丝品牌趋势研究方案优化1.pdf",
     "个人简历.md",
+    "尚霖盈和/未命名.base",
+    "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
+    "未命名.base",
+    "未命名.canvas",
+    "艾诺丝品牌趋势研究方案优化1.pdf",
+    "尚霖盈和/艾诺丝品牌趋势研究方案优化.pdf",
+    "尚霖盈和/标签提取prompt优化.md",
+    "尚霖盈和/女装prompt.md",
+    "未命名.md",
+    "Welcome.md",
+    "尚霖盈和/智能化转型.md",
     "尚霖盈和/未命名.md",
+    "尚霖盈和/coze api.md",
+    "尚霖盈和/dify api.md",
     "尚霖盈和/Welcome.md",
+    "尚霖盈和/标签提取prompt.md",
     "Learning/计算机/深度学习/代码用法/2-加载和处理输入图像.md",
     "Learning/计算机/深度学习/代码用法/6-图像数据增强.md",
     "Learning/计算机/深度学习/代码用法/1-matplotlib.md",
     "Learning/计算机/计算机安全与加密/1.二进制编码-TLV.md",
+    "个人全简历.md",
     "Learning/计算机/编译原理/斯坦福cool/1-正则表达式.md",
     "Learning/计算机/编译原理/斯坦福cool/4-从正则到NFA.md",
     "Learning/计算机/编译原理/斯坦福cool/3-DFA和NFA.md",

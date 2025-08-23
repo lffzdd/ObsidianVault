@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "个人简历",
+      "path": "个人简历.md"
+    },
+    {
       "basename": "女装prompt",
       "path": "尚霖盈和/女装prompt.md"
     },
@@ -43,10 +47,6 @@
     {
       "basename": "个人全简历",
       "path": "个人全简历.md"
-    },
-    {
-      "basename": "个人简历",
-      "path": "个人简历.md"
     }
   ],
   "omittedPaths": [],
