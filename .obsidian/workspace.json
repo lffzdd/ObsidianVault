@@ -239,8 +239,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 504.5,
-    "collapsed": true
+    "width": 504.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -257,8 +256,10 @@
       "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "c9c2825a1196cd73",
+  "active": "8f9ed1f5a789f6fe",
   "lastOpenFiles": [
+    "尚霖盈和/转型企划/ai推广/方案1.1.md",
+    "尚霖盈和/转型企划/ai推广/方案1.md",
     "AI 推广方案.pdf",
     "方案1.1.pdf",
     "AI 推广方案.html",
@@ -266,8 +267,6 @@
     "ai转型方案.html",
     "方案.html",
     "方案1.1.html",
-    "尚霖盈和/转型企划/ai推广/方案1.md",
-    "尚霖盈和/转型企划/ai推广/方案1.1.md",
     "尚霖盈和/未命名.md",
     "尚霖盈和/转型企划/ai推广/方案2.md",
     "尚霖盈和/转型企划/ai推广/方案3.md",
@@ -278,7 +277,6 @@
     "尚霖盈和/转型企划/ai推广",
     "尚霖盈和/转型企划",
     "尚霖盈和/标签提取prompt优化.md",
-    "尚霖盈和/未命名.base",
     "Untitled.md",
     "尚霖盈和/智能化转型.md",
     "尚霖盈和/女装prompt.md",
