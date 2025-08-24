@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "尚霖盈和/转型企划/ai推广/方案1.md",
+                "file": "尚霖盈和/未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "方案1 的反向链接列表"
+              "title": "未命名 的反向链接列表"
             }
           },
           {
@@ -148,12 +148,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "尚霖盈和/转型企划/ai推广/方案1.md",
+                "file": "尚霖盈和/未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "方案1 的出链列表"
+              "title": "未命名 的出链列表"
             }
           },
           {
@@ -201,17 +201,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "尚霖盈和/转型企划/ai推广/方案1.md",
+                "file": "尚霖盈和/未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "方案1 的大纲"
+              "title": "未命名 的大纲"
+            }
+          },
+          {
+            "id": "8f9ed1f5a789f6fe",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       },
       {
         "id": "25249116168d189a",
@@ -231,7 +241,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 504.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -244,13 +254,16 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false,
-      "markdown-importer:打开 Markdown 格式转换器": false
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "smart-connections:Open: Smart Chat": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "c9c2825a1196cd73",
+  "active": "7beb2bd2df0efa81",
   "lastOpenFiles": [
-    "尚霖盈和/未命名.md",
     "尚霖盈和/转型企划/ai推广/方案1.md",
+    "尚霖盈和/未命名.md",
     "尚霖盈和/转型企划/ai推广/方案2.md",
     "尚霖盈和/转型企划/ai推广/方案3.md",
     "尚霖盈和/转型企划/ai推广/推广师岗位说明书.md",

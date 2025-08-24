@@ -2,3 +2,8 @@
 /.obsidian/workspace.json
 /.obsidian/plugins/obsidian-git/data.json
 /.obsidian/workspace.json
+
+
+
+# Ignore Smart Environment folder
+.smart-env
