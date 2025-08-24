@@ -129,7 +129,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "尚霖盈和/未命名.md",
+                "file": "尚霖盈和/转型企划/ai推广/方案1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "未命名 的反向链接列表"
+              "title": "方案1 的反向链接列表"
             }
           },
           {
@@ -148,12 +148,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "尚霖盈和/未命名.md",
+                "file": "尚霖盈和/转型企划/ai推广/方案1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "未命名 的出链列表"
+              "title": "方案1 的出链列表"
             }
           },
           {
@@ -201,13 +201,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "尚霖盈和/未命名.md",
+                "file": "尚霖盈和/转型企划/ai推广/方案1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "方案1 的大纲"
             }
           }
         ],
@@ -247,10 +247,10 @@
       "markdown-importer:打开 Markdown 格式转换器": false
     }
   },
-  "active": "7beb2bd2df0efa81",
+  "active": "c9c2825a1196cd73",
   "lastOpenFiles": [
-    "尚霖盈和/转型企划/ai推广/方案1.md",
     "尚霖盈和/未命名.md",
+    "尚霖盈和/转型企划/ai推广/方案1.md",
     "尚霖盈和/转型企划/ai推广/方案2.md",
     "尚霖盈和/转型企划/ai推广/方案3.md",
     "尚霖盈和/转型企划/ai推广/推广师岗位说明书.md",
