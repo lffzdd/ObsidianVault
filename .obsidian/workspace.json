@@ -214,8 +214,8 @@
             "state": {
               "type": "smart-connections-view",
               "state": {},
-              "icon": "smart-connections",
-              "title": "Connections"
+              "icon": "lucide-ghost",
+              "title": "smart-connections-view"
             }
           }
         ],
@@ -239,7 +239,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 504.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -253,7 +253,7 @@
       "obsidian-git:Open Git source control": false,
       "smart-connections:Open: Smart Chat": false,
       "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Smart Connections: Open random connection": true
+      "smart-connections:Smart Connections: Open random connection": false
     }
   },
   "active": "0a07b2a947a88d42",
