@@ -1,4 +1,4 @@
-好的，我们来深入探讨一下这个项目的核心——`PPNet` 模型。其结构设计精巧，旨在实现“可解释性”。
+深入探讨一下这个项目的核心——`PPNet` 模型。其结构设计精巧，旨在实现“可解释性”。
 
 这个模型的结构定义在 [model.py](vscode-file://vscode-app/f:/Application/Microsoft VS Code/resources/app/out/vs/code/electron-browser/workbench/workbench.html) 文件中的 `PPNet` 类里。我们可以把它分解为以下几个关键部分，就像一个流水线一样：
 
