@@ -46,12 +46,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "尚霖盈和/转型企划/ai推广/方案1.md",
+                "file": "尚霖盈和/Welcome.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "方案1"
+              "title": "Welcome"
             }
           }
         ]
@@ -253,13 +253,27 @@
       "obsidian-git:Open Git source control": false,
       "smart-connections:Open: Smart Chat": false,
       "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Smart Connections: Open random connection": false
+      "smart-connections:Smart Connections: Open random connection": true
     }
   },
   "active": "0a07b2a947a88d42",
   "lastOpenFiles": [
-    "尚霖盈和/转型企划/ai推广/方案1.1.md",
+    "尚霖盈和/dify api.md",
+    "尚霖盈和/coze api.md",
+    "尚霖盈和/智能化转型.md",
+    "尚霖盈和/转型企划/改进点.md",
+    "尚霖盈和/标签+话术/女装prompt.md",
+    "尚霖盈和/未命名.base",
+    "尚霖盈和/标签+话术/标签提取prompt.md",
+    "尚霖盈和/标签+话术",
+    "工作/C++简历.md",
+    "工作/个人全简历.md",
+    "工作",
+    "未命名.md",
+    "工作/个人简历.md",
     "尚霖盈和/转型企划/ai推广/方案1.md",
+    "Untitled.md",
+    "尚霖盈和/转型企划/ai推广/方案1.1.md",
     "AI 推广方案.pdf",
     "方案1.1.pdf",
     "AI 推广方案.html",
@@ -267,32 +281,18 @@
     "ai转型方案.html",
     "方案.html",
     "方案1.1.html",
-    "尚霖盈和/未命名.md",
     "尚霖盈和/转型企划/ai推广/方案2.md",
     "尚霖盈和/转型企划/ai推广/方案3.md",
     "尚霖盈和/转型企划/ai推广/推广师岗位说明书.md",
     "尚霖盈和/转型企划/整体企划.md",
     "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
-    "尚霖盈和/转型企划/ai推广/推广师岗位说明书.md.downloading",
-    "尚霖盈和/转型企划/ai推广",
-    "尚霖盈和/转型企划",
-    "尚霖盈和/标签提取prompt优化.md",
-    "Untitled.md",
-    "尚霖盈和/智能化转型.md",
-    "尚霖盈和/女装prompt.md",
-    "尚霖盈和/dify api.md",
-    "尚霖盈和/coze api.md",
-    "尚霖盈和/标签提取prompt.md",
+    "尚霖盈和/标签+话术/标签提取prompt优化.md",
     "Welcome.md",
-    "未命名.md",
-    "个人全简历.md",
-    "个人简历.md",
     "尚霖盈和/Welcome.md",
     "Learning/计算机/深度学习/代码用法/2-加载和处理输入图像.md",
     "Learning/计算机/深度学习/代码用法/6-图像数据增强.md",
     "Learning/计算机/深度学习/代码用法/1-matplotlib.md",
     "Learning/计算机/计算机安全与加密/1.二进制编码-TLV.md",
-    "Learning/计算机/编译原理/斯坦福cool/1-正则表达式.md",
     "Learning/计算机/从0搭建计算机/02-加法器.canvas",
     "Learning/计算机/从0搭建计算机/01-逻辑门原理.canvas"
   ]

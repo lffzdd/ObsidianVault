@@ -1,8 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "Untitled",
-      "path": "Untitled.md"
+      "basename": "Welcome",
+      "path": "尚霖盈和/Welcome.md"
+    },
+    {
+      "basename": "dify api",
+      "path": "尚霖盈和/dify api.md"
+    },
+    {
+      "basename": "coze api",
+      "path": "尚霖盈和/coze api.md"
+    },
+    {
+      "basename": "改进点",
+      "path": "尚霖盈和/转型企划/改进点.md"
+    },
+    {
+      "basename": "女装prompt",
+      "path": "尚霖盈和/标签+话术/女装prompt.md"
+    },
+    {
+      "basename": "标签提取prompt",
+      "path": "尚霖盈和/标签+话术/标签提取prompt.md"
+    },
+    {
+      "basename": "C++简历",
+      "path": "工作/C++简历.md"
+    },
+    {
+      "basename": "个人全简历",
+      "path": "工作/个人全简历.md"
+    },
+    {
+      "basename": "个人简历",
+      "path": "工作/个人简历.md"
     },
     {
       "basename": "方案1",
@@ -11,10 +43,6 @@
     {
       "basename": "方案1.1",
       "path": "尚霖盈和/转型企划/ai推广/方案1.1.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "尚霖盈和/未命名.md"
     },
     {
       "basename": "方案2",
@@ -38,47 +66,11 @@
     },
     {
       "basename": "标签提取prompt优化",
-      "path": "尚霖盈和/标签提取prompt优化.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "尚霖盈和/未命名.base"
-    },
-    {
-      "basename": "智能化转型",
-      "path": "尚霖盈和/智能化转型.md"
-    },
-    {
-      "basename": "女装prompt",
-      "path": "尚霖盈和/女装prompt.md"
-    },
-    {
-      "basename": "个人简历",
-      "path": "个人简历.md"
-    },
-    {
-      "basename": "dify api",
-      "path": "尚霖盈和/dify api.md"
-    },
-    {
-      "basename": "coze api",
-      "path": "尚霖盈和/coze api.md"
-    },
-    {
-      "basename": "标签提取prompt",
-      "path": "尚霖盈和/标签提取prompt.md"
+      "path": "尚霖盈和/标签+话术/标签提取prompt优化.md"
     },
     {
       "basename": "Welcome",
       "path": "Welcome.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "未命名.md"
-    },
-    {
-      "basename": "个人全简历",
-      "path": "个人全简历.md"
     }
   ],
   "omittedPaths": [],
