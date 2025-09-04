@@ -1,0 +1,1400 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+
+/*https://github.com/AntonVanke/Typora-Cement-Theme*/
+/*
+字体  Font: SourceHanSans
+LICENSE: https://github.com/adobe-fonts/source-han-sans/blob/master/LICENSE.txt
+*/
+/*
+代码块字体  Code block font: Fira Code
+LICENSE: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+*/
+@media print {
+    :root {
+        --bg-color: var(--write-bg-color) !important;
+    }
+
+    html, body {
+        background: var(--write-bg-color) !important;
+    }
+}
+
+body {
+    background: var(--bg-color);
+    font: 100%/1.65 var(--font-family-base);
+    max-width: 950px;
+}
+
+/* 内容沉底 */
+content {
+    bottom: 0 !important;
+}
+
+.ty-footer {
+    background-color: transparent !important;
+    border: 0 !important;
+    right: 12px !important;
+}
+
+/* 使左侧边栏统一 */
+.sidebar-menu {
+    border: none !important;
+}
+
+/* 调整条 */
+.typora-sidebar-resizer-bar:hover {
+    border-right: 2px dashed var(--color-black);
+}
+
+#write {
+    border-radius: var(--hover-radius);
+    margin: 16px 16px 10% 16px;
+    background: var(--write-bg-color);
+    transition-duration: 0.3s;
+    transform: perspective(1px) translateZ(0);
+    transition-property: padding;
+    /*max-width: 950px;*/
+    /*margin: 16px auto 10%;*/
+}
+
+/* 写作区域宽度自适应 */
+@media (min-width: 1000px) {
+    #write {
+        padding-left: 64px;
+        padding-right: 64px;
+        /*margin-left: 10%;*/
+        /*margin-right: 10%;*/
+    }
+}
+
+@media (min-width: 1270px) {
+    #write {
+        padding-left: 128px;
+        padding-right: 128px;
+        /*margin-left: 15%;*/
+        /*margin-right: 15%;*/
+    }
+}
+
+/* 底部结束 */
+/* #write::after {
+    content: "Everything has changed";
+    color: var(--text-color);
+    font-size: .8rem;
+    font-style: italic;
+    height: 1rem !important;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 5;
+} */
+
+/*标题*/
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+    color: var(--title-color);
+    font-family: var(--font-family-base);
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 1rem 0;
+}
+
+#write h1 {
+    font-size: 3rem;
+}
+
+#write h2 {
+    font-size: 1.6rem;
+}
+
+#write h3 {
+    font-size: 1.2rem;
+}
+
+#write h4 {
+    font-size: 1rem;
+}
+
+#write h5 {
+    font-size: 0.85rem;
+}
+
+#write h6 {
+    font-size: 0.8rem;
+}
+
+#write .md-heading:before {
+    color: var(--md-heading-before-color);
+}
+
+/*表格*/
+#write table:not(.md-grid-board) {
+    /* background-color: var(--table-first-bg-color); */
+    border: 1px solid var(--table-border-color);
+    margin: 20px 0;
+    border-collapse: separate;
+    border-radius: var(--hover-radius);
+}
+
+
+#write table:not(.md-grid-board) td {
+    padding: 12px 24px;
+    border-left: 1px dashed var(--table-border-color);
+    border-bottom: 1px dashed var(--table-border-color);
+    transition: background-color 0.3s ease-out;
+}
+
+#write table:not(.md-grid-board) th {
+    padding: 12px 24px;
+    border-left: 1px solid var(--table-border-color);
+    border-bottom: 1px solid var(--table-border-color);
+    transition: background-color 0.3s ease-out;
+}
+
+#write table thead tr {
+    background-color: var(--table-first-bg-color);
+}
+
+#write table:not(.md-grid-board) td:hover,
+#write table:not(.md-grid-board) th:hover {
+    background-color: rgba(0, 0, 0, .1);
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+}
+
+#write table:not(.md-grid-board) tr td:first-child,
+#write table:not(.md-grid-board) tr th:first-child {
+    border-left: 0;
+}
+
+#write table:not(.md-grid-board) tr:last-child td {
+    border-bottom: 0;
+}
+
+/* 左上角表格 */
+#write table:not(.md-grid-board) tr:first-child th:first-child {
+    border-top-left-radius: var(--hover-radius);
+}
+
+
+/* 右上角表格 */
+#write table:not(.md-grid-board) tr:first-child th:last-child {
+    border-top-right-radius: var(--hover-radius);
+}
+
+/* 左下角表格 */
+#write table:not(.md-grid-board) tr:last-child td:first-child {
+    border-bottom-left-radius: var(--hover-radius);
+}
+
+/* 右下角表格 */
+#write table:not(.md-grid-board) tr:last-child td:last-child {
+    border-bottom-right-radius: var(--hover-radius);
+}
+
+/*一个投机取巧的方法，不过我觉得还挺好看*/
+#write table:not(.md-grid-board) thead tr:first-child th:first-child {
+    border-bottom-left-radius: var(--hover-radius) !important;
+}
+
+#write table:not(.md-grid-board) thead tr:first-child th:last-child {
+    border-bottom-right-radius: var(--hover-radius) !important;
+}
+
+/*
+#write table:not(.md-grid-board):hover {
+    border-radius: var(--hover-radius);
+}
+#write table:not(.md-grid-board) tr:first-child th:first-child:hover {
+    border-top-left-radius: var(--hover-radius);
+}
+
+#write table:not(.md-grid-board) tr:first-child th:last-child:hover {
+    border-top-right-radius: var(--hover-radius);
+}
+
+#write table:not(.md-grid-board) tr:last-child td:first-child:hover {
+    border-bottom-left-radius: var(--hover-radius);
+}
+
+#write table:not(.md-grid-board) tr:last-child td:last-child:hover {
+    border-bottom-right-radius: var(--hover-radius);
+}
+*/
+/* 下方控制条 */
+footer {
+    padding-left: 15px;
+}
+
+/*详细菜单*/
+content .dropdown-menu {
+    border-radius: 5px;
+    background: var(--dropdown-menu-color);
+    box-shadow: 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%), 0 5px 5px -3px rgb(0 0 0 / 20%);
+}
+
+/* 详细菜单的分割线 */
+.dropdown-menu .divider {
+    border-top: 1px solid #ebebeb;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+/* 表格编辑条 */
+.ty-table-edit {
+    /*overflow: hidden;*/
+    /*width: 30px !important;*/
+    /*height: 30px;*/
+    background: var(--ty-table-edit-bg-color);
+    border-radius: 15px;
+    /*padding-left: 0;*/
+    border: 1px solid var(--table-border-color);
+    /*transition: width .5s ease-in-out, overflow 1s ease-in;*/
+    box-shadow: 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%), 0 5px 5px -3px rgb(0 0 0 / 20%);
+}
+
+/*.ty-table-edit:hover {*/
+/*    width: 40% !important;*/
+/*    overflow: visible;*/
+/*}*/
+
+/* 表格编辑条按钮 */
+.ty-table-edit button {
+    margin: 0 10px !important;
+    padding: 5px !important;
+    border-radius: 5px !important;
+}
+
+/* 表格编辑条按钮状态 */
+.ty-table-edit button:active,
+.ty-table-edit button:hover,
+.ty-table-edit button.active {
+    background: none !important;
+    border: none !important;
+    box-shadow: 0 8px 10px 1px rgb(0 0 0 / 14%), 0 3px 14px 2px rgb(0 0 0 / 12%), 0 5px 5px -3px rgb(0 0 0 / 20%);
+}
+
+/*段落*/
+#write > p,
+#write > pre,
+#write > ul {
+    margin-bottom: 1.25rem;
+}
+
+/* mark 高亮 */
+mark {
+    background: var(--mark-bg-color) !important;
+    border-radius: 1em !important;
+    color: var(--mark-text-color);
+    padding: 2px 4px;
+    margin: 1px 2px;
+    font-weight: 500;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.2s;
+    transition-property: padding, margin;
+}
+
+/* 高亮 hover */
+mark:hover {
+    padding: 4px 8px;
+    margin: 2px 4px;
+}
+
+mark span {
+    white-space: nowrap;
+}
+
+/*行内代码*/
+#write :not(pre) > code {
+    font-family: var(--font-family-monospace);
+    font-weight: 300;
+    color: var(--inline-code-color);
+    padding: 0 4px;
+}
+
+#write :not(pre) > code:hover {
+    color: var(--color-tertiary);
+}
+
+/*行内公式预览*/
+.md-inline-math {
+    margin-left: .3rem;
+    margin-right: .3rem;
+}
+
+.md-inline-math .md-meta {
+    color: #0e82c2;
+}
+
+#math-inline-preview .md-arrow {
+    opacity: .3;
+}
+
+#math-inline-preview #math-inline-preview-content {
+    color: var(--color-on-primary-container);
+}
+
+/*链接*/
+a {
+    font-weight: 700;
+    color: var(--link-color);
+    text-decoration: none;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.2s;
+    transition-property: transform;
+}
+
+a:hover {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+/*yaml标签*/
+.md-meta-block {
+    background: var(--meta-block-bg-color) !important;
+    color: var(--meta-block-font-color);
+    margin: 20px 0;
+    padding: 12px 24px;
+    overflow: auto;
+    border-radius: var(--radius);
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.2s;
+    transition-property: border-radius;
+}
+
+.md-meta-block:hover {
+    border-radius: var(--hover-radius);
+}
+
+/*Latex*/
+.md-hover-tip .md-arrow:after {
+    background: var(--color-secondary-container);
+
+}
+
+.md-hover-tip .code-tooltip-content {
+    background: var(--color-secondary-container);
+}
+
+/*角标*/
+sup.md-footnote {
+    background: transparent;
+    color: var(--link-color);
+}
+
+/*目录*/
+.md-toc {
+    font-size: 0.95rem;
+}
+
+/*引用*/
+blockquote {
+    color: var(--blockquote-font-color);
+    background-color: var(--blockquote-bg-color);
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.2s;
+    transition-property: border-radius;
+}
+
+blockquote:hover {
+    border-radius: 24px;
+}
+
+/* 图片 FIXME: 无法显示 */
+#write img::after {
+    content: attr(alt);
+    color: var(--text-color);
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 999;
+}
+
+/* 复选框 */
+#write input[type=checkbox] {
+    cursor: inherit;
+    height: 100%;
+    width: 1rem;
+    margin: 0 -30px;
+    z-index: 1;
+}
+
+/*
+ 侧边栏
+*/
+#outline-content::-webkit-scrollbar,
+#file-library::-webkit-scrollbar {
+    display: none;
+}
+
+#outline-content .outline-item,
+.file-library-file-node {
+    border-radius: 0 16px 16px 0;
+    margin-left: -28px;
+    margin-right: 0 !important;
+    text-overflow: ellipsis;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 28px solid transparent;
+    padding-right: 28px;
+    /*border-right: 28px solid transparent;*/
+    transition: border-radius, width .15s cubic-bezier(0.4, 0, 0.2, 1), margin .15s cubic-bezier(0.4, 0, 0.2, 1), width .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#outline-content .outline-item:hover,
+.file-library-file-node:hover {
+    opacity: 1 !important;
+    border-radius: 0 16px 16px 0;
+    background-color: var(--sidebar-hover-bg-color);
+}
+
+#outline-content .outline-item-active,
+.file-library-file-node.active {
+    border-radius: 0 16px 16px 0;
+    background-color: var(--sidebar-active-bg-color);
+}
+
+#outline-content .outline-item:not(.outline-item-active),
+.file-library-file-node:not(.active) {
+    opacity: .6;
+}
+
+#file-library-list .file-list-item:hover {
+    opacity: 1 !important;
+    box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+}
+
+#file-library-list .file-list-item:not(.active) {
+    opacity: .6;
+}
+
+#file-library-list .file-list-item.active {
+    background-color: var(--sidebar-active-bg-color);
+}
+
+/* 树文件列表 */
+.file-tree-node.active > .file-node-background {
+    border: none !important;
+    background: none !important;
+}
+
+/* .use-file-tree-style .file-library-file-node:hover {
+    opacity: 1 !important;
+    box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0, 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+} */
+
+/* 搜索框 */
+.file-library-search {
+    height: 60px;
+
+}
+
+#file-library-search-panel {
+    padding-bottom: 10px;
+}
+
+#file-library-search-input {
+    opacity: .8;
+    padding: 10px 10px;
+    background-color: var(--sidebar-active-bg-color);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: background, padding 200ms ease-in, width 200ms ease-out;
+}
+
+#file-library-search-input:focus {
+    background: var(--file-library-search-input-focus-color);
+    padding: 15px 10px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px 0 rgb(65 69 73 / 30%), 0 1px 3px 1px rgb(65 69 73 / 15%);
+}
+
+#close-outline-filter-btn,
+#filesearch-word-option-btn,
+#filesearch-regexp-option-btn,
+#filesearch-case-option-btn {
+    transition: padding 200ms ease-in-out;
+}
+
+#file-library-search-input:focus ~ #close-outline-filter-btn,
+#file-library-search-input:focus ~ #filesearch-word-option-btn,
+#file-library-search-input:focus ~ #filesearch-regexp-option-btn,
+#file-library-search-input:focus ~ #filesearch-case-option-btn {
+    padding-top: 5px;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+}
+
+/* 提示界面 */
+.no-collapse-outline.ty-show-notification.unibody-window content,
+.no-collapse-outline.ty-show-notification.unibody-window content #typora-source,
+.no-collapse-outline.ty-show-notification content,
+.no-collapse-outline.ty-show-notification content #typora-source {
+    top: 28px !important;
+}
+
+.native-window.ty-show-notification.unibody-window content,
+.native-window.ty-show-notification.unibody-window content #typora-source,
+.native-window.ty-show-notification content,
+.native-window.ty-show-notification content #typora-source {
+    top: 0 !important;
+}
+
+.md-notification-container {
+    display: flex;
+    top: 10%;
+    width: 30%;
+    left: 70% !important;
+    padding-top: 0 !important;
+    border-right: 5px solid var(--color-primary);
+    background-color: var(--bg-color);
+    flex-direction: row;
+    border-top-left-radius: var(--hover-radius);
+    border-bottom-left-radius: var(--hover-radius);
+    box-shadow: 0 1px 1px 0 rgb(65 69 73 / 30%), 0 1px 3px 1px rgb(65 69 73 / 15%);
+}
+
+.md-notification-container .md-notification-content {
+    display: block;
+}
+
+.md-notification-container .btn-default {
+    background: none;
+    color: var(--link-color);
+    margin-right: 30px;
+}
+
+/*TODO:导出时的动画*/
+/*.md-notification-container #md-notification div {*/
+/*    display: block !important;*/
+/*}*/
+
+/* 模态框 */
+#common-dialog.modal {
+    overflow-y: hidden;
+    background-color: rgba(55, 55, 55, .4);
+}
+
+.modal .modal-dialog {
+
+    margin: 30% auto;
+}
+
+.modal .modal-content {
+    border-radius: var(--hover-radius);
+    padding: 10px;
+}
+
+.modal .modal-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.modal .btn {
+    color: var(--link-color);
+    background: none;
+}
+
+.modal .btn:hover {
+    font-weight: 600;
+}
+
+.modal .btn:focus {
+    outline: thin dotted;
+}
+
+/*-----------------------------------------
+设置页面
+----------------------------------------- */
+.megamenu-menu-header {
+    border: none;
+    color: var(--text-color);
+}
+
+.megamenu-menu-header #megamenu-back-btn,
+.megamenu-menu-header .megamenu-menu-header-title-back,
+.megamenu-menu-header .megamenu-menu-header-title-menu {
+    color: var(--text-color);
+}
+
+.megamenu-menu-header:hover #megamenu-back-btn {
+    color: var(--link-color);
+}
+
+.megamenu-menu {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: none !important;
+}
+
+.megamenu-menu #m-saved i {
+    display: none !important;
+}
+
+/* 没有保存时 */
+.megamenu-menu #m-save {
+    color: var(--color-error);
+}
+
+/* 已保存 */
+.megamenu-menu #m-saved {
+    color: var(--color-primary);
+}
+
+.megamenu-menu-list a {
+    padding-top: 0;
+    border-radius: 0 16px 16px 0;
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    transition: border-radius, width .15s cubic-bezier(0.4, 0, 0.2, 1), margin .15s cubic-bezier(0.4, 0, 0.2, 1), width .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.megamenu-menu-list {
+    background-color: var(--bg-color);
+}
+
+.megamenu-menu-list a:hover,
+.file-library-file-node:hover {
+    opacity: 1 !important;
+    border-radius: 0 16px 16px 0;
+    background-color: var(--sidebar-hover-bg-color) !important;
+}
+
+.megamenu-menu-list a.active {
+    border-radius: 0 16px 16px 0;
+    background-color: var(--sidebar-active-bg-color) !important;
+}
+
+.megamenu-menu-list a:not(.active) {
+    opacity: .6;
+}
+
+/* 主内容区 */
+header {
+    background-color: var(--bg-color);
+    background-image: none !important;
+}
+
+#megamenu-content {
+    background-color: var(--bg-color);
+    background-image: none !important;
+}
+
+.megamenu-section#megamenu-section-open {
+    margin: 40px 20px;
+    padding: 20px;
+    /* background-color: var(--write-bg-color); */
+    border-radius: var(--hover-radius);
+}
+
+.megamenu-section .long-btn {
+    border-radius: 50px;
+    background: var(--long-btn-color);
+    box-shadow: var(--long-btn-normal);
+    margin: 30px;
+    border: none;
+}
+
+.megamenu-section .long-btn:hover {
+    border-radius: 50px;
+    background: var(--long-btn-hover-bg);
+    box-shadow: var(--long-btn-hover);
+}
+
+.megamenu-section .long-btn:active {
+    border-radius: 50px;
+    background: #e6eef4;
+    box-shadow: inset 5px 5px 10px #c4cacf,
+    inset -5px -5px 10px #ffffff;
+}
+
+/* 搜索框 */
+#recent-file-panel-search-input {
+    opacity: .8;
+    margin: 10px 0;
+    padding: 10px 10px;
+    background-color: var(--sidebar-active-bg-color);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: background, padding 200ms ease-in, width 200ms ease-out;
+}
+
+#recent-file-panel-search-input:focus {
+    background: var(--file-library-search-input-focus-color);
+    padding: 20px 10px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px 0 rgb(65 69 73 / 30%), 0 1px 3px 1px rgb(65 69 73 / 15%);
+}
+
+#recent-file-panel-action-btn-container {
+    margin-right: 30px;
+    transition: background, padding 200ms ease-in, width 200ms ease-out;
+}
+
+#recent-file-panel-search-input:focus + #recent-file-panel-action-btn-container {
+    padding-top: 5px;
+}
+
+#recent-file-panel-action-btn {
+    color: var(--text-color);
+    outline: none;
+    border-radius: 19px;
+    background: var(--long-btn-color);
+    box-shadow: var(--recent-file-panel-action-btn);
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+
+#recent-file-panel-action-btn:hover {
+    border-radius: 19px;
+    background: var(--recent-file-panel-action-btn-hover-bg);
+    box-shadow: var(--recent-file-panel-action-btn-hover);
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+
+#recent-file-panel-action-btn:active {
+    border-radius: 19px;
+    background: var(--long-btn-color);
+    box-shadow: var(--recent-file-panel-action-btn-active-bg);
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+}
+
+/* 最近文件列表 */
+.recent-file-item:hover {
+    color: var(--color-black);
+    font-weight: 400;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: var(--recent-file-panel-n-bg-color);
+    color: var(--recent-file-panel-n-color);
+}
+
+/*
+导出网页 TODO
+*/
+.typora-export .outline-item-wrapper {
+    border-radius: 0 16px 16px 0;
+    margin-left: -28px;
+    margin-right: 0 !important;
+    text-overflow: ellipsis;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left: 28px solid transparent;
+    border-right: 28px solid transparent;
+    transition: border-radius, width .15s cubic-bezier(0.4, 0, 0.2, 1), margin .15s cubic-bezier(0.4, 0, 0.2, 1), width .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.typora-export .outline-item-wrapper:hover {
+    opacity: 1 !important;
+    border-radius: 0 16px 16px 0;
+    background-color: var(--sidebar-hover-bg-color);
+}
+
+.typora-export .outline-item-active {
+    border-radius: 0 16px 16px 0;
+    background-color: var(--sidebar-active-bg-color);
+}
+
+.typora-export .outline-item-wrapper:not(.outline-item-active) {
+    opacity: .6;
+}
+
+body.typora-export {
+    max-width: none !important;
+}
+
+/*防止超链接点不到*/
+.typora-export .outline-item-wrapper .outline-label {
+    width: 100%;
+}
+
+/*
+Mac 上的一些细节优化
+*/
+/*Macos 的侧边栏边框*/
+.mac-os-11 .sidebar-tabs {
+    border-bottom: none !important;
+}
+
+/*侧边栏搜索框*/
+.mac-os-11 #file-library-search-input {
+    padding: 5px 10px;
+}
+
+.mac-os-11 #file-library-search-input:focus {
+    padding: 10px 10px;
+}
+
+.mac-os-11 #ty-sidebar-search-back-btn {
+    padding-top: 3px;
+}
+
+.mac-os-11 #file-library-search-input:focus ~ #ty-sidebar-search-back-btn {
+    padding-top: 8px;
+}
+
+/*一个偶然发现的置顶功能*/
+.always-on-top #w-unpin {
+    background: var(--titlebar-top-bg-color);
+}
+
+#top-titlebar .toolbar-icon.btn.hover, #top-titlebar .toolbar-icon.btn:hover {
+    background-color: var(--titlebar-bg-color);
+}
+
+/*源码模式按钮背景颜色*/
+.typora-sourceview-on #toggle-sourceview-btn {
+    background: var(--active-file-bg-color);
+    opacity: .2;
+    transition: opacity, padding 200ms ease-in-out;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn:hover {
+    background: var(--active-file-bg-color);
+    opacity: .5;
+}@import "";
+
+:root {
+    /*
+    Color
+    Material 3 标准颜色
+    */
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-primary: #6750A4;
+    --color-on-primary: #FFFFFF;
+    --color-primary-container: #EADDFF;
+    --color-on-primary-container: #21005D;
+
+    --color-secondary: #625B71;
+    --color-on-secondary: #FFFFFF;
+    --color-secondary-container: #EADDFF;
+    --color-on-secondary-container: #1D192B;
+
+    --color-tertiary: #0e82c2;
+    --color-on-tertiary: #FFFFFF;
+    --color-tertiary-container: #FFD8E4;
+    --color-on-tertiary-container: #31111D;
+
+    --color-error: #B3261E;
+    --color-on-error: #FFFFFF;
+    --color-error-container: #F9DEDC;
+    --color-on-error-container: #410E0B;
+
+    /* 
+    系统变量
+    Typora base.css/base-control.css/windows.css 所带的变量
+    */
+    /* 背景颜色 */
+    --bg-color: #f6f8fc;
+    /* 文字颜色 */
+    --text-color: #333333;
+    /* 选择的文字背景颜色 */
+    --select-text-bg-color: #B5D6FC;
+    /* 选择的文字颜色 */
+    --select-text-font-color: auto;
+    /* 侧边栏颜色 */
+    --side-bar-bg-color: var(--bg-color);
+    /* 菜单边框 */
+    --window-border: 1px solid #e9e9e9;
+    /* 侧边栏活跃文件背景颜色 */
+    --active-file-bg-color: #eee;
+    /* 侧边栏活跃文件文字颜色 */
+    --active-file-text-color: inherit;
+    /* 侧边栏活跃文件边框颜色 */
+    --active-file-border-color: #777;
+    /* 侧边栏宽度 */
+    --sidebar-width: 256px;
+    /*代码块背景*/
+    --code-block-bg-color: #f6f7f8;
+    /*latex背景*/
+    --rawblock-edit-panel-bd: var(--code-block-bg-color);
+
+    /* 
+    主题变量
+    主题所设置的变量
+    */
+    /* 基础字体 */
+    --font-family-base: "思源黑体 CN", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /*等宽代码字体*/
+    --font-family-monospace: "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    /* 编辑区背景颜色 */
+    --write-bg-color: var(--color-white);
+    /* 圆角 */
+    --radius: 5px;
+    /* 圆角 hover */
+    --hover-radius: 24px;
+    /* 标题颜色 */
+    --title-color: #1f1f1f;
+    /* 链接颜色 */
+    --link-color: #0842a0;
+    /* 标题前的指示标志 */
+    --md-heading-before-color: var(--link-color);
+    /*右键菜单*/
+    --dropdown-menu-color: var(--color-white);
+    /*菜单按钮*/
+    --long-btn-color: #e6eef4;
+    --long-btn-normal: 10px 10px 20px #c4cacf, -10px -10px 20px #ffffff;
+    --long-btn-hover-bg: linear-gradient(145deg, #cfd6dc, #f6ffff);
+    --long-btn-hover: 5px 5px 10px #c4cacf, -5px -5px 10px #ffffff;
+    --recent-file-panel-action-btn: 4px 4px 9px #d6dde3, -4px -4px 9px #f6ffff;
+    --recent-file-panel-action-btn-hover: 4px 4px 9px #d6dde3, -4px -4px 9px #f6ffff;
+    --recent-file-panel-action-btn-hover-bg: linear-gradient(145deg, #cfd6dc, #f6ffff);
+    --recent-file-panel-action-btn-active-bg: inset 4px 4px 9px #d6dde3, inset -4px -4px 9px #f6ffff;
+
+    /*高亮背景颜色*/
+    --mark-bg-color: var(--color-primary-container);
+    /*高亮文字颜色*/
+    --mark-text-color: var(--color-black);
+    /* 引用字体颜色 */
+    --blockquote-font-color: var(--color-on-primary-container);
+    /* 引用背景颜色 */
+    --blockquote-bg-color: var(--color-primary-container);
+
+    /* 行内代码颜色 */
+    --inline-code-color: #008f83;
+    /*表格首行背景颜色*/
+    --table-first-bg-color: #f8f9fa;
+    /*表格编辑条颜色*/
+    --ty-table-edit-bg-color: var(--color-white);
+    /*表格其他行背景颜色*/
+    /* --table-other-bg-color: var(--color-tertiary-container); */
+
+    /* 表格边框颜色  */
+    --table-border-color: #e1e3e1;
+
+    /* YAML 背景颜色 */
+    --meta-block-bg-color: var(--color-tertiary-container);
+    /* YAML 文字颜色 */
+    --meta-block-font-color: var(--color-on-tertiary-container);
+
+    /* active 背景 */
+    --sidebar-active-bg-color: #d3e3fd;
+    /* --sidebar-active-bg-color: #fce8e6; */
+    /* hover 背景 */
+    --sidebar-hover-bg-color: rgba(32, 33, 36, 0.059);
+
+    /*搜索栏 focus 颜色*/
+    --file-library-search-input-focus-color: var(--color-white);
+    /*最近文件单数背景*/
+    --recent-file-panel-n-bg-color: #c0c0c0;
+    --recent-file-panel-n-color: var(--color-black);
+
+    /*操作按钮*/
+    --titlebar-bg-color: #EDEDED;
+    --titlebar-top-bg-color: var(--color-primary-container);
+
+}
+
+/*
+代码块
+*/
+.md-fences {
+    background-color: var(--code-block-bg-color);
+    border-radius: var(--radius);
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: border-radius, padding, box-shadow;
+    transition-timing-function: ease-in-out;
+    /*box-shadow: 0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%), 0px 5px 5px -3px rgb(0 0 0 / 20%);*/
+    /*box-shadow: 0 1px 1px 0 rgba(0, 28, 36, .2);*/
+}
+
+.md-fences::selection {
+    color: var(--select-text-bg-color);
+}
+
+/* .md-fences:hover::before {
+    content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDU0IDE0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+CiAgICAgICAgPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNGRjVGNTYiIHN0cm9rZT0iI0UwNDQzRSIgc3Ryb2tlLXdpZHRoPSIuNSI+PC9jaXJjbGU+CiAgICAgICAgPGNpcmNsZSBjeD0iMjYiIGN5PSI2IiByPSI2IiBmaWxsPSIjRkZCRDJFIiBzdHJva2U9IiNERUExMjMiIHN0cm9rZS13aWR0aD0iLjUiPjwvY2lyY2xlPgogICAgICAgIDxjaXJjbGUgY3g9IjQ2IiBjeT0iNiIgcj0iNiIgZmlsbD0iIzI3QzkzRiIgc3Ryb2tlPSIjMUFBQjI5IiBzdHJva2Utd2lkdGg9Ii41Ij48L2NpcmNsZT4KICAgIDwvZz4KPC9zdmc+');
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 5;
+} */
+
+/* .md-fences:hover::before {
+    content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQiIGhlaWdodD0iMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8Y2lyY2xlIGlkPSJzdmdfMiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZT0iI0UwNDQzRSIgZmlsbD0iI0ZGNUY1NiIgcj0iNiIgY3k9IjciIGN4PSI2LjgwNzY5MyIvPgogICAgPGNpcmNsZSBpZD0ic3ZnXzMiIHN0cm9rZS13aWR0aD0iMC41IiBzdHJva2U9IiNERUExMjMiIGZpbGw9IiNGRkJEMkUiIHI9IjYiIGN5PSI3IiBjeD0iMjYuODA3NjkzIi8+CiAgICA8Y2lyY2xlIGlkPSJzdmdfNCIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZT0iIzFBQUIyOSIgZmlsbD0iIzI3QzkzRiIgcj0iNiIgY3k9IjciIGN4PSI0Ni44MDc2OTMiLz4KICAgIDxsaW5lIHRyYW5zZm9ybT0icm90YXRlKDQ1IDYuNzM4NTUxNjE2NjY4NzA2LDcuMDg3MTQwNTYwMTUwMTQ2KSAiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLWxpbmVjYXA9Im51bGwiCiAgICAgICAgICBzdHJva2UtbGluZWpvaW49Im51bGwiIGlkPSJzdmdfMTMiIHkyPSI3LjA4NzE0MSIgeDI9IjExLjU3MzIyMiIgeTE9IjcuMDg3MTQxIiB4MT0iMS45MDM4ODIiCiAgICAgICAgICBmaWxsLW9wYWNpdHk9Im51bGwiIHN0cm9rZS1vcGFjaXR5PSJudWxsIiBmaWxsPSJub25lIi8+CiAgICA8bGluZSB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgNi43Mzg1NTE2MTY2Njg3MDIsNy4wODcxNDA1NjAxNTAxNDYpICIgc3Ryb2tlPSIjNTU1IiBzdHJva2UtbGluZWNhcD0ibnVsbCIKICAgICAgICAgIHN0cm9rZS1saW5lam9pbj0ibnVsbCIgaWQ9InN2Z18xNSIgeTI9IjcuMDg3MTQxIiB4Mj0iMTEuNTczMjIyIiB5MT0iNy4wODcxNDEiIHgxPSIxLjkwMzg4MiIKICAgICAgICAgIGZpbGwtb3BhY2l0eT0ibnVsbCIgc3Ryb2tlLW9wYWNpdHk9Im51bGwiIGZpbGw9Im5vbmUiLz4KICAgIDxsaW5lIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLWxpbmVjYXA9Im51bGwiIHN0cm9rZS1saW5lam9pbj0ibnVsbCIgaWQ9InN2Z18xNiIgeTI9IjcuMDg3MTQxIiB4Mj0iMzEuNzY1NTAzIgogICAgICAgICAgeTE9IjcuMDg3MTQxIiB4MT0iMjIuMDk2MTYyIiBmaWxsLW9wYWNpdHk9Im51bGwiIHN0cm9rZS1vcGFjaXR5PSJudWxsIiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCB0cmFuc2Zvcm09InJvdGF0ZSg5MCA0NS42Nzc3Njg3MDcyNzUzOSw2LjMwMTg5ODQ3OTQ2MTY3NCkgIiBpZD0ic3ZnXzE4IgogICAgICAgICAgZD0ibTQ1LjI5MzE1MSw2LjY4NjUxNGwwLC0wLjc2OTIzMWwwLjc2OTIzMSwwLjc2OTIzMWwtMC43NjkyMzEsMHoiIGZpbGwtb3BhY2l0eT0ibnVsbCIgc3Ryb2tlLW9wYWNpdHk9Im51bGwiCiAgICAgICAgICBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iIzU1NSIgZmlsbD0ibm9uZSIvPgogICAgPHBhdGggdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDQ3Ljk4NTQ1ODM3NDAyMzQ0NSw4LjgwMTg5ODAwMjYyNDUxKSAiIGlkPSJzdmdfMTkiCiAgICAgICAgICBkPSJtNDcuNjAwODQyLDkuMTg2NTE0bDAsLTAuNzY5MjNsMC43NjkyMywwLjc2OTIzbC0wLjc2OTIzLDB6IiBmaWxsLW9wYWNpdHk9Im51bGwiIHN0cm9rZS1vcGFjaXR5PSJudWxsIgogICAgICAgICAgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2U9IiM1NTUiIGZpbGw9Im5vbmUiLz4KPC9zdmc+");
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 5;
+} */
+.md-fences:hover,
+.auto-suggest-for-fences:hover {
+    border-radius: var(--hover-radius);
+    /* padding-top: 15px; */
+    /* padding-bottom: 15px; */
+    /* box-shadow: 0 20px 40px rgb(0 0 0 / 55%); */
+}
+
+.CodeMirror.cm-s-inner {
+    border-radius: 15px;
+    padding: 15px 10px 10px 10px;
+}
+
+.md-fences:hover::after {
+    content: attr(lang);
+    transition-duration: 200ms;
+    color: var(--color-tertiary);
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 20%);
+    font-size: .8rem;
+    font-style: italic;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 999;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid var(--text-color) !important;
+}
+
+.cm-s-inner .CodeMirror-gutters {
+    color: #404b53;
+    background-color: transparent;
+    border-right: 0
+}
+
+.cm-s-inner .CodeMirror-linenumber {
+    color: #6d8a88
+}
+
+.cm-s-inner div.CodeMirror-selected {
+    background: #e0e0e0
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line > span::selection,
+.cm-s-inner .CodeMirror-line > span > span::selection {
+    background: #e0e0e0
+}
+
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+    background: #e0e0e0
+}
+
+.cm-s-inner .CodeMirror-guttermarker {
+    color: #ac4142
+}
+
+.cm-s-inner .CodeMirror-guttermarker-subtle {
+    color: #b0b0b0
+}
+
+.cm-s-inner .CodeMirror-linenumber {
+    color: #b0b0b0
+}
+
+.cm-s-inner .CodeMirror-linenumbers {
+    background-color: var(--code-block-bg-color)
+}
+
+.cm-s-inner .CodeMirror-cursor {
+    border-left: 1px solid #505050
+}
+
+.cm-s-inner span.cm-comment {
+    color: #8f5536
+}
+
+.cm-s-inner span.cm-atom {
+    color: #aa759f
+}
+
+.cm-s-inner span.cm-number {
+    color: #aa759f
+}
+
+.cm-s-inner span.cm-attribute,
+.cm-s-inner span.cm-property {
+    color: #90a959
+}
+
+.cm-s-inner span.cm-keyword {
+    color: #ac4142
+}
+
+.cm-s-inner span.cm-string {
+    color: #f4bf75
+}
+
+.cm-s-inner span.cm-variable {
+    color: #90a959
+}
+
+.cm-s-inner span.cm-variable-2 {
+    color: #6a9fb5
+}
+
+.cm-s-inner span.cm-def {
+    color: #d28445
+}
+
+.cm-s-inner span.cm-bracket {
+    color: #202020
+}
+
+.cm-s-inner span.cm-tag {
+    color: #ac4142
+}
+
+.cm-s-inner span.cm-link {
+    color: #aa759f
+}
+
+.cm-s-inner span.cm-error {
+    /*background: #ac4142;*/
+    color: var(--color-error)
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+    color: #f5f5f5 !important;
+    background-color: #6a9fb5 !important
+}
+
+
+
+</style><title>报告：艾诺丝雅诗（ARIOSEYEARS）2026春夏系列趋势预测与商业策略</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='报告艾诺丝雅诗arioseyears2026春夏系列趋势预测与商业策略'><span>报告：艾诺丝雅诗（ARIOSEYEARS）2026春夏系列趋势预测与商业策略</span></h1><p>&nbsp;</p><p>&nbsp;</p><h2 id='引言为艾诺丝雅诗谱写2026春夏有旋律的时光'><span>引言：为艾诺丝雅诗谱写2026春夏“有旋律的时光”</span></h2><p>&nbsp;</p><p>&nbsp;</p><h3 id='报告摘要'><span>报告摘要</span></h3><p>&nbsp;</p><p><span>2026春夏季度，全球时尚语境将围绕“审慎的重新定位”（mindful reorientation）展开 1。这一宏观情绪与艾诺丝雅诗（ARIOSEYEARS）的品牌名称“有旋律的时光”不谋而合，为品牌提供了一个独特契机，以 thoughtfully 的系列回应消费者对平衡、真实性及恒久品质的深层渴望。本报告将深入剖析三大核心趋势主题：从“静奢风”到“静谧疗愈”的情感进化、彰显智性与感性的“智性性感风”，以及“现代手工主义”所带来的商业机遇。通过对色彩、面料、廓形及关键单品的精准预测，本报告旨在为艾诺丝雅诗的2026春夏系列提供一套兼具前瞻性与商业价值的战略蓝图。</span></p><p>&nbsp;</p><h3 id='与艾诺丝雅诗的战略关联性'><span>与艾诺丝雅诗的战略关联性</span></h3><p>&nbsp;</p><p><span>即将到来的流行趋势与艾诺丝雅诗“都市、现代、简约、时尚、精致、优雅”的核心价值观高度契合 2。季节性的转变不再仅仅是美学的更迭，而是更深层次地呼应了品牌所倡导的哲学——赋能26-40岁的独立女性“活在当下”，并拒绝被动接受主流价值观。本报告所提出的趋势方向，将帮助艾诺丝雅诗通过设计语言，进一步强化与目标客群在情感与价值观层面的深度链接，巩固其“不浮华的时尚，不怯场的高级”的市场定位 2。</span></p><hr /><p>&nbsp;</p><h2 id='第一部分宏观趋势洞察------塑造独立女性的时代精神'><span>第一部分：宏观趋势洞察——塑造独立女性的时代精神</span></h2><p>&nbsp;</p><p><span>本部分旨在阐明驱动2026春夏美学背后的“为何”，将广泛的社会文化变迁与消费者渴望联系起来，为艾诺丝雅诗的产品策略提供坚实的理论依据。</span></p><p>&nbsp;</p><h3 id='11-静奢疗愈从美学到情感的价值延伸'><span>1.1 静奢疗愈：从美学到情感的价值延伸</span></h3><p>&nbsp;</p><p><span>“静奢风”（Quiet Luxury）在2026春夏将完成一次重要的迭代。其焦点将从纯粹的极简主义美学，转向一个更深邃、更富情感与疗愈价值的领域。消费者寻求的不再仅仅是低调内敛的服装，更是一种能够在其衣橱中提供慰藉、安全感与内心平静的穿着体验。</span></p><p><span>全球趋势预测明确指出，2026春夏将是一个“重新定位和用心表达的季节” 1，而关键色如“蓝色光环”（Blue Aura）被形容为具有“舒缓的现代特质”和“治愈力” 4。这表明市场正渴求能提供心理舒适感的产品。对于身处高压现代生活中的艾诺丝雅诗目标客群（26-40岁独立女性）而言，“平静”已从一个抽象概念转变为一种可被市场化的产品属性。这意味着品牌的核心卖点需要超越视觉设计，更加强调服装的感官体验——丝绸混纺面料的亲肤触感、连衣裙的轻柔垂坠感等。这不仅是对产品价值的深化，也完美诠释了品牌“不怯场的高级”之精髓 2。</span></p><p>&nbsp;</p><h3 id='12-自然新生可持续性与高级感的融合'><span>1.2 自然新生：可持续性与高级感的融合</span></h3><p>&nbsp;</p><p><span>可持续时尚已从一个小众议题，演变为奢侈品领域的核心准则。2026春夏的焦点在于颂扬那些源于自然、以负责任方式采购的材料所固有的美感与卓越品质。这不仅是环保责任的体现，更是新一代高级感的定义。</span></p><p><span>权威展会如巴黎Première Vision已将2026春夏的基调定为在“创新与传统之间寻求平衡”，并将可持续性置于核心 7。WGSN的面料报告重点推荐了亚麻、再生棉和精炼夏季羊毛等高级天然纤维 1。而2026年度代表色“晚山新黛”（Transformative Teal），其色彩理念直接体现了“生态意识”和“地球优先的心态” 4。艾诺丝雅诗的品牌承诺建立在“高级面料”之上 2，而当代奢侈品消费者对“高级”的定义已扩展至包含可持续与道德认证。因此，面料本身成为了品牌价值观的首要沟通工具。在营销叙事中，强调某款产品采用的是“再生棉”或“无虐 mulesing 认证的夏季羊毛”，不再是单纯的技术说明，而是一个强有力的、关于现代责任式奢华的故事，能够精准触动具有“独立思考能力”的目标消费者。</span></p><p>&nbsp;</p><h3 id='13-工艺回响在数字时代彰显人文温度'><span>1.3 工艺回响：在数字时代彰显人文温度</span></h3><p>&nbsp;</p><p><span>在日益数字化的生活中，消费者对带有手工艺温度和丰富触感的表面细节愈发珍视，这是一种对冰冷屏幕世界的文化反拨。人们开始在“不完美”和“手工痕迹”中发现独特的美感与价值。</span></p><p><span>WGSN的趋势报告强调，“工艺感纹理”将是2206春夏的关键，包括拉菲草、可见缝线和钩针编织等 1。印花趋势如“工匠缝线”（Artisanal Stitch）则模仿刺绣和古老纺织品的图案 1。在秀场上，Khaite和Totême等品牌已将刺绣、钩针等精妙的手工元素融入其简洁现代的美学体系中 9。艾诺丝雅诗倡导女性“突破传统审美界限”，建立“自我认同感”。当数字世界推崇一种完美无瑕的滤镜式美学时，手工趋势代表了一种对真实性和独特性的追求。通过在设计中融入精致且低调的手工细节，例如手工缝制的门襟、精巧的钩针饰边或带有天然竹节纹理的面料，艾诺丝雅诗能够提供一种感觉独特且充满个性的产品。这是一种高级的、表达个性的方式，与品牌帮助消费者在主流价值观之外建立自我认同的使命完美契合。</span></p><hr /><p>&nbsp;</p><h2 id='第二部分2026春夏色彩序曲------构建精致优雅的调色板'><span>第二部分：2026春夏色彩序曲——构建精致优雅的调色板</span></h2><p>&nbsp;</p><p><span>本部分将全球色彩趋势转化为一个为艾诺丝雅诗量身定制的、具有商业可行性的专属调色板。</span></p><p>&nbsp;</p><h3 id='21-核心色盘静谧的中性色'><span>2.1 核心色盘：静谧的中性色</span></h3><p>&nbsp;</p><p><span>系列的基石将是一组能够传递静谧感与永恒价值的、充满高级感的中性色。它们并非平淡的基础色，而是充满细微差别的、复杂的色调。Peclers Paris的预测指出了“精致的中间色调”，如珍珠般的灰白色、柔和的冷米色和阴天般的灰色是关键情绪 12。WGSN发布的“蓝色光环”（Blue Aura, Coloro 117-77-06），一种宁静的灰蓝色粉彩，被描述为“跨越性别与季节”，并带有一丝“未来感和工业气息”，是理想的支柱色彩 4。这些颜色将构成系列的主体，完美适用于西装、基础针织衫和流动感连衣裙。“蓝色光环”尤其有潜力成为本季的核心时尚中性色。</span></p><p>&nbsp;</p><h3 id='22-大地色调温暖的智慧'><span>2.2 大地色调：温暖的智慧</span></h3><p>&nbsp;</p><p><span>一组源于自然的温暖色调，为系列增添深度与一种脚踏实地的精致感。Peclers的报告指向了让人联想到粘土和陶器的“丰富的泥土色” 12。其中，WGSN的关键色“琥珀迷雾”（Amber Haze, Coloro 043-65-31）——一种带绿色调的黄色——是核心。它被描述为具有“让人联想起宝石和水晶的古老魅力”，与人们在不确定时期寻求精神指引和慢节奏生活的渴望相关联 4。“琥珀迷雾”非常适合用于打造焦点单品，如轻薄外套或真丝衬衫，并能与核心中性色盘形成优美的搭配。其他大地色系，如陶土色和鼠尾草绿，可作为印花和点缀色使用 13。</span></p><p>&nbsp;</p><h3 id='23-点睛之笔克制的活力'><span>2.3 点睛之笔：克制的活力</span></h3><p>&nbsp;</p><p><span>尽管整体氛围是平静的，但策略性的色彩点缀对于注入现代感和创造视觉焦点至关重要，其关键在于“克制”。WGSN的“电光紫红”（Electric Fuchsia）4 和Peclers的“果味鲜艳色” 12 代表了高饱和度色彩的趋势。然而，对于艾诺丝雅诗这样以“优雅”和“精致”为标签的品牌，这些色彩的使用需要极其审慎。一个更合适的选择是年度色“晚山新黛”（Transformative Teal, Coloro 092-37-14），一种蓝绿之间的流动色调，既有活力又不失高级感 4。</span></p><p><span>品牌的“优雅”定位与“静谧疗愈”的宏观情绪，决定了高饱和度色彩的使用应极为有限。像“电光紫红”这类被描述为“叛逆”、“令人不安”并与“人工智能创造力”相关的色彩 4，可能与品牌 grounded 的精致基调相悖。因此，一个有效的策略是将这些高彩度颜色的占比控制在整体系列的5%以内。与其用于整件服装，不如将“晚山新黛”用于服装的里衬、一件配饰、手袋，或作为印花图案中的一个次要色彩。这使得品牌能够在不损害核心身份的前提下，参与到潮流对话中。</span></p><p>&nbsp;</p><h3 id='表1艾诺丝雅诗2026春夏核心调色板'><span>表1：艾诺丝雅诗2026春夏核心调色板</span></h3><p>&nbsp;</p><figure class='table-figure'><table><thead><tr><th><span>色彩类别</span></th><th style='text-align:left;' ><span>关键色名称 (中/英) &amp; 色号</span></th><th><span>情绪/概念</span></th><th><span>主要应用</span></th></tr></thead><tbody><tr><td><strong><span>核心中性色</span></strong></td><td style='text-align:left;' ><span>蓝色光环 / Blue Aura (117-77-06)</span></td><td><span>静谧、现代、疗愈、工业感</span></td><td><span>西装、衬衫、流动感连衣裙、轻薄针织</span></td></tr><tr><td><strong><span>核心中性色</span></strong></td><td style='text-align:left;' ><span>珠光白 / Pearlescent White</span></td><td><span>精致、光泽、洁净</span></td><td><span>府绸棉衬衫、真丝女衫、裤装</span></td></tr><tr><td><strong><span>次要色调</span></strong></td><td style='text-align:left;' ><span>琥珀迷雾 / Amber Haze (043-65-31)</span></td><td><span>温暖、质朴、灵性、手工艺</span></td><td><span>焦点外套、点缀性女衫、皮具、印花</span></td></tr><tr><td><strong><span>次要色调</span></strong></td><td style='text-align:left;' ><span>鼠尾草绿 / Sage Green</span></td><td><span>有机、柔和、田园</span></td><td><span>亚麻单品、休闲连衣裙</span></td></tr><tr><td><strong><span>点缀色</span></strong></td><td style='text-align:left;' ><span>晚山新黛 / Transformative Teal (092-37-14)</span></td><td><span>活力、生态、精致</span></td><td><span>里衬、配饰、印花细节、撞色缝线</span></td></tr><tr><td><strong><span>深色基石</span></strong></td><td style='text-align:left;' ><span>可可粉 / Cocoa Powder (源自26/27秋冬)</span></td><td><span>浓郁、稳重、跨季节</span></td><td><span>裤装、轻薄夹克、手袋 (作为黑色的柔和替代) 15</span></td></tr></tbody></table></figure><hr /><p>&nbsp;</p><h2 id='第三部分面料与肌理的交响------触动感官的高级质感'><span>第三部分：面料与肌理的交响——触动感官的高级质感</span></h2><p>&nbsp;</p><p><span>本部分将详细阐述能够将季节概念变为现实的关键面料，重点在于其带来的感官体验。</span></p><p>&nbsp;</p><h3 id='31-流动之诗智性与感性的透明层次'><span>3.1 流动之诗：智性与感性的透明层次</span></h3><p>&nbsp;</p><p><span>轻薄与流动感面料的运用是本季的重中之重。其重点并非直白的性感，而是一种关于层次、显露与遮蔽之间的高级游戏。WGSN将“流动飘逸的面料（薄纱、欧根纱、精致绉纱、巴里纱）”确定为主要趋势 1。Khaite的2025春夏系列大量运用了透明欧根纱裤装和连衣裙，展示了如何以一种前卫而现代的方式驾驭这类材质的层次搭配 10。造型趋势也强调“创造性的层次感”和“内衣外穿”概念 1。对于艾诺丝雅诗，建议开发关键的层次感单品，如欧根纱衬衫、丝质混纺吊带裙和细针距羊绒混纺针织衫。造型的重点应放在不透明与透明单品的叠穿上，以创造深度与高级感。</span></p><p>&nbsp;</p><h3 id='32-质朴之华回归本源的高级天然纤维'><span>3.2 质朴之华：回归本源的高级天然纤维</span></h3><p>&nbsp;</p><p><span>本季将聚焦于那些兼具可持续性与奢华触感及性能的天然纤维。亚麻是关键材质，尤其是在与羊毛或真丝混纺后，能提升抗皱性和垂感 1。像Supima®这样的高级棉花因其耐用性和卓越手感而备受推崇 1。Totême的2025春夏系列展示了利落的棉质西装和轻盈的针织品，是这一趋势在极简主义语境下的完美应用 9。艾诺丝雅诗应投资于高品质的亚麻混纺西装、用于核心衬衫的Supima®棉，以及轻质的夏季羊毛裤装。这些材质直接兑现了品牌“高级面料”的承诺 2。</span></p><p>&nbsp;</p><h3 id='33-手作之痕低调的工艺细节'><span>3.3 手作之痕：低调的工艺细节</span></h3><p>&nbsp;</p><p><span>融入精致、含蓄的手工艺肌理，能够在不显得过于波西米亚的前提下，为服装增添价值感和独特性。诸如“褶裥”、“柔软针织”、“钩针”和“可见缝线”等工艺感肌理正在流行 1。APLF的材质趋势也指向了“压褶皮革”和“纯棉钩织” 18。Khaite的2025春夏系列中，手工钩针单品与宽松针织衫的搭配，展示了对此类元素的现代诠释 10。</span></p><p><span>艾诺丝雅诗的美学核心是“简约”与“精致” 2。过于张扬的手工或波西米亚风格可能会削弱这一核心身份。因此，最高级的工艺应用在于那些需要近距离才能欣赏的细节。设计细节应遵循一个“1米 vs. 10米”的法则：从10米外看，服装的廓形应是干净、现代、简约的；而从1米内观察，消费者才能发现那些精妙的细节——袖口上微妙的褶裥肌理、衣袖上精致的钩针镶嵌、或是衣领上的撞色手工缝线。这种设计方法确保了服装在不张扬的情况下依然感觉特别和奢华，完美契合了“不浮华的时尚”这一品牌精神 2。</span></p><hr /><p>&nbsp;</p><h2 id='第四部分廓形与风尚的变奏------从秀场到衣橱的关键趋势'><span>第四部分：廓形与风尚的变奏——从秀场到衣橱的关键趋势</span></h2><p>&nbsp;</p><p><span>本部分将解构相关的秀场系列（以2025春夏作为2026春夏的关键指标），为艾诺丝雅诗提炼出可执行的廓形与造型方向。</span></p><p>&nbsp;</p><h3 id='41-智性极简jil-sander-的暗黑夏日叙事'><span>4.1 智性极简：Jil Sander 的“暗黑夏日”叙事</span></h3><p>&nbsp;</p><p><span>这一方向旨在为极简主义注入深度、叙事性以及一种更深沉、更具智识的氛围。Jil Sander的2025春夏系列摒弃了典型的夏日色盘，转而拥抱通体的黑色、石板灰和勃艮第红 19。廓形上融合了男性化的宽肩与女性化的褶饰。品牌与摄影师Greg Girard的合作，将其充满情绪的夜间城市景观印在服装上，为系列增添了电影般的叙事层次 19。这对艾诺丝雅诗的启示是，如何将“简约”进化为更具内涵的表达。品牌可以借鉴其深色夏日调色板（例如用“可可粉”替代黑色），并专注于融合男性与女性元素的雕塑感廓形。与艺术家进行微妙的印花合作，也是增加故事性的一个可行方向。</span></p><p>&nbsp;</p><h3 id='42-柔韧风骨khaite-的都市女性新解'><span>4.2 柔韧风骨：Khaite 的都市女性新解</span></h3><p>&nbsp;</p><p><span>这一趋势的核心在于柔软、流动、女性化的元素与结构化、前卫、都市感的单品之间的动态张力。它完美捕捉了现代独立女性多面性的本质。Khaite的2025春夏系列正是以这种“柔韧风骨”（Gritty Softness）来定义的 10。其关键造型包括在宽松西装下搭配透明欧根纱裤装、精致的手工针织上衣，以及紧身连衣裙与光泽感黑色皮夹克的组合 10。这种美学在“空灵的设计与更大胆、更前卫的元素”之间取得了平衡 10。这对艾诺丝雅诗而言是一个核心的战略方向，它提供了一个清晰的公式，来创造既“都市”又“优雅”的造型。它验证了将流动感丝质连衣裙与结构化西装外套搭配，或将精致针织衫与利落剪裁的西裤搭配的合理性。这种张力是现代、高级的，并且直接与26-40岁的目标客群对话。</span></p><p>&nbsp;</p><h3 id='43-自在波西米亚totême-的制服式穿搭'><span>4.3 自在波西米亚：Totême 的制服式穿搭</span></h3><p>&nbsp;</p><p><span>这一方向的核心是创造一个由高级基础款组成的、精致而永恒的衣橱，并为其注入一种微妙的、手工艺感的、轻松的精神。Totême的2025春夏系列以“纯粹的调色板”为主，主要是单色造型，并用一抹柠檬黄来提亮 9。品牌标志性的流线型针织衫和利落的棉质西装，通过加入“精致的薄纱、花卉刺绣和拖长的袖子”等细节进行了更新，为其极简核心增添了波西米亚风情 9。Totême为如何构建一个令人向往且 cohesive 的高级基础款系列提供了范本。对于艾诺丝雅诗，这意味着应专注于完善核心经典款——完美的风衣、理想的白衬衫、极致的针织衫——然后在每一季用一个微妙的、符合潮流的细节来更新它们，例如符合2026春夏趋势的工匠缝线或一种新的流动感袖型。</span></p><hr /><p>&nbsp;</p><h2 id='第五部分艾诺丝雅诗arioseyears2026春夏爆品矩阵与穿搭策略'><span>第五部分：艾诺丝雅诗（ARIOSEYEARS）2026春夏爆品矩阵与穿搭策略</span></h2><p>&nbsp;</p><p><span>这是报告中最具指导性的部分，将所有分析转化为具体的、以商业为导向的产品和造型建议。</span></p><p>&nbsp;</p><h3 id='51-关键品类连衣裙---流动的建筑感'><span>5.1 关键品类：连衣裙 - 流动的建筑感</span></h3><p>&nbsp;</p><p><span>连衣裙是系列的基石。2026春夏的关键在于将流动感面料与结构化或独特的廓形相结合。</span></p><ul><li><p><strong><span>A字帐篷裙：</span></strong><span> 灵感源于趋势报告 22，这一廓形在舒适与时尚之间取得了完美平衡。建议使用挺括的Supima®棉或亚麻混纺面料，颜色可选“蓝色光环”或“珠光白”。</span></p></li><li><p><strong><span>斜肩垂坠连衣裙：</span></strong><span> 同样来自趋势报告 22，这款式体现了现代优雅。应使用真丝混纺绉纱以获得优美的垂坠效果，这也是“柔韧风骨”趋势的体现。</span></p></li><li><p><strong><span>花苞摆连衣裙：</span></strong><span> 一款更具时尚前沿感的单品 22。关键在于保持“气泡”效果的精致与优雅，而非稚气。可使用欧根纱或塔夫绸来营造雕塑感和轻盈感，可作为重要的礼服款式。</span></p></li></ul><p>&nbsp;</p><h3 id='52-关键品类新式套装---松弛的权威感'><span>5.2 关键品类：新式套装 - 松弛的权威感</span></h3><p>&nbsp;</p><p><span>西装仍然至关重要，但它变得更柔软、更轻松、更多功能。</span></p><ul><li><p><strong><span>流动感风衣：</span></strong><span> 一件轻薄、无衬里的风衣，采用天丝或铜氨纤维混纺面料，具有优美的垂坠感。</span></p></li><li><p><strong><span>宽松西装与阔腿裤：</span></strong><span> 借鉴Khaite的造型 16，这种亚麻羊毛混纺的组合提供了一种既有力量感又舒适的造型。</span></p></li><li><p><strong><span>现代半裙套装：</span></strong><span> 一件箱型的、略短款的夹克，搭配一条流动的迷笛半裙，或许可以加入微妙的褶裥细节。这是本季的一个重要更新。</span></p></li></ul><p>&nbsp;</p><h3 id='53-关键品类层次感单品---透明的宣言'><span>5.3 关键品类：层次感单品 - 透明的宣言</span></h3><p>&nbsp;</p><p><span>这些是实现本季关键造型趋势的多功能单品。</span></p><ul><li><p><strong><span>欧根纱衬衫：</span></strong><span> 明星单品。可以扣上穿着，敞开作为外套内搭吊带，或穿在西装里面。是核心中性色的必备款。</span></p></li><li><p><strong><span>细针距针织开衫：</span></strong><span> 采用羊绒真丝混纺，长款且流动，非常适合叠穿在吊带裙外。</span></p></li><li><p><strong><span>钩针针织背心：</span></strong><span> 呼应手工艺趋势，适合叠穿在简约的白衬衫外，增加肌理和趣味性。</span></p></li></ul><p>&nbsp;</p><h3 id='54-穿搭趋势--视觉参考'><span>5.4 穿搭趋势 &amp; 视觉参考</span></h3><p>&nbsp;</p><ul><li><p><strong><span>造型一：柔韧风骨 (Gritty Softness):</span></strong><span> 一件“琥珀迷雾”色的流动感真丝吊带裙，外搭一件剪裁利落的“可可粉”色宽松西装。(视觉参考: Khaite 2025春夏秀场造型)</span></p></li><li><p><strong><span>造型二：智性极简 (Intellectual Minimalism):</span></strong><span> 一件“蓝色光环”色的A字帐篷裙，采用挺括的棉质面料，搭配极简的皮质平底凉拖和一件雕塑感的独立首饰。(视觉参考: Jil Sander 或 The Row 2025春夏秀场造型)</span></p></li><li><p><strong><span>造型三：透明层次 (Transparent Layering):</span></strong><span> 一件简约的黑色吊带背心和西裤，外搭一件“珠光白”色的透明欧根纱衬衫，扣子低开。(视觉参考: Khaite 2025春夏秀场造型)</span></p></li></ul><p>&nbsp;</p><h3 id='表2艾诺丝雅诗2026春夏关键单品开发建议'><span>表2：艾诺丝雅诗2026春夏关键单品开发建议</span></h3><p>&nbsp;</p><figure class='table-figure'><table><thead><tr><th><span>关键单品</span></th><th><span>廓形描述</span></th><th><span>推荐面料</span></th><th><span>关键设计细节</span></th><th><span>关键趋势对标</span></th><th><span>标杆品牌影响</span></th><th><span>商业角色</span></th></tr></thead><tbody><tr><td><strong><span>欧根纱衬衫</span></strong></td><td><span>经典款衬衫，略宽松版型</span></td><td><span>真丝欧根纱、棉巴里纱</span></td><td><span>珍珠母贝纽扣、精细法式缝边</span></td><td><span>透明层次</span></td><td><span>Khaite</span></td><td><span>时尚必需品</span></td></tr><tr><td><strong><span>A字帐篷裙</span></strong></td><td><span>简洁A字廓形，迷笛长度，无袖</span></td><td><span>Supima®棉府绸、亚麻粘胶混纺</span></td><td><span>隐藏式侧袋、利落领型</span></td><td><span>智性极简</span></td><td><span>Jil Sander, The Row</span></td><td><span>销量驱动款</span></td></tr><tr><td><strong><span>流动感西装</span></strong></td><td><span>单排扣，宽松版型，无衬里</span></td><td><span>天丝亚麻、夏季羊毛混纺</span></td><td><span>柔软肩部结构、贴袋</span></td><td><span>柔韧风骨</span></td><td><span>Khaite, Totême</span></td><td><span>核心衣橱构建者</span></td></tr><tr><td><strong><span>不对称吊带裙</span></strong></td><td><span>斜裁迷笛裙，领口有微妙不对称设计</span></td><td><span>真丝绉纱、铜氨丝缎</span></td><td><span>细肩带、垂坠领细节</span></td><td><span>柔韧风骨</span></td><td><span>Khaite</span></td><td><span>焦点款</span></td></tr><tr><td><strong><span>钩针背心</span></strong></td><td><span>无袖，略短款，开放式针织</span></td><td><span>Pima棉纱线</span></td><td><span>精致钩针图案、罗纹下摆</span></td><td><span>工艺回响</span></td><td><span>Totême</span></td><td><span>新颖款</span></td></tr></tbody></table></figure><hr /><p>&nbsp;</p><h2 id='结语把握当下引领未来'><span>结语：把握当下，引领未来</span></h2><p>&nbsp;</p><p><span>本报告的战略总结是，2026春夏为艾诺丝雅诗提供了一个绝佳的机会，通过倡导一种更深思熟虑、更具情感共鸣和可持续性的奢华形式，来巩固其市场地位。</span></p><p><span>核心要点在于，通过拥抱“静谧疗愈”的情感价值，驾驭“柔韧风骨”的风格张力，并投资于“工艺回响”的精致细节，艾诺丝雅诗能够创造出一个不仅与时尚未来同步，更与其独立、现代的女性消费者的核心价值观产生深度共鸣的系列，从而真正地谱写出一段属于她们的“有旋律的时光”。</span></p></div></div>
+</body>
+</html>

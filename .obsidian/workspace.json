@@ -34,8 +34,21 @@
               "icon": "lucide-file",
               "title": "艾诺丝品牌趋势研究方案优化"
             }
+          },
+          {
+            "id": "0aee555a9cb68647",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.12"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.9.12"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "cf12597ff6b9e701",
@@ -47,12 +60,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "尚霖盈和/转型企划/ai推广/未命名.md",
+                "file": "尚霖盈和/转型企划/ai推广/方案1.1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "方案1.1"
             }
           }
         ]
@@ -257,10 +270,10 @@
       "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "0a07b2a947a88d42",
+  "active": "0aee555a9cb68647",
   "lastOpenFiles": [
-    "尚霖盈和/转型企划/ai推广/方案1.1-工具尝试.md",
     "尚霖盈和/转型企划/ai推广/未命名.md",
+    "尚霖盈和/转型企划/ai推广/方案1.1-工具尝试.md",
     "尚霖盈和/转型企划/ai推广/方案1.1.md",
     "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
     "PPNet.md",
