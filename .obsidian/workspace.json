@@ -39,12 +39,14 @@
             "id": "2eb2bf837f14a9cc",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.9.12"
+                "file": "播品牌杉杉奥莱开业企划 .md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "版本说明 1.9.12"
+              "icon": "lucide-file",
+              "title": "播品牌杉杉奥莱开业企划"
             }
           }
         ],
@@ -214,7 +216,7 @@
     "hiddenItems": {
       "smart-connections:Open: Smart Chat": false,
       "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Connections: Open random connection": true,
       "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -227,6 +229,7 @@
   },
   "active": "2eb2bf837f14a9cc",
   "lastOpenFiles": [
+    "播品牌杉杉奥莱开业企划 .md",
     "播品牌杉杉奥莱开业企划.md.md",
     "尚霖盈和/奥莱开业企划/播品牌长沙杉杉奥莱开业企划.md",
     "尚霖盈和/奥莱开业企划/业绩公式.md",
@@ -262,7 +265,6 @@
     "未命名.md",
     "尚霖盈和/智能化转型.md",
     "尚霖盈和/转型企划/ai推广/方案3.md",
-    "尚霖盈和/转型企划/ai推广/方案2.md",
     "未命名.canvas",
     "Learning/计算机/从0搭建计算机/02-加法器.canvas",
     "Learning/计算机/从0搭建计算机/01-逻辑门原理.canvas"
