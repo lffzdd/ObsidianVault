@@ -8,45 +8,45 @@
         "type": "tabs",
         "children": [
           {
-            "id": "41b5ea39be2e475c",
+            "id": "b3f2fb609f7626ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "尚霖盈和/转型企划/ai推广/方案1.1.md",
+                "file": "conflict-files-obsidian-git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "方案1.1"
+              "title": "conflict-files-obsidian-git"
             }
           },
           {
-            "id": "c9c2825a1196cd73",
+            "id": "09667d6bab17235b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "艾诺丝品牌趋势研究方案优化"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           },
           {
-            "id": "0aee555a9cb68647",
+            "id": "78bc58c763c0503d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "面试登记表.md",
+                "file": "尚霖盈和/奥莱开业企划/杉杉奥莱开业企划落地方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "面试登记表"
+              "title": "杉杉奥莱开业企划落地方案"
             }
           }
         ],
@@ -107,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 210.5
+    "width": 300
   },
   "right": {
     "id": "b6b4065b62f5014a",
@@ -123,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "尚霖盈和/转型企划/ai推广/方案1.1.md",
+                "file": "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "方案1.1 的反向链接列表"
+              "title": "艾诺丝品牌趋势研究方案优化 的反向链接列表"
             }
           },
           {
@@ -142,12 +142,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "尚霖盈和/转型企划/ai推广/方案1.1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "方案1.1 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -166,6 +165,21 @@
             }
           },
           {
+            "id": "9feb94ab95011611",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "conflict-files-obsidian-git 的大纲"
+            }
+          },
+          {
             "id": "c7bc5f13d6f4fbb5",
             "type": "leaf",
             "state": {
@@ -174,48 +188,9 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
-          },
-          {
-            "id": "d3290a46bf8c93f9",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-ghost",
-              "title": "all-properties"
-            }
-          },
-          {
-            "id": "e60da67699c222e5",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "尚霖盈和/转型企划/ai推广/方案1.1.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "方案1.1 的大纲"
-            }
-          },
-          {
-            "id": "8f9ed1f5a789f6fe",
-            "type": "leaf",
-            "state": {
-              "type": "smart-connections-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "smart-connections-view"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "25249116168d189a",
@@ -235,7 +210,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -246,50 +221,48 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false,
-      "smart-connections:Open: Smart Chat": false,
-      "smart-connections:Smart Connections: Open connections view": false,
-      "smart-connections:Smart Connections: Open random connection": true
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0aee555a9cb68647",
+  "active": "78bc58c763c0503d",
   "lastOpenFiles": [
-    "尚霖盈和/转型企划/ai推广/未命名.md",
-    "尚霖盈和/转型企划/ai推广/方案1.1-工具尝试.md",
-    "尚霖盈和/转型企划/ai推广/方案1.1.md",
-    "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
-    "PPNet.md",
-    "尚霖盈和/转型企划/改进点.md",
-    "Welcome.md",
-    "尚霖盈和/Welcome.md",
+    "尚霖盈和/奥莱开业企划/播品牌长沙杉杉奥莱开业企划.md",
+    "尚霖盈和/奥莱开业企划/杉杉奥莱开业企划落地方案.md",
+    "尚霖盈和/奥莱开业企划/业绩公式.md",
+    "尚霖盈和/奥莱开业企划/Untitled.md",
+    "conflict-files-obsidian-git.md",
     "面试登记表.md",
-    "尚霖盈和/dify api.md",
-    "尚霖盈和/coze api.md",
-    "尚霖盈和/智能化转型.md",
-    "尚霖盈和/标签+话术/女装prompt.md",
-    "尚霖盈和/未命名.base",
-    "尚霖盈和/标签+话术/标签提取prompt.md",
-    "尚霖盈和/标签+话术",
-    "工作/C++简历.md",
-    "工作/个人全简历.md",
-    "工作",
-    "未命名.md",
-    "工作/个人简历.md",
-    "尚霖盈和/转型企划/ai推广/方案1.md",
-    "AI 推广方案.pdf",
-    "方案1.1.pdf",
-    "AI 推广方案.html",
-    "AI推广方案.html",
-    "ai转型方案.html",
-    "方案.html",
+    "阶段一 AI 实施策略：为高端女装构建效率基石 (V2.0 定制版).pdf",
+    "阶段一 AI 实施策略：为高端女装构建效率基石 (V2.0 定制版).html",
+    "杉杉奥莱开业企划落地方案.html",
+    "方案1.html",
     "方案1.1.html",
-    "尚霖盈和/转型企划/ai推广/方案2.md",
-    "尚霖盈和/转型企划/ai推广/方案3.md",
-    "尚霖盈和/转型企划/ai推广/推广师岗位说明书.md",
-    "尚霖盈和/转型企划/整体企划.md",
+    "播品牌长沙杉杉奥莱开业企划.pdf",
+    "播品牌长沙杉杉奥莱开业企划.html",
+    "报告：艾诺丝雅诗（ARIOSEYEARS）2026春夏系列趋势预测与商业策略.md",
+    "报告：艾诺丝雅诗（ARIOSEYEARS）2026春夏系列趋势预测与商业策略.html",
+    "工作/个人简历.md",
+    "工作/个人全简历.md",
+    "工作/C++简历.md",
+    "工作",
+    "尚霖盈和/转型企划/改进点.md",
+    "尚霖盈和/转型企划/ai推广/未命名.md",
+    "尚霖盈和/转型企划/ai推广/方案1.1.md",
+    "尚霖盈和/转型企划/ai推广/方案1.1-工具尝试.md",
     "尚霖盈和/标签+话术/标签提取prompt优化.md",
-    "Learning/计算机/深度学习/代码用法/2-加载和处理输入图像.md",
-    "Learning/计算机/深度学习/代码用法/6-图像数据增强.md",
+    "尚霖盈和/标签+话术/标签提取prompt.md",
+    "尚霖盈和/标签+话术/女装prompt.md",
+    "尚霖盈和/标签+话术",
+    "尚霖盈和/奥莱开业企划/播牌.md",
+    "尚霖盈和/奥莱开业企划/播牌业绩目标.md",
+    "尚霖盈和/图片.md",
+    "PPNet.md",
+    "未命名.md",
+    "尚霖盈和/智能化转型.md",
+    "尚霖盈和/转型企划/ai推广/方案3.md",
+    "尚霖盈和/转型企划/ai推广/方案2.md",
+    "尚霖盈和/转型企划/ai推广/方案1.md",
+    "未命名.canvas",
     "Learning/计算机/从0搭建计算机/02-加法器.canvas",
     "Learning/计算机/从0搭建计算机/01-逻辑门原理.canvas"
   ]
