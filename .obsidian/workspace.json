@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "面试登记表.md",
+                "file": "尚霖盈和/奥莱开业企划/杉杉奥莱开业企划落地方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "面试登记表"
+              "title": "杉杉奥莱开业企划落地方案"
             }
           }
         ],
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "299",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +103,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -254,9 +255,11 @@
   },
   "active": "0aee555a9cb68647",
   "lastOpenFiles": [
+    "北极星企划.md",
+    "尚霖盈和/奥莱开业企划/长沙杉杉奥莱-集团项目介绍及开业方案.pdf",
+    "面试登记表.md",
     "北极星计划最终版.md",
     "播品牌杉杉奥莱开业企划 .md",
-    "尚霖盈和/奥莱开业企划/长沙杉杉奥莱-集团项目介绍及开业方案.pdf",
     "尚霖盈和/转型企划/ai推广/未命名.md",
     "尚霖盈和/转型企划/ai推广/方案1.1-工具尝试.md",
     "尚霖盈和/转型企划/ai推广/方案1.1.md",
@@ -265,7 +268,6 @@
     "尚霖盈和/转型企划/改进点.md",
     "Welcome.md",
     "尚霖盈和/Welcome.md",
-    "面试登记表.md",
     "尚霖盈和/dify api.md",
     "尚霖盈和/coze api.md",
     "尚霖盈和/智能化转型.md",
@@ -289,7 +291,6 @@
     "尚霖盈和/转型企划/ai推广/方案3.md",
     "尚霖盈和/转型企划/ai推广/推广师岗位说明书.md",
     "尚霖盈和/转型企划/整体企划.md",
-    "尚霖盈和/标签+话术/标签提取prompt优化.md",
     "Learning/计算机/从0搭建计算机/02-加法器.canvas",
     "Learning/计算机/从0搭建计算机/01-逻辑门原理.canvas"
   ]
