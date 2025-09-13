@@ -1,6 +1,38 @@
 {
   "recentFiles": [
     {
+      "basename": "国庆企划要点",
+      "path": "尚霖盈和/国庆企划/国庆企划要点.md"
+    },
+    {
+      "basename": "北极星企划",
+      "path": "北极星企划.md"
+    },
+    {
+      "basename": "艾诺丝品牌趋势研究方案优化",
+      "path": "尚霖盈和/艾诺丝品牌趋势研究方案优化.md"
+    },
+    {
+      "basename": "图片",
+      "path": "Learning/计算机/大模型/图片.md"
+    },
+    {
+      "basename": "文生图",
+      "path": "Learning/计算机/大模型/文生图.md"
+    },
+    {
+      "basename": "Welcome",
+      "path": "Welcome.md"
+    },
+    {
+      "basename": "面试登记表",
+      "path": "面试登记表.md"
+    },
+    {
+      "basename": "Untitled",
+      "path": "Untitled.md"
+    },
+    {
       "basename": "播品牌长沙杉杉奥莱开业企划",
       "path": "尚霖盈和/奥莱开业企划/播品牌长沙杉杉奥莱开业企划.md"
     },
@@ -11,10 +43,6 @@
     {
       "basename": "播牌",
       "path": "尚霖盈和/奥莱开业企划/播牌.md"
-    },
-    {
-      "basename": "未命名",
-      "path": "未命名.base"
     },
     {
       "basename": "杉杉奥莱开业企划落地方案",
@@ -55,22 +83,6 @@
     {
       "basename": "整体企划",
       "path": "尚霖盈和/转型企划/整体企划.md"
-    },
-    {
-      "basename": "艾诺丝品牌趋势研究方案优化",
-      "path": "尚霖盈和/艾诺丝品牌趋势研究方案优化.md"
-    },
-    {
-      "basename": "dify api",
-      "path": "尚霖盈和/dify api.md"
-    },
-    {
-      "basename": "coze api",
-      "path": "尚霖盈和/coze api.md"
-    },
-    {
-      "basename": "Welcome",
-      "path": "Welcome.md"
     }
   ],
   "omittedPaths": [],
