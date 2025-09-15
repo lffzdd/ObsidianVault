@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "尚霖盈和/国庆企划/国庆企划要点.md",
+                "file": "尚霖盈和/奥莱开业企划/Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "国庆企划要点"
+              "title": "Untitled"
             }
           }
         ],
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "尚霖盈和/转型企划/ai推广/方案1.1.md",
+                "file": "尚霖盈和/奥莱开业企划/业绩公式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "方案1.1 的反向链接列表"
+              "title": "业绩公式 的反向链接列表"
             }
           },
           {
@@ -190,20 +190,6 @@
             }
           },
           {
-            "id": "d3290a46bf8c93f9",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-ghost",
-              "title": "all-properties"
-            }
-          },
-          {
             "id": "e60da67699c222e5",
             "type": "leaf",
             "state": {
@@ -224,12 +210,12 @@
             "state": {
               "type": "smart-connections-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "smart-connections-view"
+              "icon": "smart-connections",
+              "title": "Connections"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       },
       {
         "id": "25249116168d189a",
@@ -249,7 +235,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 379.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -266,14 +252,16 @@
       "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "79ab8184991b7b2b",
+  "active": "8f9ed1f5a789f6fe",
   "lastOpenFiles": [
+    "话术.md",
+    "播品牌长沙杉杉奥莱开业企划.pdf",
+    "尚霖盈和/国庆企划/国庆企划要点.md",
     "北极星企划.md",
     "尚霖盈和/国庆企划",
     "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
     "Learning/计算机/大模型/图片.md",
     "Learning/计算机/大模型/文生图.md",
-    "尚霖盈和/国庆企划/国庆企划要点.md",
     "尚霖盈和/Welcome.md",
     "尚霖盈和/coze api.md",
     "尚霖盈和/dify api.md",
@@ -284,7 +272,6 @@
     "Untitled.md",
     "尚霖盈和/奥莱开业企划/播品牌长沙杉杉奥莱开业企划.md",
     "Untitled 1.md",
-    "话术.md",
     "尚霖盈和/奥莱开业企划/播牌业绩目标.md",
     "尚霖盈和/奥莱开业企划/播牌.md",
     "未命名.base",
@@ -302,7 +289,6 @@
     "AI 推广方案.pdf",
     "方案1.1.pdf",
     "AI 推广方案.html",
-    "AI推广方案.html",
     "Learning/计算机/从0搭建计算机/02-加法器.canvas",
     "Learning/计算机/从0搭建计算机/01-逻辑门原理.canvas"
   ]
