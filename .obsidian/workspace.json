@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "41b5ea39be2e475c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "尚霖盈和/转型企划/ai推广/方案1.1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "方案1.1"
-            }
-          },
-          {
             "id": "c9c2825a1196cd73",
             "type": "leaf",
             "state": {
@@ -48,9 +34,65 @@
               "icon": "lucide-file",
               "title": "面试登记表"
             }
+          },
+          {
+            "id": "4ce7c3e77f5a5269",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "尚霖盈和/奥莱开业企划/DAZZLE/prompt.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "prompt"
+            }
+          },
+          {
+            "id": "85cbf441c0b7338c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "尚霖盈和/奥莱开业企划/DAZZLE/prompt.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "prompt"
+            }
+          },
+          {
+            "id": "ce7d0e69b7ce02a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "尚霖盈和/奥莱开业企划/DAZZLE/企划2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "企划2"
+            }
+          },
+          {
+            "id": "3f19204a2c2ae29b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -210,12 +252,12 @@
             "state": {
               "type": "smart-connections-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "smart-connections-view"
+              "icon": "smart-connections",
+              "title": "Connections"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       },
       {
         "id": "25249116168d189a",
@@ -252,44 +294,44 @@
       "smart-connections:Smart Connections: Open random connection": true
     }
   },
-  "active": "0aee555a9cb68647",
+  "active": "3f19204a2c2ae29b",
   "lastOpenFiles": [
-    "播品牌杉杉奥莱开业企划 .md",
+    "4913",
+    "尚霖盈和/奥莱开业企划/DAZZLE/企划2.md",
+    "conflict-files-obsidian-git.md",
+    "尚霖盈和/奥莱开业企划/DAZZLE/企划1.pdf",
+    "尚霖盈和/奥莱开业企划/DAZZLE/企划1.md",
+    "尚霖盈和/奥莱开业企划/DAZZLE/DAZZLE国庆目标.md",
+    "尚霖盈和/奥莱开业企划/DAZZLE/prompt.md",
+    "尚霖盈和/奥莱开业企划/DAZZLE/参考.md",
+    "尚霖盈和/奥莱开业企划/DAZZLE/prompt的prompt.md",
+    "尚霖盈和/奥莱开业企划/业绩公式.md",
+    "报告：艾诺丝雅诗（ARIOSEYEARS）2026春夏系列趋势预测与商业策略.md",
+    "面试登记表.md",
+    "AI 推广方案.pdf",
+    "Learning/编译/浏览器编译器.md",
+    "Untitled.md",
+    "Untitled 1.md",
+    "尚霖盈和/奥莱开业企划/播broadcast/北极星企划.md",
+    "尚霖盈和/国庆企划/国庆企划要点.md",
+    "话术.md",
+    "尚霖盈和/奥莱开业企划/播broadcast/播牌信息.md",
+    "尚霖盈和/奥莱开业企划/播broadcast/杉杉奥莱开业企划落地方案.md",
+    "尚霖盈和/奥莱开业企划/播broadcast/播牌业绩目标.md",
+    "尚霖盈和/奥莱开业企划/播broadcast/播品牌长沙杉杉奥莱开业企划.md",
+    "尚霖盈和/奥莱开业企划/播broadcast",
+    "尚霖盈和/奥莱开业企划/DAZZLE",
+    "尚霖盈和/国庆企划",
+    "尚霖盈和/奥莱开业企划/播broadcast/北极星企划V2.md",
+    "Learning/计算机/大模型/文生图.md",
+    "Learning/计算机/大模型/图片.md",
+    "尚霖盈和/奥莱开业企划/播broadcast/播品牌杉杉奥莱开业企划 .md",
     "尚霖盈和/奥莱开业企划/长沙杉杉奥莱-集团项目介绍及开业方案.pdf",
     "尚霖盈和/转型企划/ai推广/未命名.md",
-    "尚霖盈和/转型企划/ai推广/方案1.1-工具尝试.md",
-    "尚霖盈和/转型企划/ai推广/方案1.1.md",
-    "尚霖盈和/艾诺丝品牌趋势研究方案优化.md",
-    "PPNet.md",
-    "尚霖盈和/转型企划/改进点.md",
-    "Welcome.md",
-    "尚霖盈和/Welcome.md",
-    "面试登记表.md",
-    "尚霖盈和/dify api.md",
-    "尚霖盈和/coze api.md",
-    "尚霖盈和/智能化转型.md",
-    "尚霖盈和/标签+话术/女装prompt.md",
     "尚霖盈和/未命名.base",
-    "尚霖盈和/标签+话术/标签提取prompt.md",
     "尚霖盈和/标签+话术",
-    "工作/C++简历.md",
-    "工作/个人全简历.md",
     "工作",
-    "未命名.md",
-    "工作/个人简历.md",
-    "尚霖盈和/转型企划/ai推广/方案1.md",
-    "AI 推广方案.pdf",
     "方案1.1.pdf",
-    "AI 推广方案.html",
-    "AI推广方案.html",
-    "ai转型方案.html",
-    "方案.html",
-    "尚霖盈和/转型企划/ai推广/方案2.md",
-    "尚霖盈和/转型企划/ai推广/方案3.md",
-    "尚霖盈和/转型企划/ai推广/推广师岗位说明书.md",
-    "尚霖盈和/转型企划/整体企划.md",
-    "尚霖盈和/标签+话术/标签提取prompt优化.md",
-    "Learning/计算机/深度学习/代码用法/2-加载和处理输入图像.md",
     "Learning/计算机/从0搭建计算机/02-加法器.canvas",
     "Learning/计算机/从0搭建计算机/01-逻辑门原理.canvas"
   ]
