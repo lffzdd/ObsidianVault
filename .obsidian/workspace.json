@@ -67,13 +67,11 @@
             "id": "ce7d0e69b7ce02a1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "尚霖盈和/奥莱开业企划/DAZZLE/企划2.md",
-                "mode": "source",
-                "source": false
+                "file": "尚霖盈和/奥莱开业企划/DAZZLE/企划2.pdf"
               },
-              "icon": "lucide-file",
+              "icon": "lucide-file-text",
               "title": "企划2"
             }
           }
@@ -223,7 +221,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "尚霖盈和/奥莱开业企划/DAZZLE/企划2.md",
+                "file": "尚霖盈和/奥莱开业企划/DAZZLE/企划2.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -282,12 +280,12 @@
   },
   "active": "ce7d0e69b7ce02a1",
   "lastOpenFiles": [
+    "尚霖盈和/奥莱开业企划/DAZZLE/企划1.pdf",
+    "尚霖盈和/奥莱开业企划/DAZZLE/企划1.md",
+    "尚霖盈和/奥莱开业企划/DAZZLE/企划2.md",
     "尚霖盈和/奥莱开业企划/DAZZLE/企划2.pdf",
     "conflict-files-obsidian-git.md",
     "4913",
-    "尚霖盈和/奥莱开业企划/DAZZLE/企划2.md",
-    "尚霖盈和/奥莱开业企划/DAZZLE/企划1.pdf",
-    "尚霖盈和/奥莱开业企划/DAZZLE/企划1.md",
     "尚霖盈和/奥莱开业企划/DAZZLE/DAZZLE国庆目标.md",
     "尚霖盈和/奥莱开业企划/DAZZLE/prompt.md",
     "尚霖盈和/奥莱开业企划/DAZZLE/参考.md",
@@ -317,7 +315,6 @@
     "尚霖盈和/转型企划/ai推广/未命名.md",
     "尚霖盈和/未命名.base",
     "尚霖盈和/标签+话术",
-    "工作",
     "Learning/计算机/从0搭建计算机/02-加法器.canvas",
     "Learning/计算机/从0搭建计算机/01-逻辑门原理.canvas"
   ]
