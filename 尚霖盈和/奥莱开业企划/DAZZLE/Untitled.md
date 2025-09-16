@@ -5,3 +5,4 @@
 **二级公式 (Secondary Formula):**
 
 成交客户数 (Paying Customers)=客流量 (Traffic)×进店率 (Entry Rate)×试衣率 (Fitting Rate)×成交率 (Conversion Rate)
+
