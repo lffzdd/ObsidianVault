@@ -23,5 +23,7 @@
   "Editor@@h2-color-select": "h2-color-default",
   "Editor@@h2-size": "1.5em",
   "Editor@@h2-divider-on": false,
-  "Editor@@h1-accent-color@@light": "#AA0618"
+  "Editor@@h1-accent-color@@light": "#AA0618",
+  "Editor@@bold-color@@light": "#21316D",
+  "Editor@@italic-color@@light": "#383940"
 }
