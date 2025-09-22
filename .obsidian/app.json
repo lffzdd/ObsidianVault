@@ -6,5 +6,9 @@
     "downscalePercent": 100
   },
   "promptDelete": false,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "attachmentFolderPath": "./assets",
+  "newFileLocation": "current",
+  "newLinkFormat": "relative",
+  "showUnsupportedFiles": true
 }
