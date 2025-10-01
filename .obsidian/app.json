@@ -7,7 +7,7 @@
   },
   "promptDelete": false,
   "showLineNumber": false,
-  "attachmentFolderPath": "./assets",
+  "attachmentFolderPath": "./attachments",
   "newFileLocation": "current",
   "newLinkFormat": "relative",
   "showUnsupportedFiles": true
