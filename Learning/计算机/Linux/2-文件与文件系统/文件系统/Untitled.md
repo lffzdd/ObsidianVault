@@ -147,7 +147,7 @@
 
 Python
 
-```
+```python
 import time
 import struct
 
