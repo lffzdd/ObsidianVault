@@ -10,5 +10,6 @@
   "attachmentFolderPath": "./attachments",
   "newFileLocation": "current",
   "newLinkFormat": "relative",
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "alwaysUpdateLinks": true
 }
