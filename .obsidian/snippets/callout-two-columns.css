@@ -1,0 +1,46 @@
+/* 父容器：两列网格 + 间距 */
+.callout[data-callout="columns"] > .callout-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+/* 关键补丁：把 content 的第一层包装 div 变“透明”
+   这样里面的 .callout[data-callout="col"] 会直接参与网格布局 */
+.callout[data-callout="columns"] > .callout-content > div {
+  display: contents;
+}
+
+/* 子列：去掉多余外边距（无论是否包了一层 div 都能命中） */
+.callout[data-callout="columns"] > .callout-content > .callout[data-callout="col"],
+.callout[data-callout="columns"] > .callout-content > div > .callout[data-callout="col"] {
+  margin: 0;
+}
+
+/* 隐藏标题行（保持“纯容器”观感） */
+.callout[data-callout="columns"] > .callout-title,
+.callout[data-callout="col"] > .callout-title {
+  display: none;
+}
+
+/* 响应式：窄屏单列 */
+@media (max-width: 900px) {
+  .callout[data-callout="columns"] > .callout-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 变体：三列、2-1 比例（通过 [!columns|3] / [!columns|2-1] 触发） */
+.callout[data-callout="columns"][data-callout-metadata*="3"]  > .callout-content {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.callout[data-callout="columns"][data-callout-metadata*="2-1"] > .callout-content {
+  grid-template-columns: 2fr 1fr;
+}
+
+/* 可选：表格溢出处理（列里放 Dataview 表格更稳） */
+.callout[data-callout="columns"] .callout[data-callout="col"] table {
+  display: block;
+  overflow-x: auto;
+}
