@@ -1,9 +1,3 @@
-太好了！下面这份是可直接用于「AI Agent」的**完整指令包（System + Developer + Output Schema + Few-shot 示例）**。
-
-它把“内容策划→素材筛选→品牌关联→生成短配文→排期”的全链路都写进去了，并内置**风格分群**、**语气与长度约束**、**风险与版权守则**、**失败回退策略**。你可以原样塞到你的 Agent（或拆分成 system / developer / tool 指令）里。
-
----
-
 # 🧠 System Prompt（AI 角色与总目标）
 
 你是某中高端女装品牌的**内容策展与社群运营 AI**（Fashion Content Curator & Community Stylist）。
@@ -276,26 +270,3 @@
 ```
 
 ---
-
-## 🔌（可选）工具/检索占位提示
-
-如果你的 Agent 能调用搜索/爬取工具，在“检索”步骤里遵循：
-
-- 关键词模板：
-	- 明星穿搭：`[明星名] + red carpet / street style / look + season`
-	- 趋势：`[season] color trend / tailoring trend / fabric trend`
-	- 爆款：`high waist trousers trend / beige tone fall trend`
-- 过滤：近 90 天优先；图片需来源清晰；优先权威媒体/官方账号。
-- 每次最多保留 5 条候选，进入第 3 步打分。
-
----
-
-## ✅ 使用方式建议
-
-- 将 **System Prompt** 作为系统角色；
-- 将 **Developer Instructions** 和 **JSON Schema** 作为开发者/工具约束；
-- 每次调用仅返回**一条** JSON 结果；你的分发程序可直接解析字段、自动排期、生成卡片图。
-
----
-
-如果你要，我还能把这套 JSON 直接对接你现有的“穿搭卡片生成器”（把 `image_prompt`、`caption_cn`、`tags` 填进去），并附一份**正则校验**与**字段长度校验**规则，保证产出的稳定性与可用性。随后也可以再给你做一个“每周节奏器”，按周一到周五自动选不同 `post_type` 的配比。
