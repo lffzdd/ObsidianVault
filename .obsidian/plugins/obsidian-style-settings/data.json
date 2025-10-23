@@ -30,5 +30,8 @@
   "Editor@@codeblock-style-select": "codeblock-style-customize",
   "Editor@@h1-font": "\"\"",
   "Editor@@h2-font": "\"\"",
-  "Editor@@h3-font": "\"\""
+  "Editor@@h3-font": "\"\"",
+  "Editor@@editor-grid-background-pattren": false,
+  "Editor@@bold-color@@light": "#000000",
+  "Editor@@inline-code-normal@@light": "#854747"
 }
