@@ -1,0 +1,147 @@
+很好，我们把“规则层”这刀捋顺了，可以往上长一层：**真正把 app 层接上来**，让你的三层结构不只是理论，而是从浏览器 → app → core → base 整条链路打通。
+
+接下来这一阶段的目标是：
+
+> 搭一个最小的 Web 接口层，只干：  
+> “把 HTTP 请求翻译成对 services 的调用，再把结果变成 JSON 返回”。
+
+先不搞复杂的前端页面，只搞最小 API，这样你能更清楚地看到各层分工。
+
+---
+
+## 一、这一步想达成什么效果？
+
+我们准备做两个最基础的接口（沿用你现在的 V1 设计）：
+
+1. **预览接口（GET）**
+    
+    - 路径举例：`GET /preview`
+        
+    - 逻辑：调用 `preview_unissued_orders()`，返回一个 JSON 列表
+        
+2. **发券接口（POST）**
+    
+    - 路径举例：`POST /send`
+        
+    - 请求体：`{"trade_nos": ["T001", "T002", ...]}`
+        
+    - 逻辑：调用 `send_coupon_for_order(trade_nos)`，返回每条的发送结果
+        
+
+也就是说：
+
+- app 层不直接碰数据库、不算券、不调外部接口
+    
+- 它只做“HTTP <-> services 的适配器”
+    
+
+这是典型的“接口层职责”：做输入输出翻译、参数校验。
+
+---
+
+## 二、先选一个 Web 框架（别纠结）
+
+因为你现在重点在“架构”，不是在学 Web 框架，我建议：
+
+- 用 **Flask** 或 **FastAPI** 都行，二者思想完全类似
+    
+- 为了简单，下面我用 Flask 举例（代码非常短）
+    
+
+你可以按自己实际情况替换成你习惯的框架，核心思想完全一样：
+
+> app 层只依赖 `core.services`，不再依赖 `base`。
+
+---
+
+## 三、我们设计一下 app 层的大致形状
+
+在 `app/app.py` 里，大致长这样（先用“伪代码思路”，不是让你照抄）：
+
+```python
+from flask import Flask, request, jsonify
+from core.services import preview_unissued_orders, send_coupon_for_order
+
+app = Flask(__name__)
+
+@app.get("/preview")
+def preview():
+    orders = preview_unissued_orders()
+    return jsonify(orders)
+
+@app.post("/send")
+def send():
+    data = request.get_json()
+    trade_nos = data["trade_nos"]
+    result = send_coupon_for_order(trade_nos)
+    return jsonify(result)
+```
+
+这里的关键点不是语法，而是**分工**：
+
+- `/preview`：只负责把 `services.preview_unissued_orders()` 的结果变成 HTTP 响应
+    
+- `/send`：只负责解析请求体 → 拿到 `trade_nos` → 调 `send_coupon_for_order` → 返回结果
+    
+
+你会发现：
+
+> app 层对“多少金额发什么券”一无所知，对 Oracle 也一无所知，对发券接口的 URL 也一无所知。
+
+它就是一个薄薄的壳。  
+这就是分层的核心味道。
+
+---
+
+## 四、这一步你的练习任务（很小，但非常关键）
+
+👉 **任务：在 `app/app.py` 里，用你熟悉的框架（Flask / FastAPI），自己写出：**
+
+1. 一个 `/preview` 接口：
+    
+    - 不接收参数
+        
+    - 调用 `preview_unissued_orders()`
+        
+    - 返回 JSON
+        
+2. 一个 `/send` 接口：
+    
+    - 接收 JSON 请求体，里面至少有一个 `trade_nos` 字段（列表）
+        
+    - 调用 `send_coupon_for_order(trade_nos)`
+        
+    - 返回 JSON
+        
+
+注意几点：
+
+- `app/app.py` 只 import `core.services`，不要 import `base.*`
+    
+- 先不用考虑鉴权、分页、复杂错误处理，**能把服务调用打通就行**
+    
+- 跑的时候可以在项目根：
+    
+    ```bash
+    # Flask 例子
+    export FLASK_APP=app.app
+    flask run
+    ```
+    
+    或者自己写个 `if __name__ == "__main__"` 来启动。
+    
+
+---
+
+你先把这两个接口写出来、跑起来（哪怕用 curl 或浏览器简单访问一下 `/preview`），  
+然后把你写的 `app/app.py` 代码贴给我，我们下一步就可以开始聊：
+
+- HTTP 层要不要做简单校验？
+    
+- 怎么在不污染 core 的情况下，加日志？
+    
+- 未来要有真正前端页面时，这个 app 层怎么演化？
+    
+
+这时候你就会非常直观地感到：  
+你已经不只是“会写 Python 代码的人”，而是在设计一个**可演化的小系统**了。
