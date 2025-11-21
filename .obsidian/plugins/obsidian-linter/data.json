@@ -96,7 +96,11 @@
       "start-at-h2": false
     },
     "headings-start-line": {
+<<<<<<< HEAD
       "enabled": true
+=======
+      "enabled": false
+>>>>>>> origin/main
     },
     "remove-trailing-punctuation-in-heading": {
       "enabled": false,
@@ -112,12 +116,17 @@
       "enabled": false
     },
     "auto-correct-common-misspellings": {
+<<<<<<< HEAD
       "enabled": true,
+=======
+      "enabled": false,
+>>>>>>> origin/main
       "ignore-words": "",
       "skip-words-with-multiple-capitals": false,
       "extra-auto-correct-files": []
     },
     "blockquote-style": {
+<<<<<<< HEAD
       "enabled": true,
       "style": "space"
     },
@@ -131,13 +140,32 @@
     "emphasis-style": {
       "enabled": true,
       "style": "asterisk"
+=======
+      "enabled": false,
+      "style": "space"
+    },
+    "convert-bullet-list-markers": {
+      "enabled": false
+    },
+    "default-language-for-code-fences": {
+      "enabled": false,
+      "default-language": ""
+    },
+    "emphasis-style": {
+      "enabled": false,
+      "style": "consistent"
+>>>>>>> origin/main
     },
     "no-bare-urls": {
       "enabled": false,
       "no-bare-uris": false
     },
     "ordered-list-style": {
+<<<<<<< HEAD
       "enabled": true,
+=======
+      "enabled": false,
+>>>>>>> origin/main
       "number-style": "ascending",
       "list-end-style": "."
     },
@@ -152,6 +180,7 @@
       "double-quote-style": "\"\""
     },
     "remove-consecutive-list-markers": {
+<<<<<<< HEAD
       "enabled": true
     },
     "remove-empty-list-markers": {
@@ -166,25 +195,54 @@
     "strong-style": {
       "enabled": true,
       "style": "asterisk"
+=======
+      "enabled": false
+    },
+    "remove-empty-list-markers": {
+      "enabled": false
+    },
+    "remove-hyphenated-line-breaks": {
+      "enabled": false
+    },
+    "remove-multiple-spaces": {
+      "enabled": false
+    },
+    "strong-style": {
+      "enabled": false,
+      "style": "consistent"
+>>>>>>> origin/main
     },
     "two-spaces-between-lines-with-content": {
       "enabled": false,
       "line-break-indicator": "  "
     },
     "unordered-list-style": {
+<<<<<<< HEAD
       "enabled": true,
       "list-style": "-"
+=======
+      "enabled": false,
+      "list-style": "consistent"
+>>>>>>> origin/main
     },
     "compact-yaml": {
       "enabled": false,
       "inner-new-lines": false
     },
     "consecutive-blank-lines": {
+<<<<<<< HEAD
       "enabled": true
     },
     "convert-spaces-to-tabs": {
       "enabled": true,
       "tabsize": "4"
+=======
+      "enabled": false
+    },
+    "convert-spaces-to-tabs": {
+      "enabled": false,
+      "tabsize": 4
+>>>>>>> origin/main
     },
     "empty-line-around-blockquotes": {
       "enabled": false
@@ -202,7 +260,11 @@
       "enabled": false
     },
     "heading-blank-lines": {
+<<<<<<< HEAD
       "enabled": true,
+=======
+      "enabled": false,
+>>>>>>> origin/main
       "bottom": true,
       "empty-line-after-yaml": true
     },
@@ -213,7 +275,11 @@
       "enabled": false
     },
     "paragraph-blank-lines": {
+<<<<<<< HEAD
       "enabled": true
+=======
+      "enabled": false
+>>>>>>> origin/main
     },
     "remove-empty-lines-between-list-markers-and-checklists": {
       "enabled": true
@@ -234,15 +300,26 @@
       "characters-to-remove-space-after": "¿¡‘“(["
     },
     "space-after-list-markers": {
+<<<<<<< HEAD
       "enabled": true
     },
     "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
       "enabled": false,
+=======
+      "enabled": false
+    },
+    "space-between-chinese-japanese-or-korean-and-english-or-numbers": {
+      "enabled": true,
+>>>>>>> origin/main
       "english-symbols-punctuation-before": "-+;:'\"°%$)]",
       "english-symbols-punctuation-after": "-+'\"([¥$"
     },
     "trailing-spaces": {
+<<<<<<< HEAD
       "enabled": true,
+=======
+      "enabled": false,
+>>>>>>> origin/main
       "two-space-line-break": false
     },
     "add-blockquote-indentation-on-paste": {
@@ -252,7 +329,11 @@
       "enabled": false
     },
     "prevent-double-list-item-indicator-on-paste": {
+<<<<<<< HEAD
       "enabled": true
+=======
+      "enabled": false
+>>>>>>> origin/main
     },
     "proper-ellipsis-on-paste": {
       "enabled": false
