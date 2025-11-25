@@ -1,10 +1,10 @@
 {
 	"nodes":[
-		{"id":"6e736997053853d6","type":"file","file":"02-Topics/Learning/金融/投资/经验与教训/attachments/Pasted image 20250514122839.png","x":-200,"y":-571,"width":400,"height":247},
-		{"id":"a866c254c3451b20","type":"file","file":"02-Topics/Learning/金融/投资/经验与教训/attachments/Pasted image 20250514122952.png","x":-200,"y":-300,"width":400,"height":247},
-		{"id":"64c1655eeaf09c4a","type":"file","file":"02-Topics/Learning/金融/投资/经验与教训/attachments/Pasted image 20250514123310.png","x":-200,"y":-20,"width":400,"height":247},
-		{"id":"c4366353c71bb374","type":"file","file":"02-Topics/Learning/金融/投资/经验与教训/attachments/Pasted image 20250514123509.png","x":-200,"y":260,"width":400,"height":247},
-		{"id":"b95df4e99949cf23","type":"file","file":"02-Topics/Learning/金融/投资/经验与教训/attachments/Pasted image 20250514123748.png","x":-200,"y":540,"width":400,"height":247},
+		{"id":"6e736997053853d6","type":"file","file":"02-Topics/Learning/经济与商业体系/金融/投资/经验与教训/attachments/Pasted image 20250514122839.png","x":-200,"y":-571,"width":400,"height":247},
+		{"id":"a866c254c3451b20","type":"file","file":"02-Topics/Learning/经济与商业体系/金融/投资/经验与教训/attachments/Pasted image 20250514122952.png","x":-200,"y":-300,"width":400,"height":247},
+		{"id":"64c1655eeaf09c4a","type":"file","file":"02-Topics/Learning/经济与商业体系/金融/投资/经验与教训/attachments/Pasted image 20250514123310.png","x":-200,"y":-20,"width":400,"height":247},
+		{"id":"c4366353c71bb374","type":"file","file":"02-Topics/Learning/经济与商业体系/金融/投资/经验与教训/attachments/Pasted image 20250514123509.png","x":-200,"y":260,"width":400,"height":247},
+		{"id":"b95df4e99949cf23","type":"file","file":"02-Topics/Learning/经济与商业体系/金融/投资/经验与教训/attachments/Pasted image 20250514123748.png","x":-200,"y":540,"width":400,"height":247},
 		{"id":"e22a6e034c834972","type":"text","text":"###### `SUI`\n- 周: 上涨中继\n- 天: 震荡横盘, **短期跌概率大**\n- 4 小时: 到处插针, 震荡横盘\n- 1 小时: 上一轮下降趋势刚过, 不宜追跌, 等待下轮上涨\n- ! 15 分钟: 已经开涨, 晚了, 又等下一轮","x":-740,"y":-20,"width":280,"height":436},
 		{"id":"2f71d1e28dddc22f","type":"text","text":"###### `SOL`\n- 周: 上涨中继\n- 天: 震荡横盘\n- 4 小时: 上一轮上涨刚过, 不明显\n- 1 小时: 下跌趋势刚开启\n- 15 分钟: 跌完了一波, 等待下一轮","x":-652,"y":633,"width":250,"height":347},
 		{"id":"45468b8a855954d8","type":"text","text":"观察 15 分钟, 等待下一个压力位","x":-652,"y":1040,"width":250,"height":103,"color":"4"},

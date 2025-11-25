@@ -8,10 +8,10 @@
 		{"id":"94375ff5de19dfd1","type":"text","text":"日线\n短期看下降\n长期看震荡中\n","x":-985,"y":-686,"width":250,"height":267},
 		{"id":"84432e97a0291b7a","type":"text","text":"4 小时\n短期看涨\n长期看降\n","x":-985,"y":-260,"width":250,"height":240},
 		{"id":"139a3940243df5f2","type":"text","text":"买入\n16:19\n149.5 止盈\n146.5 止损\n","x":735,"y":-260,"width":250,"height":256,"color":"4"},
-		{"id":"d1a7c5b5f8f4cb2f","type":"file","file":"02-Topics/Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427155823.png","x":-286,"y":-819,"width":381,"height":400},
-		{"id":"558be85c6ea58548","type":"file","file":"02-Topics/Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427160231.png","x":-286,"y":-332,"width":381,"height":400},
-		{"id":"9a26d7b8816ddcaa","type":"file","file":"02-Topics/Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427160428.png","x":-286,"y":140,"width":381,"height":400},
-		{"id":"70899069dfadecc3","type":"file","file":"02-Topics/Learning/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427161230.png","x":-286,"y":610,"width":381,"height":400}
+		{"id":"d1a7c5b5f8f4cb2f","type":"file","file":"02-Topics/Learning/经济与商业体系/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427155823.png","x":-286,"y":-819,"width":381,"height":400},
+		{"id":"558be85c6ea58548","type":"file","file":"02-Topics/Learning/经济与商业体系/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427160231.png","x":-286,"y":-332,"width":381,"height":400},
+		{"id":"9a26d7b8816ddcaa","type":"file","file":"02-Topics/Learning/经济与商业体系/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427160428.png","x":-286,"y":140,"width":381,"height":400},
+		{"id":"70899069dfadecc3","type":"file","file":"02-Topics/Learning/经济与商业体系/金融/投资/经验与教训/4-27/attachments/Pasted image 20250427161230.png","x":-286,"y":610,"width":381,"height":400}
 	],
 	"edges":[
 		{"id":"6d4d6cb33e28f1b2","fromNode":"94e5f83109905423","fromSide":"bottom","toNode":"bfc5b5a3b91f0ae1","toSide":"top"},
