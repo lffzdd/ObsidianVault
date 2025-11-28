@@ -33,7 +33,12 @@
   "Editor@@h3-font": "\"\"",
   "Editor@@editor-grid-background-pattren": false,
   "Editor@@bold-color@@light": "#000000",
-  "Editor@@inline-code-normal@@light": "#854747",
+  "Editor@@inline-code-normal@@light": "#333333",
   "Editor@@list-spacing": "0.25em",
-  "Editor@@text-highlight-bg@@light": "#EFD8FF"
+  "Editor@@text-highlight-bg@@light": "#EFD8FF",
+  "Editor@@border-focus-mode": true,
+  "Editor@@line-normal-opacity": 1,
+  "Editor@@line-active-bg@@light": "#EDEDED",
+  "Editor@@collapse-icon-restore": false,
+  "Editor@@inline-code-background-light": "linear-gradient(90deg, #ffe8f3, #e8f7ff)"
 }
