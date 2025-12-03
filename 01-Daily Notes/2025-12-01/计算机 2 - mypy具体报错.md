@@ -1,4 +1,5 @@
 # 导入问题
+
 >`base\config.py:1: error: Library stubs not installed for "yaml" [import-untyped]`
 
 这句话不是在说你的 `yaml` 模块有问题，而是在说：
