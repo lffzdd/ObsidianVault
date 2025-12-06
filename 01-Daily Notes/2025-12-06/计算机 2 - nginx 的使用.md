@@ -54,8 +54,7 @@ Nginx 的配置并不杂乱，它有严格的层级。Linux 下的主配置文�
 - `/etc/nginx/nginx.conf`: **全局配置**（一般不动）。
 - `/etc/nginx/conf.d/*.conf`: **自定义配置**（放这里）。
 - _(推荐)_ `/etc/nginx/sites-available/`: 存放**所有**站点的配置文件。
-- _(推荐)_ `/etc/nginx/sites-enabled/`: 存放**正在启用**的站点（通过软链接链接到 available 目录）。
-
+上
 ---
 
 ### 第四步：三个核心场景实战
