@@ -69,9 +69,7 @@
 
 #### A. 阻塞模式（简单，但容易卡死）
 
-C
-
-```
+```C
 // 假设我们要读取固定的 100 字节
 char buf[100];
 // 这一行会死等，直到凑够 100 字节才往下走
@@ -85,9 +83,7 @@ process(buf); // 处理业务
 
 这是一个循环状态机的过程：
 
-C++
-
-```
+```C++
 // 全局映射：每个连接都有自己的“半成品”缓存
 map<int, string> user_buffers; 
 
@@ -186,10 +182,8 @@ void handle_event(int fd) {
 
 - **例子：** 简单的聊天室、SMTP（邮件协议）、FTP、**HTTP 的 Header 部分**。
 - **应用逻辑：**
-    
-    C++
-    
-    ```
+
+    ```    C++
     // 每次 read 完，都去遍历 buffer
     if (buffer.find("\n") != string::npos) {
         // 找到了！拼图完成！
@@ -206,10 +200,9 @@ void handle_event(int fd) {
 
 - **例子：** 一些银行的老旧系统、硬件传感器数据。
 - **应用逻辑：**
+    vv
     
-    C++
-    
-    ```
+    ```    C++l
     if (buffer.size() >= 100) {
         // 够了！切出前 100 个字节
         process(buffer.substr(0, 100));
@@ -236,9 +229,7 @@ void handle_event(int fd) {
 
 **接收端逻辑（拼图逻辑）：**
 
-C++
-
-```
+```C++
 // 假设 buffer 是应用层的缓存 string/vector
 void check_and_process(string& buffer) {
     while (true) {

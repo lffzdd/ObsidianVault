@@ -90,25 +90,6 @@ server {
     # 1. 监听 443 端口，并启用 SSL
     listen 443 ssl;
     server_name yourdomain.com; # 你的域名
-
-    # 2. 指向证书文件 (这就是你刚才申请到的)
-    ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
-
-    # 3. SSL 优化配置 (推荐加上，为了安全和性能)
-    ssl_protocols TLSv1.2 TLSv1.3; # 只允许安全的协议
-    ssl_ciphers HIGH:!aNULL:!MD5;  # 加密套件选择
-
-    # 4. 你的业务逻辑 (反向代理)
-    location / {
-        proxy_pass http://127.0.0.1:8000;
-        
-        # 别忘了传递真实 IP，否则后端只能看到 127.0.0.1
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
 }
 ```
 
@@ -151,7 +132,7 @@ server {
 ---
 
 ### ⚠️ 一个致命的细节：关于“续期”
-
+zs
 刚才我们用了 --manual 模式。这有一个巨大的副作用：
 
 它无法自动续期！
