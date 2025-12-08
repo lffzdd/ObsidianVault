@@ -21,7 +21,7 @@
   "removeOrphansCompl": false,
   "PngToJpeg": false,
   "PngToJpegLocal": false,
-  "JpegQuality": 80,
+  "JpegQuality": 100,
   "DoNotCreateObsFolder": false,
   "DateFormat": "YYYY MM DD",
   "ImgCompressionType": "image/jpeg",
