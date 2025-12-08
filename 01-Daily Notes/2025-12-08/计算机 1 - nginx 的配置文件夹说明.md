@@ -1,4 +1,4 @@
-这是一个非常棒的问题，触及到了 Linux 系统管理中**“约定大于配置”**（Convention over Configuration）的精髓。
+v这是一个非常棒的问题，触及到了 Linux 系统管理中**“约定大于配置”**（Convention over Configuration）的精髓。
 
 简短的回答是：**是的，它们的语法完全一样，里面写的都是 `server { ... }` 代码块。**
 
