@@ -78,6 +78,11 @@ $$L(p, u, t^u, v) = L_{cls}(p, u) + \lambda [u \ge 1] L_{loc}(t^u, v)$$
 
 何恺明团队提出了 Faster R-CNN，引入了 **RPN (Region Proposal Network)**，实现了真正的**端到端**实时检测。
 
+> Faster R-CNN 可以看成两个共享特征图的子网络：
+
+1. RPN：特征图 → 候选框
+2. Fast R-CNN Head：候选框 → 类别 + 精确位置
+
 #### 1. 核心创新：RPN (Region Proposal Network)
 
 RPN 是一个轻量级的全卷积网络，它“寄生”在主干网络的特征图上。它的作用是**在特征图的每一个点上，都猜一猜有没有物体**。
