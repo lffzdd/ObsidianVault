@@ -295,8 +295,8 @@ self.custom_weight = nn.Parameter(torch.randn(10, 10))
                                        │ 只更新 nn.Parameter
                                        ▼
 ┌──────────────────────────────────────────────────────────────────────┐
-│                         model.parameters()                            │
-│                    返回所有注册的 nn.Parameter                          │
+│                         model.parameters()                           │
+│                    返回所有注册的 nn.Parameter                         │
 └──────────────────────────────────────────────────────────────────────┘
                                        ▲
                                        │ 自动注册
