@@ -1,6 +1,7 @@
 {
   "cssTheme": "Border",
   "enabledCssSnippets": [
-    "callout-two-columns"
+    "callout-two-columns",
+    "链接高亮背景"
   ]
 }
