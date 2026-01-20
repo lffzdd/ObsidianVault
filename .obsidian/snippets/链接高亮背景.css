@@ -1,8 +1,17 @@
 /* 编辑模式 + 预览模式的所有链接 */
 .cm-s-obsidian a,
 .markdown-preview-view a {
-  background-color: rgba(red, green, blue, alpha) !important;           /* 普通状态颜色 */
-  text-decoration: none;
+  background-color: rgba(101, 149, 245, 0.3) !important;
+  /* 普通状态颜色 */
+  /* color: #4d67fc !important; */
+  text-decoration: none !important;
+  border-radius: 4px;
+}
+
+.cm-s-obsidian a::before,
+.markdown-preview-view a::before {
+  content: "🔜" !important;
+  color: #4d67fc !important;
 }
 
 /* 悬停/聚焦时高亮 */
@@ -10,7 +19,5 @@
 .cm-s-obsidian a:focus,
 .markdown-preview-view a:hover,
 .markdown-preview-view a:focus {
-  color: #ffffff !important;
-  background-color: #ff9800 !important; /* 高亮背景 */
-  text-decoration: underline;
+  background-color: rgba(101, 149, 245, 0.5) !important;
 }
