@@ -1,5 +1,5 @@
-[[01-Daily Notes/2026-01-12/attachments/17d3eff0978019c83d998a42e97d33f4_MD5.png|Open: Pasted image 20260112121943.png]]
-![[01-Daily Notes/2026-01-12/attachments/17d3eff0978019c83d998a42e97d33f4_MD5.png]]
+[[attachments/17d3eff0978019c83d998a42e97d33f4_MD5.png|Open: Pasted image 20260112121943.png]]
+![[attachments/17d3eff0978019c83d998a42e97d33f4_MD5.png]]
 p-hacking 这期视频，实际上是在延续前面几集 p-value / 假设检验的主线：它不是在教你一个“新统计方法”，而是在讲“同样的统计方法，一旦被滥用，会怎样把你一步步骗进假阳性（false positive）的陷阱，以及如何有系统地避免这种自欺欺人”。[youtube](https://www.youtube.com/watch?v=HDCOUXE3HMM&list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9&index=14)​
 
 下面给你一份可以当「学习文档 / 读书笔记」的版本，结构上尽量贴着视频推进节奏来讲，读起来就像 Josh 在你面前慢慢讲故事，但又比视频更利于回顾。你后面要做自己的 slides、讲解稿或者课程笔记，可以直接在这个基础上删改补充。
