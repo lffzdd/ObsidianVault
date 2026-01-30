@@ -1,0 +1,1 @@
+- $$\int_{0}^{1}\theta^{3}(1-\theta^{7})\mathbf{d}x$$
