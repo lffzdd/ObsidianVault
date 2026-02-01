@@ -1,0 +1,29 @@
+{
+  "conversations": [
+    {
+      "id": "1769831187425",
+      "title": "你好",
+      "messages": [
+        {
+          "id": "1769831187425",
+          "content": "你好",
+          "role": "user",
+          "timestamp": 1769831187425
+        },
+        {
+          "id": "chatcmpl-D3wEHi9zrcRwDbHF9YBQEUknueVEO",
+          "content": "你好！你现在在 Obsidian 里想做什么：写笔记、整理知识库、做任务管理，还是配置插件/模板？\n\n如果你说下你的目标和你目前的 Obsidian 版本/常用插件（比如 Dataview、Templater、Tasks），我可以直接给你一套可用的步骤或示例。",
+          "role": "assistant",
+          "timestamp": 1769831190201
+        }
+      ],
+      "createdAt": 1769831187425,
+      "updatedAt": 1769831190201,
+      "model": {
+        "label": "GPT-5.2",
+        "value": "gpt-5.2"
+      }
+    }
+  ],
+  "activeConversationId": "1769831187425"
+}
