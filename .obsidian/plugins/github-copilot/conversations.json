@@ -27,10 +27,22 @@
           "content": "你好！你想在 Obsidian 里实现什么功能？\n\n给我一个方向就行，比如：\n- 新建笔记模板（Templater / 内置模板）\n- 做任务清单与每日笔记（Tasks / Daily notes）\n- 用 Dataview 自动汇总（按标签/文件夹/字段）\n- 双链与知识图谱整理\n- 同步与备份（iCloud/OneDrive/Git）\n\n你也可以直接贴一段你现在的笔记内容或你想要的效果，我按你的库结构给出具体写法。",
           "role": "assistant",
           "timestamp": 1770195865130
+        },
+        {
+          "id": "1770197741223",
+          "content": "新建笔记模板",
+          "role": "user",
+          "timestamp": 1770197741223
+        },
+        {
+          "id": "chatcmpl-D5TaY33PADSXPJSMkrCVTrXlo2v5K",
+          "content": "在 Obsidian 里做“新建笔记模板”常见有两种方式：**内置 Templates（简单稳定）** 和 **Templater 插件（可自动填日期、交互、脚本）**。你先选一种；不确定就用内置版，够用了。\n\n## 方式 A：内置 Templates（最简单）\n1. **设置 → 核心插件 → Templates**：启用  \n2. **设置 → Templates**：  \n   - **Template folder location** 设为例如：`Templates/`\n3. 在 `Templates/` 里新建一个模板文件，比如：`Note Template.md`\n4. 写入模板内容，例如：\n\n```md\n---\ncreated: {{date}}\ntags: []\n---\n\n# {{title}}\n\n## 关键点\n- \n\n## 参考\n- \n```\n\n> 注意：内置 Templates 的变量有限（如 `{{date}}`、`{{time}}`），`{{title}}` 这种不一定支持（不同版本表现不同）。如果你想要“自动用文件名当标题/更多变量”，建议用 Templater。\n\n5. 使用方式：在任意笔记里运行 **命令面板**（Ctrl/Cmd+P）→ `Templates: Insert template` → 选模板。\n\n---\n\n## 方式 B：Templater（更强大：自动标题、日期、交互）\n1. **设置 → 第三方插件**：关闭安全模式（如需要）  \n2. 安装并启用 **Templater**  \n3. **设置 → Templater**：  \n   - Template folder：设为 `Templates/`\n\n4. 新建模板 `Templates/通用笔记.md`，示例：\n\n```md\n---\ncreated: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>\ntags: []\n---\n\n# <% tp.file.title %>\n\n## 摘要\n<% tp.file.cursor() %>\n\n## 待办\n- [ ] \n```\n\n5. 使用方式：\n- 命令面板 → `Templater: Insert template`\n- 或配置“新建笔记时自动套用模板”（Templater 支持更灵活的自动化，但需要你告知你的创建流程：新建在哪个文件夹、用什么命令/插件创建）\n\n---\n\n## 我需要你补充 3 个信息，我就能给你一套“开箱即用”的模板方案\n1. 你要做哪类模板：**通用笔记 / 读书笔记 / 会议纪要 / 日记 / 项目**？\n2. 你是否愿意安装插件（Templater/Dataview/Tasks）？还是只用内置功能？\n3. 新笔记通常放在哪个文件夹（例如 `Inbox/`、`Notes/`）？文件名规则是日期还是标题？\n\n你回答这三项后，我直接给你模板文本 + 推荐设置路径。",
+          "role": "assistant",
+          "timestamp": 1770197762152
         }
       ],
       "createdAt": 1769831187425,
-      "updatedAt": 1770195865130,
+      "updatedAt": 1770197762152,
       "model": {
         "label": "GPT-5.2",
         "value": "gpt-5.2"
