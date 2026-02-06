@@ -1,8 +1,8 @@
-[[01-Daily Notes/2026-01-30/attachments/3d8945d254363cb27b408e08cff8d0ab_MD5.png|Open: Pasted image 20260130150729.png]]
-![[01-Daily Notes/2026-01-30/attachments/3d8945d254363cb27b408e08cff8d0ab_MD5.png]]
+[[attachments/3d8945d254363cb27b408e08cff8d0ab_MD5.png|Open: Pasted image 20260130150729.png]]
+![[attachments/3d8945d254363cb27b408e08cff8d0ab_MD5.png]]
 
-[[01-Daily Notes/2026-01-30/attachments/f0dc45ea2721f75f18e2f3a20e3acbb3_MD5.png|Open: Pasted image 20260130150956.png]]
-![[01-Daily Notes/2026-01-30/attachments/f0dc45ea2721f75f18e2f3a20e3acbb3_MD5.png]]
+[[attachments/f0dc45ea2721f75f18e2f3a20e3acbb3_MD5.png|Open: Pasted image 20260130150956.png]]
+![[attachments/f0dc45ea2721f75f18e2f3a20e3acbb3_MD5.png]]
 
 这份学习文档基于 StatQuest 的视频内容整理而成，继续保持 Josh Starmer 充满活力且条理清晰的风格，带你解锁 Bootstrapping 的进阶技能：**如何计算 P 值 (p-values)**。
 

@@ -1,16 +1,16 @@
-[[01-Daily Notes/2026-01-30/attachments/33a5e2fdf5d98aad299a72c44812dd22_MD5.png|Open: Pasted image 20260130142756.png]]
-![[01-Daily Notes/2026-01-30/attachments/33a5e2fdf5d98aad299a72c44812dd22_MD5.png]]
+[[attachments/33a5e2fdf5d98aad299a72c44812dd22_MD5.png|Open: Pasted image 20260130142756.png]]
+![[attachments/33a5e2fdf5d98aad299a72c44812dd22_MD5.png]]
 
-[[01-Daily Notes/2026-01-30/attachments/8db92ecc9d3725856505ba7228cdf086_MD5.png|Open: Pasted image 20260130142837.png]]
-![[01-Daily Notes/2026-01-30/attachments/8db92ecc9d3725856505ba7228cdf086_MD5.png]]
+[[attachments/8db92ecc9d3725856505ba7228cdf086_MD5.png|Open: Pasted image 20260130142837.png]]
+![[attachments/8db92ecc9d3725856505ba7228cdf086_MD5.png]]
 
-[[01-Daily Notes/2026-01-30/attachments/13d7b910ef904c345ba319aeaed3ed00_MD5.png|Open: Pasted image 20260130142802.png]]
-![[01-Daily Notes/2026-01-30/attachments/13d7b910ef904c345ba319aeaed3ed00_MD5.png]]
+[[attachments/13d7b910ef904c345ba319aeaed3ed00_MD5.png|Open: Pasted image 20260130142802.png]]
+![[attachments/13d7b910ef904c345ba319aeaed3ed00_MD5.png]]
 
 # 置信区间
 
-[[01-Daily Notes/2026-01-30/attachments/4cfe8e5d4b851bca1b29f7f1ff71b892_MD5.png|Open: Pasted image 20260130142747.png]]
-![[01-Daily Notes/2026-01-30/attachments/4cfe8e5d4b851bca1b29f7f1ff71b892_MD5.png]]
+[[attachments/4cfe8e5d4b851bca1b29f7f1ff71b892_MD5.png|Open: Pasted image 20260130142747.png]]
+![[attachments/4cfe8e5d4b851bca1b29f7f1ff71b892_MD5.png]]
 
 这份学习文档基于 StatQuest 的视频内容整理而成，继续以 Josh Starmer 标志性的生动风格，带你深入理解 **Bootstrapping (自助法)** 的核心思想及其强大之处。
 
