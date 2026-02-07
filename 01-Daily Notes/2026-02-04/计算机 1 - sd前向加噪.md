@@ -31,6 +31,35 @@ $$
 +\cdots
 +\sqrt{(1-\alpha_{t})}\,\epsilon_{t}.
 $$
+方差为：
+
+$$
+\begin{aligned}
+\mathrm{Var}(\epsilon_t)
+&=(1-\alpha_{1})\alpha_{2}\cdots \alpha_{t}
++(1-\alpha_{2})\alpha_{3}\cdots \alpha_{t}
++\cdots
++(1-\alpha_{t})\\
+&=(\alpha_{2}\cdots\alpha_t-\alpha_{1}\alpha_{2}\cdots\alpha_t)
++(\alpha_{3}\cdots\alpha_t-\alpha_{2}\alpha_{3}\cdots\alpha_t)
++\cdots
++(1-\alpha_t)\\
+&=\alpha_{2}\cdots\alpha_t
+-\alpha_{1}\alpha_{2}\cdots\alpha_t
++\alpha_{3}\cdots\alpha_t
+-\alpha_{2}\alpha_{3}\cdots\alpha_t
++\cdots
++1-\alpha_t\\
+&=1-\alpha_{1}\alpha_{2}\cdots\alpha_{t}.
+\end{aligned}
+$$
+
+如果你用 $\bar\alpha_t=\prod_{i=1}^t\alpha_i$ 记号，那么最后一行就是：
+$$
+\mathrm{Var}(\epsilon_t)=1-\bar\alpha_t.
+$$
+
+（向量协方差版本则是 $\mathrm{Var}(\epsilon_t)=(1-\bar\alpha_t)I$。）
 
 * * *
 
