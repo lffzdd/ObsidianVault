@@ -39,10 +39,22 @@
           "content": "在 Obsidian 里做“新建笔记模板”常见有两种方式：**内置 Templates（简单稳定）** 和 **Templater 插件（可自动填日期、交互、脚本）**。你先选一种；不确定就用内置版，够用了。\n\n## 方式 A：内置 Templates（最简单）\n1. **设置 → 核心插件 → Templates**：启用  \n2. **设置 → Templates**：  \n   - **Template folder location** 设为例如：`Templates/`\n3. 在 `Templates/` 里新建一个模板文件，比如：`Note Template.md`\n4. 写入模板内容，例如：\n\n```md\n---\ncreated: {{date}}\ntags: []\n---\n\n# {{title}}\n\n## 关键点\n- \n\n## 参考\n- \n```\n\n> 注意：内置 Templates 的变量有限（如 `{{date}}`、`{{time}}`），`{{title}}` 这种不一定支持（不同版本表现不同）。如果你想要“自动用文件名当标题/更多变量”，建议用 Templater。\n\n5. 使用方式：在任意笔记里运行 **命令面板**（Ctrl/Cmd+P）→ `Templates: Insert template` → 选模板。\n\n---\n\n## 方式 B：Templater（更强大：自动标题、日期、交互）\n1. **设置 → 第三方插件**：关闭安全模式（如需要）  \n2. 安装并启用 **Templater**  \n3. **设置 → Templater**：  \n   - Template folder：设为 `Templates/`\n\n4. 新建模板 `Templates/通用笔记.md`，示例：\n\n```md\n---\ncreated: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>\ntags: []\n---\n\n# <% tp.file.title %>\n\n## 摘要\n<% tp.file.cursor() %>\n\n## 待办\n- [ ] \n```\n\n5. 使用方式：\n- 命令面板 → `Templater: Insert template`\n- 或配置“新建笔记时自动套用模板”（Templater 支持更灵活的自动化，但需要你告知你的创建流程：新建在哪个文件夹、用什么命令/插件创建）\n\n---\n\n## 我需要你补充 3 个信息，我就能给你一套“开箱即用”的模板方案\n1. 你要做哪类模板：**通用笔记 / 读书笔记 / 会议纪要 / 日记 / 项目**？\n2. 你是否愿意安装插件（Templater/Dataview/Tasks）？还是只用内置功能？\n3. 新笔记通常放在哪个文件夹（例如 `Inbox/`、`Notes/`）？文件名规则是日期还是标题？\n\n你回答这三项后，我直接给你模板文本 + 推荐设置路径。",
           "role": "assistant",
           "timestamp": 1770197762152
+        },
+        {
+          "id": "1770449006581",
+          "content": "Inbox",
+          "role": "user",
+          "timestamp": 1770449006581
+        },
+        {
+          "id": "chatcmpl-D6Wx63SdTESFSoIjAuf7YY1XeaNF0",
+          "content": "如果你的新笔记都先进 **Inbox**，最实用的是做一个“Inbox 快速记录”模板，并让你每次新建 Inbox 笔记时一键插入（或自动插入）。\n\n## 方案 1（不装插件）：内置 Templates + 手动插入\n1. 建一个模板文件夹：`Templates/`\n2. 新建模板：`Templates/Inbox.md`\n3. 模板内容示例（内置变量只放日期/时间最稳）：\n\n```md\n---\ncreated: {{date}} {{time}}\nsource:\ntags: [inbox]\n---\n\n# \n\n## 记录\n- \n\n## 下一步\n- [ ] \n```\n\n4. 使用：打开刚创建的 Inbox 笔记 → 命令面板 → **Templates: Insert template** → 选 `Inbox`\n\n> 上面 `#` 标题留空是为了不依赖 `{{title}}` 支持情况。\n\n---\n\n## 方案 2（推荐，装 Templater）：自动写标题=文件名\n1. 安装并启用 **Templater**\n2. 设置模板文件夹为：`Templates/`\n3. 新建：`Templates/Inbox.md`\n\n```md\n---\ncreated: <% tp.date.now(\"YYYY-MM-DD HH:mm\") %>\ntags: [inbox]\n---\n\n# <% tp.file.title %>\n\n## 记录\n<% tp.file.cursor() %>\n\n## 下一步\n- [ ] \n```\n\n使用：命令面板 → **Templater: Insert template**。\n\n---\n\n## 想要“新建到 Inbox 就自动套用模板”吗？\n可以实现。我需要你再确认一句：你现在是怎么新建 Inbox 笔记的？\n- A) 左侧“新建笔记”后再拖到 Inbox  \n- B) 用“新建笔记到指定文件夹”的命令/插件  \n- C) 用 QuickAdd / 新建按钮已经指定到 `Inbox/`\n\n你选 A/B/C，我给你对应的自动化设置。",
+          "role": "assistant",
+          "timestamp": 1770449014961
         }
       ],
       "createdAt": 1769831187425,
-      "updatedAt": 1770197762152,
+      "updatedAt": 1770449014961,
       "model": {
         "label": "GPT-5.2",
         "value": "gpt-5.2"
