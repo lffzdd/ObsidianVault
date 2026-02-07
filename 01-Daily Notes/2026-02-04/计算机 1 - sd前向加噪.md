@@ -19,7 +19,9 @@
 $$
 x_t = \sqrt{\bar\alpha_t}\, x_0 + \sqrt{1-\bar\alpha_t}\, \varepsilon
 $$
-
+其中：
+\bar\alpha_t = \prod_{i=1}^t \alpha_i
+\epsilon=(1-\alpha_t)\epsilon_t+(1-\alpha_{t-1})\epsilon_{t-1}+\cdots+(1-\alpha_1)\epsilon_1
 * * *
 
 一、先说一句人话版本（先有直觉）
