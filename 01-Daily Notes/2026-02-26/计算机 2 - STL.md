@@ -68,3 +68,147 @@ int main() {
 1. **拆解转接头**：详细看看这个神奇的“迭代器”底层到底长什么样，为什么它连指针都能模拟？
 2. **看看别人家的孩子**：对比一下 Java 或者 C# 的集合框架（Collections），看看它们是如何借鉴 STL 思想，又做出了哪些不同的选择？
 3. **泛型的阴暗面**：聊聊 C++ 模板和 STL 臭名昭著的“千行报错”（当我们不小心用错模板时，编译器是如何让我们怀疑人生的）。
+
+# 实现
+
+太棒了！要真正理解 STL 的精髓，最好的方法绝对不是死记硬背，而是**亲手造一个迷你的 STL**。
+
+我们将严格按照 STL 的“三剑客”哲学（容器、迭代器、算法），从零手写一个最基础的动态数组 `MyVector`，并为它配备一个通用的查找算法。
+
+准备好迎接真正的底层魔法了吗？我们开始拆解！
+
+---
+
+### 1. 🔗 核心枢纽：迭代器 (Iterator)
+
+在真正的 STL 中，迭代器通常嵌套在容器内部。它的本质是一个**被包装过的指针**。我们需要让它能够像普通指针一样使用（支持 `*` 取值、`++` 移动、`!=` 比较）。
+
+```C++
+template <typename T>
+class MyVector {
+public:
+    // 【迭代器登场】它就像一个 USB 插头
+    class Iterator {
+    private:
+        T* ptr; // 底层其实就是一个普普通通的指针
+    public:
+        Iterator(T* p) : ptr(p) {}
+
+        // 重载 * 运算符：拔出 USB 读取数据
+        T& operator*() { return *ptr; }
+
+        // 重载 ++ 运算符：把指针移到下一个位置
+        Iterator& operator++() {
+            ptr++;
+            return *this;
+        }
+
+        // 重载 != 运算符：判断有没有走到尽头
+        bool operator!=(const Iterator& other) const {
+            return ptr != other.ptr;
+        }
+    };
+    
+    // ... 下面我们来写容器本身
+```
+
+### 2. 📦 数据收纳箱：容器 (Container)
+
+接下来，我们完成 `MyVector` 的主体。它负责管理内存（这里为了简单，我们固定大小，不写复杂的扩容逻辑），并提供暴露迭代器的接口。
+
+```C++
+private:
+    T* data;      // 指向真实数据的指针
+    int capacity; // 容量
+    int size;     // 当前装了多少个
+
+public:
+    // 构造函数：分配内存
+    MyVector(int cap) : capacity(cap), size(0) {
+        data = new T[capacity];
+    }
+    
+    // 析构函数：释放内存，防止泄露
+    ~MyVector() { delete[] data; }
+
+    // 往盒子里装东西
+    void push_back(const T& value) {
+        if (size < capacity) {
+            data[size++] = value;
+        }
+    }
+
+    // 提供 USB 接口的起点和终点
+    Iterator begin() { return Iterator(data); }
+    Iterator end()   { return Iterator(data + size); } // end 是最后一个元素的下一个位置
+};
+```
+
+### 3. ⚙️ 流水线工人：算法 (Algorithm)
+
+现在，高潮来了。我们要写一个 `my_find` 查找算法。
+
+**注意看它的模板参数：它完全不知道 `MyVector` 的存在！** 它只认识泛型的迭代器（`Iter`）。
+
+```C++
+// 算法是独立于容器之外的！
+template <typename Iter, typename T>
+Iter my_find(Iter first, Iter last, const T& value) {
+    // 只要没走到尽头，就一直找
+    while (first != last) {
+        if (*first == value) {
+            return first; // 找到了，返回当前位置的迭代器
+        }
+        ++first; // 没找到，往下走一步
+    }
+    return last; // 找遍了也没找到，返回终点标志
+}
+```
+
+---
+
+### 🚀 见证奇迹的时刻：组装运行
+
+现在我们在 `main` 函数里把它们拼起来。你看这段代码，是不是和标准的 C++ STL 用法一模一样？
+
+```C++
+#include <iostream>
+#include <string>
+
+int main() {
+    // 1. 创建我们的容器，指定装 string
+    MyVector<std::string> words(5);
+    words.push_back("Apple");
+    words.push_back("Banana");
+    words.push_back("Gemini");
+
+    // 2. 使用独立的泛型算法去查找
+    std::string target = "Gemini";
+    
+    // 把起点和终点迭代器交给算法
+    MyVector<std::string>::Iterator result = my_find(words.begin(), words.end(), target);
+
+    // 3. 验证结果
+    if (result != words.end()) {
+        std::cout << "找到了: " << *result << std::endl;
+    } else {
+        std::cout << "没找到!" << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### 🧠 核心洞察
+
+如果你仔细看 `my_find` 的代码，你会发现它完全依赖 `!=`、`*` 和 `++` 这三个操作。
+
+这意味着，**只要你写的任何类（比如链表、甚至是一棵树）内部提供了一个支持这三种操作的 `Iterator`，这个 `my_find` 算法就能直接用在你的类上，一行代码都不用改！** 这就是 STL 的终极魔法：**解耦**。
+
+---
+
+我们现在已经亲手搭建了一个微型的 STL 骨架。接下来，你想探索哪个方向？
+
+1. **破绽百出**：如果我们不小心往 `my_find` 传错了类型，看看传说中让 C++ 程序员闻风丧胆的**“模板报错天书”**长什么样？
+2. **内存探秘**：我们刚才偷懒写死了数组容量。想不想看真正的 `std::vector` 是如何聪明地进行**动态扩容**的？
+3. **换个语言对比**：想不想看看 Java 或者 C# 是如何用不同的思路（接口/继承）来实现类似这种通用查找逻辑的？
