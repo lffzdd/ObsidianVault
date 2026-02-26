@@ -1,5 +1,6 @@
 /* 编辑模式 + 预览模式的所有链接 */
-.cm-s-obsidian a,
+.markdown-source-view a,
+.markdown-reading-view a,
 .markdown-preview-view a {
   background-color: rgba(101, 149, 245, 0.3) !important;
   /* 普通状态颜色 */
@@ -8,15 +9,15 @@
   border-radius: 4px;
 }
 
-.cm-s-obsidian a::before,
+.markdown-source-view a::before,
 .markdown-preview-view a::before {
   content: "🔜" !important;
   color: #4d67fc !important;
 }
 
 /* 悬停/聚焦时高亮 */
-.cm-s-obsidian a:hover,
-.cm-s-obsidian a:focus,
+.markdown-source-view a:hover,
+.markdown-source-view a:focus,
 .markdown-preview-view a:hover,
 .markdown-preview-view a:focus {
   background-color: rgba(101, 149, 245, 0.5) !important;
