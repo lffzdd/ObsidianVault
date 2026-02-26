@@ -42,6 +42,6 @@
   "Editor@@collapse-icon-restore": false,
   "Editor@@inline-code-background-light": "#e9eef6",
   "Appearance-light@@link-external-color-hover@@light": "#0361FF",
-  "Editor@@code-border-light": "10px",
+  "Editor@@code-border-light": "\"\"",
   "Editor@@code-background-light": "#f0f4f9"
 }
