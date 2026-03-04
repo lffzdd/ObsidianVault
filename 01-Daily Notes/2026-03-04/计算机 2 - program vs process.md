@@ -59,4 +59,16 @@
 
 Text段的大小和内容都不会改变
 
-Data段的大小
+Data段的大小虽然没有改变，但是内容可能改变
+
+
+[[01-Daily Notes/2026-03-04/attachments/2f6fdf02cb452b56bc1bf674a172b88e_MD5.png|Open: Pasted image 20260304164916.png]]
+![[01-Daily Notes/2026-03-04/attachments/2f6fdf02cb452b56bc1bf674a172b88e_MD5.png]]
+
+
+[[01-Daily Notes/2026-03-04/attachments/cf9f81972eaa324f30adec7ff0878d06_MD5.png|Open: Pasted image 20260304164929.png]]
+![[01-Daily Notes/2026-03-04/attachments/cf9f81972eaa324f30adec7ff0878d06_MD5.png]]
+
+[[01-Daily Notes/2026-03-04/attachments/0f47cb2acbc5b2c7a8d0581c1f8fe3d7_MD5.png|Open: Pasted image 20260304164958.png]]
+![[01-Daily Notes/2026-03-04/attachments/0f47cb2acbc5b2c7a8d0581c1f8fe3d7_MD5.png]]
+
