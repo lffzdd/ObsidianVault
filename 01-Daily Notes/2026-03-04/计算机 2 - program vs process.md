@@ -72,3 +72,45 @@ Data段的大小虽然没有改变，但是内容可能改变
 [[01-Daily Notes/2026-03-04/attachments/0f47cb2acbc5b2c7a8d0581c1f8fe3d7_MD5.png|Open: Pasted image 20260304164958.png]]
 ![[01-Daily Notes/2026-03-04/attachments/0f47cb2acbc5b2c7a8d0581c1f8fe3d7_MD5.png]]
 
+# 同一个程序，不同的进程
+
+[[01-Daily Notes/2026-03-04/attachments/f614e2855cd9d2af9d5ab11c37994d21_MD5.png|Open: Pasted image 20260304172701.png]]
+![[01-Daily Notes/2026-03-04/attachments/f614e2855cd9d2af9d5ab11c37994d21_MD5.png]]
+
+[[01-Daily Notes/2026-03-04/attachments/123c5a0cb3e0a45fb70c2dac0dce16f4_MD5.png|Open: Pasted image 20260304172734.png]]
+![[01-Daily Notes/2026-03-04/attachments/123c5a0cb3e0a45fb70c2dac0dce16f4_MD5.png]]
+
+Text段一样，Data段不一样
+
+[[01-Daily Notes/2026-03-04/attachments/f871bf1be341cccc6680019cba5978bd_MD5.png|Open: Pasted image 20260304173224.png]]
+![[01-Daily Notes/2026-03-04/attachments/f871bf1be341cccc6680019cba5978bd_MD5.png]]
+# 解释型语言
+
+[[01-Daily Notes/2026-03-04/attachments/e842bb52c8c4ac599ff18be993820063_MD5.png|Open: Pasted image 20260304173255.png]]
+![[01-Daily Notes/2026-03-04/attachments/e842bb52c8c4ac599ff18be993820063_MD5.png]]
+
+
+
+[[01-Daily Notes/2026-03-04/attachments/448628dafa86122a98257dfdbea2694d_MD5.png|Open: Pasted image 20260304173318.png]]
+![[01-Daily Notes/2026-03-04/attachments/448628dafa86122a98257dfdbea2694d_MD5.png]]
+
+
+
+[[01-Daily Notes/2026-03-04/attachments/269ccb2589a23d7536eb85b08513bd35_MD5.png|Open: Pasted image 20260304173343.png]]
+![[01-Daily Notes/2026-03-04/attachments/269ccb2589a23d7536eb85b08513bd35_MD5.png]]
+
+
+
+[[01-Daily Notes/2026-03-04/attachments/c9f322906327e782d79cef77cf592f47_MD5.png|Open: Pasted image 20260304173428.png]]
+![[01-Daily Notes/2026-03-04/attachments/c9f322906327e782d79cef77cf592f47_MD5.png]]
+
+
+
+[[01-Daily Notes/2026-03-04/attachments/02c751b2942404ac39bf23b905e74a57_MD5.png|Open: Pasted image 20260304173613.png]]
+![[01-Daily Notes/2026-03-04/attachments/02c751b2942404ac39bf23b905e74a57_MD5.png]]
+
+
+
+[[01-Daily Notes/2026-03-04/attachments/54e18d86c2e7cc552be8d37c4ba732a5_MD5.png|Open: Pasted image 20260304173656.png]]
+![[01-Daily Notes/2026-03-04/attachments/54e18d86c2e7cc552be8d37c4ba732a5_MD5.png]]
+
