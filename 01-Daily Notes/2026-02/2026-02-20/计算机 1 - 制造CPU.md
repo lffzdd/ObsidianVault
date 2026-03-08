@@ -1,7 +1,6 @@
 ---
 url: "[把CPU拆到只剩一个晶体管，带你从零看懂计算机底层原理！\\| 晶体管 / 锁存器 / 寄存器 / 数据总线 / 地址总线 / 汇编语言 / 周期\\_哔哩哔哩\\_bilibili](https://www.bilibili.com/video/BV1rVnFzKECS?spm_id_from=333.788.videopod.sections&vd_source=56499cc54ebd02db0ac739e485d74801)"
 ---
-                                                               
 # 怎么运行指令
 
 [[attachments/7e361aa2d3c8d313c78d75f4ccad3c88_MD5.png|Open: Pasted image 20260220091030.png]]
