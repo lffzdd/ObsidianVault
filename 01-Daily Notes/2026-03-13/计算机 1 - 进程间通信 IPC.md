@@ -45,3 +45,12 @@ PCB
 [[01-Daily Notes/2026-03-13/attachments/cbe2ff4576ac54ef45b691d61ccbdaaf_MD5.mp4|Open: PixPin_2026-03-13_22-59-45.mp4]]
 ![[01-Daily Notes/2026-03-13/attachments/cbe2ff4576ac54ef45b691d61ccbdaaf_MD5.mp4]]
 
+
+[[01-Daily Notes/2026-03-13/attachments/168984d3c4f561cb6d4356a0634c2b8b_MD5.png|Open: Pasted image 20260316151816.png]]
+![[01-Daily Notes/2026-03-13/attachments/168984d3c4f561cb6d4356a0634c2b8b_MD5.png]]
+
+
+[[01-Daily Notes/2026-03-13/attachments/6be34ce637f41f2aef8ad21d6f9ad94b_MD5.png|Open: Pasted image 20260316151947.png]]
+![[01-Daily Notes/2026-03-13/attachments/6be34ce637f41f2aef8ad21d6f9ad94b_MD5.png]]
+
+
