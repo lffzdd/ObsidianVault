@@ -54,7 +54,7 @@
 
 在 `struct file` 结构体中，有一个字段记录了文件的状态标志。
 
-- 如果你在创建 Socket 时，没有做特殊处理，它默认是**阻塞（Blocking）**的。
+- 如果你在创建 Socket 时，没有做特殊处理，它默认是**阻塞（Blocking）** 的。
 - 如果你使用了 `fcntl()` 函数，或者在创建时加了 `SOCK_NONBLOCK` 标志，内核就会把这个文件标记为**非阻塞（O_NONBLOCK）**。
 
 当底层的 `tcp_recvmsg` 函数去网卡接收缓冲区（Receive Buffer）里拿数据时：
