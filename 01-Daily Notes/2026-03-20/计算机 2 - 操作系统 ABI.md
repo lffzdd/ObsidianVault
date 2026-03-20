@@ -220,7 +220,27 @@
 ![[01-Daily Notes/2026-03-20/attachments/0fe7e6511b6ab70f827ef3072256f9fb_MD5.png]]
 
 
-[[01-Daily Notes/2026-03-20/attachments/7ef0dde3a7059ef0477afafae5b789d7_MD5.png|Open: Pasted image 20260320172633.png]]
+其他底层细节仍然可能导致兼容性问题
+
+### 可执行文件
+
+[[01-Daily Notes/2026-03-20/attachments/7ef0dde3a7059ef0477afafae5b789d7_MD5.png|Open: Pasted image 20260320172904.png]]
 ![[01-Daily Notes/2026-03-20/attachments/7ef0dde3a7059ef0477afafae5b789d7_MD5.png]]
 
 
+[[01-Daily Notes/2026-03-20/attachments/79689f1bfaafcd83c34ff43d368d2063_MD5.png|Open: Pasted image 20260320173005.png]]
+![[01-Daily Notes/2026-03-20/attachments/79689f1bfaafcd83c34ff43d368d2063_MD5.png]]
+
+
+[[01-Daily Notes/2026-03-20/attachments/04bf0cdf58079cd1aa23e8e498c9ac3e_MD5.png|Open: Pasted image 20260320173240.png]]
+![[01-Daily Notes/2026-03-20/attachments/04bf0cdf58079cd1aa23e8e498c9ac3e_MD5.png]]
+
+
+它还包含允许操作系统加载的数据和元数据
+
+[[01-Daily Notes/2026-03-20/attachments/0be315215eb854629a52bdd6208846a9_MD5.png|Open: Pasted image 20260320173327.png]]
+![[01-Daily Notes/2026-03-20/attachments/0be315215eb854629a52bdd6208846a9_MD5.png]]
+
+
+[[01-Daily Notes/2026-03-20/attachments/a4602890dac146d47924a1b315e2e630_MD5.png|Open: Pasted image 20260320173340.png]]
+![[01-Daily Notes/2026-03-20/attachments/a4602890dac146d47924a1b315e2e630_MD5.png]]
