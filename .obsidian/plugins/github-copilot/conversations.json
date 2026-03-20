@@ -1,6 +1,42 @@
 {
   "conversations": [
     {
+      "id": "1773993543601",
+      "title": "57在linux上对应的是fork系统调用吗",
+      "messages": [
+        {
+          "id": "1773993710189",
+          "content": "57在linux上对应的是fork系统调用吗",
+          "role": "user",
+          "timestamp": 1773993710189
+        },
+        {
+          "id": "chatcmpl-DLP5jPknOP2uoWrwbMiZbg1DpE9c1",
+          "content": "不是一一对应的。\n\n- 在 **Linux 的 syscall 号表（x86_64）**里，**57 确实是 `fork`**：`__NR_fork = 57`。所以如果你在 `strace`、seccomp 规则、或自己看 `unistd_64.h` 这类表时看到 **57**，通常就是指 `fork` 这个系统调用号。\n\n- 但要注意两点常见“坑”：\n  1. **不同架构/ABI syscall 号不一样**：比如 x86（32位）、ARM、AArch64 的编号和 x86_64 不同，不能把 57 直接泛化到所有 Linux。\n  2. **glibc 的 `fork()` 函数不一定最终发起 `fork` syscall**：在很多场景下用户态 `fork()` 可能实际走的是 `clone()`（或 `clone3()`）等实现细节；但从“系统调用号表”的角度讲，**57 在 x86_64 上对应的名字就是 `fork`**。\n\n如果你告诉我你看到“57”的上下文（例如 `strace` 输出、seccomp 日志、某个头文件/内核版本、CPU 架构），我可以帮你确认它到底指的是什么。",
+          "role": "assistant",
+          "timestamp": 1773993716155
+        },
+        {
+          "id": "1773993765197",
+          "content": "假设都是x86_64,57在Windows上对应的是什么系统调用呢",
+          "role": "user",
+          "timestamp": 1773993765197
+        },
+        {
+          "id": "chatcmpl-DLP6bPGRYkVIQZyjFNecUrodBs3nK",
+          "content": "Windows 上没有“像 Linux 那样的 syscall 号 = 57 对应 fork”的稳定对应关系。\n\n原因是：\n\n1. **Windows 没有 `fork` 语义**  \n   Windows 创建进程主要是 `CreateProcess`（用户态 Win32 API），底层走 NT 内核的 `NtCreateUserProcess`/`NtCreateProcessEx` 等，不存在一个与 Linux `fork` 等价且同名的系统调用。\n\n2. **Windows 的系统调用编号（SSDT index）不是稳定 ABI**  \n   在 Windows 里你如果说“syscall 号 57”，通常指的是某个版本下 `ntdll!Nt*` 对应的 **系统服务号**。但这个编号：\n   - 会随 **Windows 版本/补丁**变化\n   - 会随 **架构**变化（x64/ARM64）\n   - 甚至不同构建之间都可能变  \n   所以“57 对应什么”必须绑定到**具体 Windows 版本和 build 号**，否则没有确定答案。\n\n3. **x64 Windows 的 syscall 机制**  \n   用户态一般通过 `ntdll.dll` 的 `NtXxx`/`ZwXxx` stub 把服务号放到寄存器然后 `syscall` 进入内核。那个“号”在不同版本会变。\n\n如果你想查“在某个 Windows 版本上，服务号 57 是哪个 Nt* 调用”，可按下面方式之一定位：\n- 指定版本（例如 Windows 10 22H2 build 19045.x / Windows 11 23H2 22631.x），然后用现成的表（如各种 syscall table 项目）查询；\n- 或在本机上用 WinDbg/符号加载后枚举 `ntdll!Zw*` stub 里的服务号（反汇编即可看到）。\n\n你告诉我你的 Windows 具体版本（`winver` 里的 build 号），我可以帮你把“57”对应到那个版本的具体 `Nt*` 系统调用名称。",
+          "role": "assistant",
+          "timestamp": 1773993774677
+        }
+      ],
+      "createdAt": 1773993543601,
+      "updatedAt": 1773993774677,
+      "model": {
+        "label": "GPT-5.2",
+        "value": "gpt-5.2"
+      }
+    },
+    {
       "id": "1769831187425",
       "title": "你好",
       "messages": [
@@ -61,5 +97,5 @@
       }
     }
   ],
-  "activeConversationId": "1769831187425"
+  "activeConversationId": "1773993543601"
 }
