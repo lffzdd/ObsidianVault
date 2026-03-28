@@ -2,7 +2,7 @@
   "cssTheme": "Border",
   "enabledCssSnippets": [
     "callout-two-columns",
-    "链接高亮背景",
-    "代码块样式"
+    "代码块样式",
+    "链接高亮背景"
   ]
 }
