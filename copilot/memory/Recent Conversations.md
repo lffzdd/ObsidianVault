@@ -13,3 +13,7 @@
 ## Obsidian 代码块折叠方案
 **Time:** 2026-03-08 19:03
 **Summary:** 用户询问 Obsidian 里三反引号代码块是否能收起。助手说明普通代码块默认不能折叠，并给出替代方案：用可折叠的 Callout 包裹代码、用 HTML 的 <details> 标签实现展开/收起，或通过插件/主题/CSS 增强实现代码块折叠，并询问用户希望默认折叠还是默认展开。
+
+## Untitled Conversation
+**Time:** 2026-03-30 22:37
+**Summary:** Summary generation failed
