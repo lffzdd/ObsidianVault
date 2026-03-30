@@ -1,7 +1,68 @@
+/* =============================================
+   Obsidian 代码块美化 - 清爽浅色风格（左右阴影版）
+   柔和浅灰背景 + 优雅圆角 + 清晰边框
+   ============================================= */
+
+.theme-light,
+.theme-dark {
+    --code-bg: #f0f4f9;
+    /* 非常柔和的浅灰背景（比 #f2f2f2 更干净） */
+    --code-border-color: #d1d9e6;
+    /* 浅灰边框，清晰可见 */
+    --code-border-width: 1.5px;
+    --code-text: #2c3e50;
+    /* 深灰文字（在浅背景上非常清晰） */
+    --code-radius: 12px;
+    /* 圆角大小，可调 */
+
+    /* 左右阴影（上下几乎没有） */
+    --code-side-shadow: 10px 0 16px -6px rgba(0, 0, 0, 0.18),
+        -10px 0 16px -6px rgba(0, 0, 0, 0.18);
+}
+
+/* 编辑模式（Live Preview）核心样式 - 加强选择器 */
+.HyperMD-codeblock {
+    background-color: var(--code-bg) !important;
+    border-left: var(--code-border-width) solid var(--code-border-color) !important;
+    border-right: var(--code-border-width) solid var(--code-border-color) !important;
+    /* box-shadow: var(--code-side-shadow) !important; */
+    margin: 1.5em 0 !important;
+    padding-left: 1.5em !important;
+    padding-right: 1.5em !important;
+}
+
+
+/* 编辑模式上下圆角 */
 .HyperMD-codeblock-begin {
-    border-radius: 1.5em 1.5em 0 0 !important;
+    border-top: var(--code-border-width) solid var(--code-border-color) !important;
+
+    border-top-left-radius: var(--code-radius) !important;
+    border-top-right-radius: var(--code-radius) !important;
 }
 
 .HyperMD-codeblock-end {
-    border-radius: 0 0 1.5em 1.5em !important;
+    border-bottom: var(--code-border-width) solid var(--code-border-color) !important;
+
+    border-bottom-left-radius: var(--code-radius) !important;
+    border-bottom-right-radius: var(--code-radius) !important;
+}
+
+/* 阅读模式（Reading View） */
+.markdown-rendered pre,
+.markdown-preview-view pre {
+    background-color: var(--code-bg) !important;
+    border: var(--code-border-width) solid var(--code-border-color) !important;
+    border-radius: var(--code-radius) !important;
+    padding: 1.5em !important;
+    margin: 1.8em 0 !important;
+    box-shadow: var(--code-side-shadow) !important;
+}
+
+/* 代码文字样式（必须打开） */
+.cm-s-obsidian .HyperMD-codeblock,
+.markdown-rendered pre code,
+.markdown-preview-view pre code {
+    /* color: var(--code-text) !important; */
+    /* font-size: 0.95em; */
+    /* line-height: 1.6; */
 }
