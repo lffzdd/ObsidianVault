@@ -287,14 +287,14 @@
   "customRegexes": [
     {
       "label": "引号加粗左",
-      "find": "**“",
+      "find": "\\*\\*“",
       "replace": " **“",
       "flags": "gm",
       "enabled": true
     },
     {
       "label": "引号加粗右",
-      "find": "“**",
+      "find": "”\\*\\*",
       "replace": "“** ",
       "flags": "gm",
       "enabled": true
