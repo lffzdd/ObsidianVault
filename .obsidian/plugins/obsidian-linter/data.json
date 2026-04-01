@@ -184,8 +184,8 @@
       "enabled": true
     },
     "convert-spaces-to-tabs": {
-      "enabled": false,
-      "tabsize": 4
+      "enabled": true,
+      "tabsize": "4"
     },
     "empty-line-around-blockquotes": {
       "enabled": false
@@ -247,7 +247,7 @@
       "two-space-line-break": false
     },
     "add-blockquote-indentation-on-paste": {
-      "enabled": false
+      "enabled": true
     },
     "prevent-double-checklist-indicator-on-paste": {
       "enabled": false
@@ -268,7 +268,7 @@
       "enabled": false
     },
     "remove-multiple-blank-lines-on-paste": {
-      "enabled": false
+      "enabled": true
     }
   },
   "lintOnSave": false,
@@ -284,7 +284,22 @@
   "linterLocale": "system-default",
   "logLevel": "ERROR",
   "lintCommands": [],
-  "customRegexes": [],
+  "customRegexes": [
+    {
+      "label": "引号加粗左",
+      "find": "**“",
+      "replace": " **“",
+      "flags": "gm",
+      "enabled": true
+    },
+    {
+      "label": "引号加粗右",
+      "find": "“**",
+      "replace": "“** ",
+      "flags": "gm",
+      "enabled": true
+    }
+  ],
   "commonStyles": {
     "aliasArrayStyle": "single-line",
     "tagArrayStyle": "single-line",
