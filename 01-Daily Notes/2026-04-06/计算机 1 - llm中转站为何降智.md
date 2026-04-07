@@ -212,7 +212,7 @@ POST https://api.anthropic.com/v1/messages
 
 中转转换后，LLM 在第二轮看到的：
 
-```
+```json
 <|human|>用动态规划解这道题<|end|>
 <|assistant|><|thinking|><|/thinking|>这道题可以用动态规划解决...<|end|>
                          ↑ 空的！模型看不到自己之前的推理过程
@@ -260,7 +260,7 @@ POST https://api.anthropic.com/v1/messages
 
 在 LLM 层面：
 
-```
+```json
 // 正确的内部表示：
 <|system|>You are helpful<|end|>
 <|human|>Hello<|end|>
@@ -280,7 +280,7 @@ Claude 训练时 system prompt 有专属位置和权重，放错位置 → 模�
 
 ## 四、Tool Use（工具调用）的格式灾难
 
-```
+```json
 // OpenAI 的 function calling 格式：
 "tools": [{
   "type": "function",
@@ -299,7 +299,7 @@ Claude 训练时 system prompt 有专属位置和权重，放错位置 → 模�
 
 返回格式差异更大：
 
-```
+```json
 // Claude LLM 实际输出：
 <|assistant|>
 <|tool_use|>{"id": "toolu_xxx", "name": "get_weather", "input": {"city": "北京"}}
