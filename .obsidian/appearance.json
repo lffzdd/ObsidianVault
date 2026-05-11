@@ -4,5 +4,7 @@
     "callout-two-columns",
     "代码块样式",
     "链接高亮背景"
-  ]
+  ],
+  "baseFontSizeAction": true,
+  "baseFontSize": 15
 }
