@@ -419,8 +419,8 @@ static int match(State *start, const char *s) {
 > - **Done**
 
 
-[[01-Daily Notes/2026-05/2026-05-26/attachments/ccc61d5311385283c7dfe31414eca928_MD5.png|Open: Pasted image 20260527155019.png]]
-![[01-Daily Notes/2026-05/2026-05-26/attachments/ccc61d5311385283c7dfe31414eca928_MD5.png]]
+[[../2026-05-26/attachments/ccc61d5311385283c7dfe31414eca928_MD5.png|Open: Pasted image 20260527155019.png]]
+![[../2026-05-26/attachments/ccc61d5311385283c7dfe31414eca928_MD5.png]]
 
 > 规划了从基础语法到现代图论的演进解释。
 >
