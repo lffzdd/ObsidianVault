@@ -133,3 +133,8 @@ dice_train = f1_score(np.ndarray.flatten(np.array(y_train, dtype=bool)),
 - `prediction_train > 0.5`: 将预测结果二值化，如果预测值大于 0.5 则为真，否则为假。
 以上代码通过 `f1_score` 计算训练集的 Dice 系数（在二分类问题中，Dice 系数和 F1 分数等价）。使用二值化处理的预测结果和标签进行比较，得到模型在训练集上的 Dice 分数。
 
+## 同步冲突副本中的差异内容（合并于 2026-10-12）
+
+> 以下内容来自 7-Dice系数，原笔记中没有。
+
+### Dice 系数的定义

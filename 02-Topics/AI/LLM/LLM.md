@@ -27,4 +27,3 @@ LLM 本质是对模板化 token 序列做续写：role/content、im_start 这类
 - [[02-Topics/AI/LLM/5-GRU|5-GRU]] — 讲了：5-GRU
 - [[02-Topics/AI/LLM/6-RNN-递归神经网络|6-RNN-递归神经网络]] — 讲了：6-RNN-递归神经网络
 - [[02-Topics/AI/LLM/图片|图片]] — 讲了：第一优先级：ControlNet —— 图像的“ / 第二优先级：IP-Adapter —— 图像的“ / 第三优先级：Inpainting & Outpa
-- [[02-Topics/AI/LLM/文生图|文生图]] — 讲了：文生图
