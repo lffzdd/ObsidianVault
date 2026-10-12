@@ -3,6 +3,7 @@ aliases: Day 4
 tags: []
 date modified: 2024, 五月 21日, 09:47:09,  星期二晚上
 date created: Invalid date
+source: 吴恩达
 ---
 
 - Batch gradient descent：每个步骤都使用了所有的数据

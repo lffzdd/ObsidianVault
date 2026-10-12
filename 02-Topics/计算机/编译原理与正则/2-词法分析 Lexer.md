@@ -1,3 +1,6 @@
+---
+source: 斯坦福CS143-COOL
+---
 ![[attachments/Pasted image 20250419132610.png]] 
 循环过程:![[attachments/Pasted image 20250419132625.png]]
 - 长短选长

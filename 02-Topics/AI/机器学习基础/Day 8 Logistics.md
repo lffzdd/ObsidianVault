@@ -4,6 +4,7 @@ aliases:
 tags: 
 date modified: 2024-06-06T16:06:00
 date created: 2024, 六月 8日, 02:23:19,  星期六凌晨
+source: 吴恩达
 ---
 
 # 逻辑回归

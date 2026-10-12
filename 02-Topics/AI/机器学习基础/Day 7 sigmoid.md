@@ -3,6 +3,7 @@ aliases: Day 7 SIGMOD
 tags:
 date created: 2024, 六月 6日, 01:38:02,  星期四下午
 date modified: 2024, 六月 6日, 01:41:22,  星期四下午
+source: 吴恩达
 ---
 ### 自我推导
 <iframe src="https://www.geogebra.org/graphing/jqw8m4py?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>

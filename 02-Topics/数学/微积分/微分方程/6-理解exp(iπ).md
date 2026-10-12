@@ -1,3 +1,6 @@
+---
+source: 3B1B
+---
 # 速度向量与位置向量
 ![[attachments/Pasted image 20240907115643.png]] 
 ![[attachments/Pasted image 20240907115652.png]]

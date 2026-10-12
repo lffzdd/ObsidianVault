@@ -2,6 +2,7 @@
 aliases: 7-语法解析器 Parser
 date created: 星期四, 四月 24日 2025, 12:45:42 下午
 date modified: 星期四, 四月 24日 2025, 12:52:44 下午
+source: 斯坦福CS143-COOL
 ---
 
 自动机无法识别字符串的长度, 无法识别嵌套

@@ -4,6 +4,7 @@ tags: []
 date created: Invalid date
 date modified: Wednesday, April 16th 2025, 12:40:17 pm
 URL: https://www.youtube.com/watch?v=TcYdEAWch_4&list=PL6gx4Cwl9DGBrtymuJUiv9Lq5CAYpN8Gl&index=6&ab_channel=thenewboston
+source: YouTube
 ---
 
 不同于工作量证明

@@ -1,3 +1,6 @@
+---
+source: 斯坦福CS143-COOL
+---
 # 闭包
 ![[attachments/Pasted image 20250424115838.png]]
 ![[attachments/Pasted image 20250424120018.png]]

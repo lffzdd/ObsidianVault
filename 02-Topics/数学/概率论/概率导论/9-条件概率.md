@@ -1,5 +1,6 @@
 ---
 ~
+source: 《概率导论》
 ---
 $$
 \mathrm{P}(X\in A|Y=y)=\int_{A}f_{X|Y}(x|y)\mathrm{d}x.

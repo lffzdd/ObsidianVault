@@ -3,6 +3,7 @@ aliases: IO模型
 tags: []
 date created: 星期四, 四月 3日 2025, 12:43:12 下午
 date modified: 星期四, 四月 3日 2025, 5:36:39 下午
+source: CSAPP
 ---
 # 五种 IO 模型
 1. blockingIO - 阻塞 IO

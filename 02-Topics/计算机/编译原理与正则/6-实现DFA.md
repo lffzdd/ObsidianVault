@@ -1,3 +1,6 @@
+---
+source: 斯坦福CS143-COOL
+---
 ![[attachments/Pasted image 20250424122032.png]]
 ***
 ![[attachments/Pasted image 20250424121956.png]]

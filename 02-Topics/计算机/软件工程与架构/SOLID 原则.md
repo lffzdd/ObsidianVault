@@ -2,6 +2,7 @@
 aliases: 架构整洁知道
 date created: Monday, April 28th 2025, 1:22:43 pm
 date modified: Monday, April 28th 2025, 2:09:02 pm
+source: 架构整洁之道
 ---
 
 SOLID 原则

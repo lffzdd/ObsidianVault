@@ -1,3 +1,6 @@
+---
+source: 吴恩达
+---
 一般是使用 $\eta$ 表示学习率，因此我们使用 $\eta$
 由之前知道，当斜率 $\theta$ 为某个值时，$J(\theta)$ 最小。假设 $\theta$ 为 1.5 时 $J$ 最小，假设 $\theta$ 的函数如图：
 ![[attachments/Pasted image 20240604151057.png]]

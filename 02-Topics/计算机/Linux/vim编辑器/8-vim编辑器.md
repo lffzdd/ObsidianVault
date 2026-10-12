@@ -3,6 +3,7 @@ aliases: 8-vim编辑器
 tags:
 date created: 星期四, 十月 3日 2024, 9:17:41 晚上
 date modified: 星期四, 十月 3日 2024, 9:21:14 晚上
+source: 鸟哥
 ---
 # vim 编辑文件
 有那么多的文书编辑器，为什么一定要学 vi？

@@ -3,6 +3,7 @@ aliases: Day 9 overfit
 tags: []
 date created: Invalid date
 date modified: 2024, 六月 13日, 05:30:10,  星期四下午
+source: 吴恩达
 ---
 - underfit
 - generalization

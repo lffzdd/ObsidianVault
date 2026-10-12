@@ -3,6 +3,7 @@ aliases: Day 2
 tags:
 date created: 星期日, 五月 19日 2024, 2:33:30 下午
 date modified: 星期二, 七月 16日 2024, 11:28:45 上午
+source: 吴恩达
 ---
 ## Gradient descent algorithm
 

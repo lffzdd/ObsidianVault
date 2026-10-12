@@ -3,6 +3,7 @@ aliases: Day 5 normalization
 tags: []
 date created: Invalid date
 date modified: 2024, 六月 19日, 11:28:56,  星期三上午
+source: 吴恩达
 ---
 #### Normal Equation（正规方程）
   - Only for linear regression

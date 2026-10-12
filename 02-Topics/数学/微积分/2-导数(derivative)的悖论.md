@@ -3,6 +3,7 @@ aliases: 2-导数(derivative)的悖论
 tags:
 date created: 2024, 六月 24日, 12:20:54,  星期一中午
 date modified: 2024, 六月 24日, 12:29:04,  星期一中午
+source: 3B1B
 ---
 我们一般把导数叫做*Instantaneous Fate of change（瞬时变化率）*，然而你仔细想想的话，这个说法其实自带矛盾，在不同时间点 " 之间 " 变化才能发生，而当你把自己限制在一个瞬间点的时候，也就没有变化的余地了 ![[attachments/Pasted image 20240624122501.png]]
 等你意识到诸如 " 瞬时变化率 " 的说法是多么的不合理，你就能体会到微积分创始人们的智慧，他们在表达这些说法的真正意义之时，引入了一个精妙的数学定义：**导数**![[attachments/Pasted image 20240624122715.png]]

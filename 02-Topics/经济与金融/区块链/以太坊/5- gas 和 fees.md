@@ -5,6 +5,7 @@ tags:
 date created: Wednesday, April 16th 2025, 12:03:59 pm
 date modified: Wednesday, April 16th 2025, 1:03:11 pm
 URL: https://www.youtube.com/watch?v=dmguh81VBQ8&list=PL6gx4Cwl9DGBrtymuJUiv9Lq5CAYpN8Gl&index=7&pp=iAQB
+source: YouTube
 ---
 
 节点需要 gas 来接受你的 smart contract $\downarrow$ ![[attachments/Pasted image 20250416120534.png]]
