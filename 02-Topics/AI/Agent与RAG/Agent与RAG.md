@@ -25,4 +25,4 @@ Agent = LLM + 工具 + 循环：从 CoT、ReAct 到 Plan 模式，本质是让�
 - [[02-Topics/AI/Agent与RAG/2026-08-01 Agent开发 - Plan模式的实现 Explaining ReAct Planning Logic|2026-08-01 Agent开发 - Plan模式的实现 Explaining ReAct Planning Logic]] — 讲了：Chat Conversation / User Input / Planner Response
 - [[02-Topics/AI/Agent与RAG/2026-08-18 Agent - LLM眼里的skill|2026-08-18 Agent - LLM眼里的skill]] — 讲了：第 1 轮：大模型刚调用完  load_skil / 第 2 轮：大模型执行完了  pytest ，准 / 第 3 轮：大模型全部执行完毕，调用了  unl
 - [[02-Topics/AI/Agent与RAG/2026-09-19 AI做架构|2026-09-19 AI做架构]] — 讲了：一、 时间节点：AI 是从什么时候开始“真能做架 / 二、 目前真正能用来做架构的模型有哪些？ / 1. Claude Fable 5.1 / Cl
-- [[02-Topics/AI/Agent与RAG/2026-10-07 AI Agent实习简历草稿|2026-10-07 AI Agent实习简历草稿]] — 讲了：姓名（待填） / 教育经历 / 专业技能
+- [[02-Topics/工作/求职/简历与面试/2026-10-07 AI Agent实习简历草稿|2026-10-07 AI Agent实习简历草稿]] — 讲了：姓名（待填） / 教育经历 / 专业技能

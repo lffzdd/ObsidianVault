@@ -20,40 +20,40 @@
 - [[02-Topics/计算机/安全与加密/2026-04-11 openclaw 配置|openclaw 配置]] `2026-04-11`
 
 ## PyTorch / Transformer / 深度学习连续线
-- [[02-Topics/AI/NLP与Transformer/2026-01-03 位置编码|位置编码]] `2026-01-03`
-- [[02-Topics/AI/PyTorch/2026-01-04 pytorch中的张量创建和device|pytorch中的张量创建和device]] `2026-01-04`
-- [[02-Topics/AI/NLP与Transformer/2026-01-04 Attention中softmax作用的维度|Attention中softmax作用的维度]] `2026-01-04`
-- [[02-Topics/AI/PyTorch/2026-01-04 pytorch关于掩码的函数|pytorch关于掩码的函数]] `2026-01-04`
-- [[02-Topics/AI/NLP与Transformer/2026-01-04 Attention的输出不需要加Q|Attention的输出不需要加Q]] `2026-01-04`
-- [[02-Topics/AI/NLP与Transformer/2026-01-05 Transformer不是U-Net架构|Transformer不是U-Net架构]] `2026-01-05`
-- [[02-Topics/AI/PyTorch/2026-01-05 PyTorch 张量形状操作速查表|PyTorch 张量形状操作速查表]] `2026-01-05`
-- [[02-Topics/AI/PyTorch/2026-01-07 pytorch 的张量方法|pytorch 的张量方法]] `2026-01-07`
-- [[02-Topics/AI/PyTorch/2026-01-08 pytorch数据处理|pytorch数据处理]] `2026-01-08`
-- [[02-Topics/AI/PyTorch/2026-01-08 PyTorch更新流程|PyTorch更新流程]] `2026-01-08`
-- [[02-Topics/AI/深度学习原理/2026-01-09 交叉熵损失推导-两个角度|交叉熵损失推导-两个角度]] `2026-01-09`
-- [[02-Topics/AI/计算机视觉/目标检测/2026-01-12 YOLO轻量化|YOLO 轻量化]] `2026-01-12`
-- [[02-Topics/AI/计算机视觉/目标检测/2026-01-12 YOLO轻量化|YOLO轻量化]] `2026-01-12`
-- [[02-Topics/AI/NLP与Transformer/2026-01-21 Transformer的padding掩码|Transformer的padding掩码]] `2026-01-21`
-- [[02-Topics/AI/NLP与Transformer/2026-01-21 Transformer机制|Transformer机制]] `2026-01-21`
-- [[02-Topics/AI/PyTorch/2026-01-22 pytorch 训练流程|pytorch 训练流程]] `2026-01-22`
-- [[02-Topics/AI/PyTorch/2026-01-22 CrossEntryLoss的计算|CrossEntryLoss的计算]] `2026-01-22`
-- [[02-Topics/AI/PyTorch/2026-01-22 pytorch中的底层张量布局和读取|pytorch中的底层张量布局和读取]] `2026-01-22`
-- [[02-Topics/AI/PyTorch/2026-01-23 pytorch保存和加载模型|pytorch保存和加载模型]] `2026-01-23`
+- [[02-Topics/AI/NLP与Transformer/Attention与Transformer/2026-01-03 位置编码|位置编码]] `2026-01-03`
+- [[02-Topics/AI/PyTorch/张量操作/2026-01-04 pytorch中的张量创建和device|pytorch中的张量创建和device]] `2026-01-04`
+- [[02-Topics/AI/NLP与Transformer/Attention与Transformer/2026-01-04 Attention中softmax作用的维度|Attention中softmax作用的维度]] `2026-01-04`
+- [[02-Topics/AI/PyTorch/张量操作/2026-01-04 pytorch关于掩码的函数|pytorch关于掩码的函数]] `2026-01-04`
+- [[02-Topics/AI/NLP与Transformer/Attention与Transformer/2026-01-04 Attention的输出不需要加Q|Attention的输出不需要加Q]] `2026-01-04`
+- [[02-Topics/AI/NLP与Transformer/Attention与Transformer/2026-01-05 Transformer不是U-Net架构|Transformer不是U-Net架构]] `2026-01-05`
+- [[02-Topics/AI/PyTorch/张量操作/2026-01-05 PyTorch 张量形状操作速查表|PyTorch 张量形状操作速查表]] `2026-01-05`
+- [[02-Topics/AI/PyTorch/张量操作/2026-01-07 pytorch 的张量方法|pytorch 的张量方法]] `2026-01-07`
+- [[02-Topics/AI/PyTorch/训练流程与数据/2026-01-08 pytorch数据处理|pytorch数据处理]] `2026-01-08`
+- [[02-Topics/AI/PyTorch/训练流程与数据/2026-01-08 PyTorch更新流程|PyTorch更新流程]] `2026-01-08`
+- [[02-Topics/AI/深度学习原理/损失与信息论/2026-01-09 交叉熵损失推导-两个角度|交叉熵损失推导-两个角度]] `2026-01-09`
+- [[02-Topics/AI/计算机视觉/目标检测/YOLO/2026-01-12 YOLO轻量化|YOLO 轻量化]] `2026-01-12`
+- [[02-Topics/AI/计算机视觉/目标检测/YOLO/2026-01-12 YOLO轻量化|YOLO轻量化]] `2026-01-12`
+- [[02-Topics/AI/NLP与Transformer/Attention与Transformer/2026-01-21 Transformer的padding掩码|Transformer的padding掩码]] `2026-01-21`
+- [[02-Topics/AI/NLP与Transformer/Attention与Transformer/2026-01-21 Transformer机制|Transformer机制]] `2026-01-21`
+- [[02-Topics/AI/PyTorch/训练流程与数据/2026-01-22 pytorch 训练流程|pytorch 训练流程]] `2026-01-22`
+- [[02-Topics/AI/PyTorch/训练流程与数据/2026-01-22 CrossEntryLoss的计算|CrossEntryLoss的计算]] `2026-01-22`
+- [[02-Topics/AI/PyTorch/张量操作/2026-01-22 pytorch中的底层张量布局和读取|pytorch中的底层张量布局和读取]] `2026-01-22`
+- [[02-Topics/AI/PyTorch/训练流程与数据/2026-01-23 pytorch保存和加载模型|pytorch保存和加载模型]] `2026-01-23`
 - [[02-Topics/AI/LLM/2026-01-27 知识蒸馏|知识蒸馏]] `2026-01-27`
-- [[02-Topics/AI/深度学习原理/2026-01-27 梯度裁剪|梯度裁剪]] `2026-01-27`
-- [[02-Topics/AI/NLP与Transformer/2026-01-27 位置编码采取对数形式|位置编码采取对数形式]] `2026-01-27`
-- [[02-Topics/AI/深度学习原理/2026-01-27 Adam|Adam]] `2026-01-27`
-- [[02-Topics/AI/深度学习原理/2026-01-27 Adam的初始化问题|Adam的初始化问题]] `2026-01-27`
-- [[02-Topics/AI/NLP与Transformer/2026-01-27 Transformer 的训练问题|Transformer 的训练问题]] `2026-01-27`
-- [[02-Topics/AI/深度学习原理/2026-01-27 BatchNorm和LayerNorm|BatchNorm和LayerNorm]] `2026-01-27`
+- [[02-Topics/AI/深度学习原理/训练技巧与正则/2026-01-27 梯度裁剪|梯度裁剪]] `2026-01-27`
+- [[02-Topics/AI/NLP与Transformer/Attention与Transformer/2026-01-27 位置编码采取对数形式|位置编码采取对数形式]] `2026-01-27`
+- [[02-Topics/AI/深度学习原理/优化器/2026-01-27 Adam|Adam]] `2026-01-27`
+- [[02-Topics/AI/深度学习原理/优化器/2026-01-27 Adam的初始化问题|Adam的初始化问题]] `2026-01-27`
+- [[02-Topics/AI/NLP与Transformer/Attention与Transformer/2026-01-27 Transformer 的训练问题|Transformer 的训练问题]] `2026-01-27`
+- [[02-Topics/AI/深度学习原理/训练技巧与正则/2026-01-27 BatchNorm和LayerNorm|BatchNorm和LayerNorm]] `2026-01-27`
 - [[02-Topics/数学/概率论/似然估计/2026-01-31 交叉熵损失|交叉熵损失]] `2026-01-31`
-- [[02-Topics/AI/PyTorch/2026-02-01 pytorch的配对索引|pytorch的配对索引]] `2026-02-01`
-- [[02-Topics/AI/PyTorch/2026-02-01 重新梳理pytorch计算流程|重新梳理pytorch计算流程]] `2026-02-01`
-- [[02-Topics/AI/PyTorch/2026-02-01 简易pytorch实现|简易pytorch实现]] `2026-02-01`
-- [[02-Topics/AI/AIGC与扩散模型/2026-02-04 sd前向加噪|sd前向加噪]] `2026-02-04`
+- [[02-Topics/AI/PyTorch/训练流程与数据/2026-02-01 pytorch的配对索引|pytorch的配对索引]] `2026-02-01`
+- [[02-Topics/AI/PyTorch/训练流程与数据/2026-02-01 重新梳理pytorch计算流程|重新梳理pytorch计算流程]] `2026-02-01`
+- [[02-Topics/AI/PyTorch/训练流程与数据/2026-02-01 简易pytorch实现|简易pytorch实现]] `2026-02-01`
+- [[02-Topics/AI/AIGC与扩散模型/扩散原理/2026-02-04 sd前向加噪|sd前向加噪]] `2026-02-04`
 - [[02-Topics/AI/PyTorch/2026-02-07 torch linspace|torch linspace]] `2026-02-07`
 - [[02-Topics/AI/PyTorch/2026-02-07 torch 累积类函数|torch 累积类函数]] `2026-02-07`
-- [[02-Topics/AI/AIGC与扩散模型/2026-02-10 逆向扩散|逆向扩散]] `2026-02-10`
+- [[02-Topics/AI/AIGC与扩散模型/扩散原理/2026-02-10 逆向扩散|逆向扩散]] `2026-02-10`
 
 ## 从硬件到操作系统连续线
 - [[02-Topics/计算机/计算机组成与硬件/2026-02-15 锁存器|锁存器]] `2026-02-15`

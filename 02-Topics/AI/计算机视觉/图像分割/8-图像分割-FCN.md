@@ -125,5 +125,5 @@ model.summary()
 
 ### 总结
 转置卷积通过对输入进行扩展和卷积运算，实现从低分辨率到高分辨率的映射。这种机制在需要上采样的任务中具有广泛应用。理解其数学原理有助于设计有效的深度学习模型，特别是在图像分割和生成对抗网络等应用中。
-# ![[../../PyTorch/4-add和concatenate的区别#FCN 中的区别|concatenate不会导致特征图尺寸增加]]
+# ![[../../PyTorch/Keras与TensorFlow/4-add和concatenate的区别#FCN 中的区别|concatenate不会导致特征图尺寸增加]]
 

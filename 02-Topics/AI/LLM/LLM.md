@@ -20,10 +20,10 @@ LLM 本质是对模板化 token 序列做续写：role/content、im_start 这类
 ### 早期专题笔记
 
 - [[02-Topics/AI/LLM/0-学习路径|0-学习路径]] — 讲了：🕰️ LLM 的历史发展大致可以分为这几个阶段： / 1.   早期探索：神经网络 & 词向量 (19 / 2.   从 RNN 到 Transformer
-- [[02-Topics/AI/LLM/1-n-gram模型|1-n-gram模型]] — 讲了：什么是 n-gram 模型？ / 为什么要用 n-gram？ / n-gram 怎么建模？
-- [[02-Topics/AI/LLM/2-word2vec|2-word2vec]] — 讲了：原版损失函数 / 背景：Word2Vec 目标 / 1. 训练目标
-- [[02-Topics/AI/LLM/3-RNN-循环神经网络|3-RNN-循环神经网络]] — 讲了：3-RNN-循环神经网络
-- [[02-Topics/AI/LLM/4-LSTM|4-LSTM]] — 讲了：4-LSTM
-- [[02-Topics/AI/LLM/5-GRU|5-GRU]] — 讲了：5-GRU
-- [[02-Topics/AI/LLM/6-RNN-递归神经网络|6-RNN-递归神经网络]] — 讲了：6-RNN-递归神经网络
-- [[02-Topics/AI/LLM/图片|图片]] — 讲了：第一优先级：ControlNet —— 图像的“ / 第二优先级：IP-Adapter —— 图像的“ / 第三优先级：Inpainting & Outpa
+- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/1-n-gram模型|1-n-gram模型]] — 讲了：什么是 n-gram 模型？ / 为什么要用 n-gram？ / n-gram 怎么建模？
+- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/2-word2vec|2-word2vec]] — 讲了：原版损失函数 / 背景：Word2Vec 目标 / 1. 训练目标
+- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/3-RNN-循环神经网络|3-RNN-循环神经网络]] — 讲了：3-RNN-循环神经网络
+- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/4-LSTM|4-LSTM]] — 讲了：4-LSTM
+- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/5-GRU|5-GRU]] — 讲了：5-GRU
+- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/6-RNN-递归神经网络|6-RNN-递归神经网络]] — 讲了：6-RNN-递归神经网络
+- [[02-Topics/AI/AIGC与扩散模型/生图进阶 - LoRA 之后学什么|图片]] — 讲了：第一优先级：ControlNet —— 图像的“ / 第二优先级：IP-Adapter —— 图像的“ / 第三优先级：Inpainting & Outpa
