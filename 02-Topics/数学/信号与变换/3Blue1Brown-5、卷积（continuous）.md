@@ -86,7 +86,7 @@ $$
 ![[attachments/Pasted image 20240701145658.png]]
 # 三个变量之和
 ![[attachments/Pasted image 20240701145825.png]]
-![[attachments/attachments/Pasted image 20240701145839.png]]
+![[attachments/Pasted image 20240701145839.png]]
 ![[attachments/Pasted image 20240701150408.png]]
 礼帽函数的好处在于，乘以它的效果是滤掉上方图像的值 ![[attachments/Pasted image 20240701150551.png]] ![[attachments/Pasted image 20240701150654.png]]
 

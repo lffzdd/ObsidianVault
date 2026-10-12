@@ -8,19 +8,19 @@ date modified: 2024, 六月 17日, 05:03:56,  星期一下午
 > [But what is the Central Limit Theorem? - YouTube](https://www.youtube.com/watch?v=zeJD6dqJ5lo&ab_channel=3Blue1Brown)
 
 投掷骰子，计算点数之和即出现概率，骰子越多，分布越趋于正态分布
-![[../attachments/Pasted image 20240617004941.png]]
+![[attachments/Pasted image 20240617004941.png]]
 均值会成倍递增
 方差：
-![[../attachments/Pasted image 20240617005056.png]]
+![[attachments/Pasted image 20240617005056.png]]
 $$\sigma_{X+Y}^2=\sigma_X^2+\sigma_Y^2$$
 - ? 为什么 ->3 b 1 b 概率论
 
 考虑 $e^{-|x|}$, 连续但不光滑的偶函数
-再考虑 $e^{-x^2}$, 光滑的偶函数，再加上一个常数，$e^{-cx^2}$, $c>1$ 时，函数被挤压，$c<1$ 时，函数被拉伸 ![[../attachments/Pasted image 20240617011338.png]]
-再考虑曲线下的面积，对 $e^{-ax^2}$, 面积为 $\sqrt{\frac{\pi}{a}}$, 于是 $\frac{1}{\sqrt{\pi}}e^{-x^2}$ 的面积为 1，再考虑 $\frac1{\sqrt{\pi}}e^{-\frac12(x/\sigma)^2}$，其效果是将图像拉伸 $\sigma\sqrt{2}$ 倍，于是有 $\frac1{\sigma\sqrt{2}}\frac1{\sqrt{\pi}}e^{-\frac12(x/\sigma)^2}$，其面积为 1 ![[../attachments/Pasted image 20240617013345.png]]
-$\sigma=1$ 时，称之为标准正态分布 ![[../attachments/Pasted image 20240617013827.png]]
-大的要来了：![[../attachments/Pasted image 20240617014142.png]]
-![[../attachments/Pasted image 20240617014521.png]]
+再考虑 $e^{-x^2}$, 光滑的偶函数，再加上一个常数，$e^{-cx^2}$, $c>1$ 时，函数被挤压，$c<1$ 时，函数被拉伸 ![[attachments/Pasted image 20240617011338.png]]
+再考虑曲线下的面积，对 $e^{-ax^2}$, 面积为 $\sqrt{\frac{\pi}{a}}$, 于是 $\frac{1}{\sqrt{\pi}}e^{-x^2}$ 的面积为 1，再考虑 $\frac1{\sqrt{\pi}}e^{-\frac12(x/\sigma)^2}$，其效果是将图像拉伸 $\sigma\sqrt{2}$ 倍，于是有 $\frac1{\sigma\sqrt{2}}\frac1{\sqrt{\pi}}e^{-\frac12(x/\sigma)^2}$，其面积为 1 ![[attachments/Pasted image 20240617013345.png]]
+$\sigma=1$ 时，称之为标准正态分布 ![[attachments/Pasted image 20240617013827.png]]
+大的要来了：![[attachments/Pasted image 20240617014142.png]]
+![[attachments/Pasted image 20240617014521.png]]
 $\frac{(X_1+\cdots+X_{10})-10\cdot\mu}{\sigma\cdot\sqrt{10}}$ 本质上是说**这个总和与平均值相差多少个标准差**？
 
 ```ad-important
@@ -32,18 +32,18 @@ $x$ 替换为 $\frac{(X_1+\cdots+X_{N})-N\cdot\mu}{\sigma\cdot\sqrt{N}}$，即 $
 约有 68.3% 的概率落在平均值的 1 个标准差范围内，由上可推出 $$\int^{1\cdot\sigma=1}_{-1}\frac1{\sqrt{2\pi}}e^{-\frac12x^2}dx\approx0.683$$
 再想象一下扔骰子，一个骰子很可能在 3 到 5 之间，而两个骰子均值增大，扔出的点数也更加分散，因此标准差增大
 
-中心极限定理：![[../attachments/Pasted image 20240617115809.png]]
-3. $0<Var(X_i)<\infty$ And finite $E[X]$ for that matter.![[../attachments/Pasted image 20240617120155.png]]
+中心极限定理：![[attachments/Pasted image 20240617115809.png]]
+3. $0<Var(X_i)<\infty$ And finite $E[X]$ for that matter.![[attachments/Pasted image 20240617120155.png]]
 # 公式详解
 
 > [【官方双语】为什么正态分布里会有一个π？（不止是积分技巧）\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1wu411W7uU/?spm_id_from=333.337.search-card.all.click&vd_source=56499cc54ebd02db0ac739e485d74801)
 
-来自泊松的经典证明： ![[../attachments/Pasted image 20240617120609.png]]
-- ? 为什么是 $e^{-x^2}$![[../attachments/Pasted image 20240617121136.png]]
+来自泊松的经典证明： ![[attachments/Pasted image 20240617120609.png]]
+- ? 为什么是 $e^{-x^2}$![[attachments/Pasted image 20240617121136.png]]
 ## Step 1
- ![[../attachments/Pasted image 20240617122548.png]]
+ ![[attachments/Pasted image 20240617122548.png]]
 ## Step 2
-![[../attachments/Pasted image 20240617161619.png]]
+![[attachments/Pasted image 20240617161619.png]]
 - Property 1
 	- The probability (density) depends ==only on the distance== from the origin
 - Property 2
@@ -56,7 +56,7 @@ $$
 f_2(r,0)=f(r)=g(r)g(0)
 $$
 表明了 $f(r)$ 等于 $g(r)$ 乘上一个常数，$f$ 和 $g$ 算是同一类东西，只是差了一个常数倍
-![[../attachments/Pasted image 20240617162943.png]]
+![[attachments/Pasted image 20240617162943.png]]
 $$
 f(r)=f(x)f(y)
 $$
@@ -82,7 +82,7 @@ h(x^2+y^2)=h(x^2)h(y^2)
 $$
 这里要注意，对 $f$ 来说，有 $\sqrt{x^2+y^2}=\sqrt{x^2+y^2}$，但对 $h$ 来说，并没有 $x^2+y^2=\sqrt{x^4+y^4}$，因为 $h$ 不是 $f$，$f$ 的性质不能直接套用到 $h$ 中
 对 $h(x^2+y^2)=h(x^2)h(y^2)$，输入加法，输出乘法
-![[../attachments/Pasted image 20240617165030.png]]
+![[attachments/Pasted image 20240617165030.png]]
 我们直接给 $h(1)$ 取名为 $b$，于是 $h(n)=b^n$
 对于任何有理数 $\frac{p}{q}$，有
 $$
@@ -116,9 +116,9 @@ $$
 $$
 f(x)=h(x^2)=e^{cx^2}
 $$
-关联 Step 1，1 中描述了 $e^{-x^2}$ 的图像，若 $c$ 为正数，$e^{cx^2}$ 的函数就会在所有方向上都膨胀到无穷大 ![[../attachments/Pasted image 20240617172326.png]]
+关联 Step 1，1 中描述了 $e^{-x^2}$ 的图像，若 $c$ 为正数，$e^{cx^2}$ 的函数就会在所有方向上都膨胀到无穷大 ![[attachments/Pasted image 20240617172326.png]]
 因此 $c$ 必须是一个负值，并且这个特定的常数决定了分布的分散度
-![[../attachments/Pasted image 20240617172643.png]]
+![[attachments/Pasted image 20240617172643.png]]
 如果我们认为这两个性质（径向对称性，各坐标独立分布）定义了高斯分布的话，那么 $\pi$ 的出现也就不那么意外了
 
 ## Step 3
