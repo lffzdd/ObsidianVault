@@ -16,14 +16,16 @@ LLM 本质是对模板化 token 序列做续写：role/content、im_start 这类
 - [[02-Topics/AI/LLM/2025-11-06 不是所有llm都采用im_xxx|2025-11-06 不是所有llm都采用im_xxx]] — 讲了：不是所有llm都采用im_xxx
 - [[02-Topics/AI/LLM/2026-01-27 知识蒸馏|2026-01-27 知识蒸馏]] — 讲了：1. 核心矛盾：越强越慢 vs. 越快越弱 / 2. 历史背景：Hinton 的神来之笔 (20 / 3. 原理详解：温度 (Temperature)
 - [[02-Topics/AI/LLM/2026-04-06 llm中转站为何降智|2026-04-06 llm中转站为何降智]] — 讲了：API 格式转换导致降智的完整拆解 / 一、最核心的问题：Thinking（扩展思考） / 1. Claude 原生 API 的 Think
-
-### 早期专题笔记
-
 - [[02-Topics/AI/LLM/0-学习路径|0-学习路径]] — 讲了：🕰️ LLM 的历史发展大致可以分为这几个阶段： / 1.   早期探索：神经网络 & 词向量 (19 / 2.   从 RNN 到 Transformer
-- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/1-n-gram模型|1-n-gram模型]] — 讲了：什么是 n-gram 模型？ / 为什么要用 n-gram？ / n-gram 怎么建模？
-- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/2-word2vec|2-word2vec]] — 讲了：原版损失函数 / 背景：Word2Vec 目标 / 1. 训练目标
-- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/3-RNN-循环神经网络|3-RNN-循环神经网络]] — 讲了：3-RNN-循环神经网络
-- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/4-LSTM|4-LSTM]] — 讲了：4-LSTM
-- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/5-GRU|5-GRU]] — 讲了：5-GRU
-- [[02-Topics/AI/NLP与Transformer/RNN与早期语言模型/6-RNN-递归神经网络|6-RNN-递归神经网络]] — 讲了：6-RNN-递归神经网络
-- [[02-Topics/AI/AIGC与扩散模型/生图进阶 - LoRA 之后学什么|图片]] — 讲了：第一优先级：ControlNet —— 图像的“ / 第二优先级：IP-Adapter —— 图像的“ / 第三优先级：Inpainting & Outpa
+- [[02-Topics/AI/LLM/chatgpt-prompt|chatgpt-prompt]] — 讲了：✅ 推荐填入内容（通用型指令）、💡 可选增强版（如果你希望 ChatGPT 更贴近「思维导图
+- [[02-Topics/AI/LLM/prompt gpt|prompt gpt]] — 讲了：（内容很短，待补充）
+
+## 子主题
+
+### web_search
+
+- [[02-Topics/AI/LLM/web_search/2026-05-15 llm web_search 1 - 官方有哪些|2026-05-15 llm web_search 1 - 官方有哪些]] — 讲了：**OpenAI 主要自建搜索基础设施（与 Bing/必应深、**OpenAI:Bing 索引 + 自有爬虫 + 自研排序、**Anthropic Claude:Brave Searc
+- [[02-Topics/AI/LLM/web_search/2026-05-15 llm web_search 2 - 自建怎么做|2026-05-15 llm web_search 2 - 自建怎么做]] — 讲了：**如果你是个人开发者或中小团队自建 Agent，最稳的方案、**一、先把 "web search" 这个需求拆成五个子问、**二、可选方案矩阵: 六类供应商各司其职**
+- [[02-Topics/AI/LLM/web_search/2026-05-15 llm web_search 3 - 自建vs官方|2026-05-15 llm web_search 3 - 自建vs官方]] — 讲了：**自建未必输给官方——在垂直场景里几乎一定赢; 但在 " 、**第二层: 四家官方 web_search 的真实体验对比、**ChatGPT Search: 综合体验最强,但有 " 
+
+- 入口：[[02-Topics/AI/LLM/接口格式发展/接口格式发展|接口格式发展]]（5 篇）
