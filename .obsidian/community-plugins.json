@@ -18,5 +18,6 @@
   "quick-latex",
   "copilot",
   "github-copilot",
-  "notion-sync"
+  "notion-sync",
+  "beautiful-mermaid-renderer"
 ]

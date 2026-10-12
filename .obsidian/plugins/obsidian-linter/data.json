@@ -298,6 +298,27 @@
       "replace": "“** ",
       "flags": "gm",
       "enabled": true
+    },
+    {
+      "label": "LaTeX数学公式转换 行",
+      "find": "\\\\\\(\\s*(.*?)\\s*\\\\\\)",
+      "replace": "$$$1$$",
+      "flags": "g",
+      "enabled": true
+    },
+    {
+      "label": "LaTeX数学公式转换 块",
+      "find": "\\\\\\[([\\s\\S]*?)\\\\\\]",
+      "replace": "$$$$$1$$$$",
+      "flags": "g",
+      "enabled": true
+    },
+    {
+      "label": "LaTeX 数学公式 行 清理",
+      "find": "(?<!\\$)\\$\\s*(.*?)\\s*\\$(?!\\$)",
+      "replace": "$$$1$$",
+      "flags": "g",
+      "enabled": true
     }
   ],
   "commonStyles": {
